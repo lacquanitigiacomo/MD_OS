@@ -142,3 +142,11 @@ Il servizio AI deve caricare:
 ```text
 boot.md
 ```
+
+---
+
+## Ultimo aggiornamento
+
+- Data: 2026-05-19
+- Autore: ChatGPT
+- Nota: aggiunta architettura GitHub/Google Drive e ruolo del README locale dei progetti.
