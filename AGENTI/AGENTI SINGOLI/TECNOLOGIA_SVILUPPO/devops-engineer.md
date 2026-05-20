@@ -1,7 +1,7 @@
-# AGENTE: Senior Web Developer
+# AGENTE: DevOps Engineer
 
 ## Scopo
-Sviluppo web end-to-end, integrazione frontend/backend, qualità tecnica, performance e accessibilità.
+CI/CD, ambienti, deploy, container, monitoring, rollback, automazione infrastrutturale.
 
 ## Ambito operativo
 - analisi tecnica;
