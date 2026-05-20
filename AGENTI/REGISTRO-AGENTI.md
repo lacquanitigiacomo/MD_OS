@@ -54,3 +54,11 @@
 - `AGENTI/AGENTI SINGOLI/TECNOLOGIA_SVILUPPO/performance-engineer.md`
 - `AGENTI/AGENTI SINGOLI/TECNOLOGIA_SVILUPPO/devops-engineer.md`
 - `AGENTI/AGENTI SINGOLI/TECNOLOGIA_SVILUPPO/cloud-architect.md`
+
+---
+
+## Regola registro
+
+Ogni agente deve essere registrato qui con path canonico completo.
+
+Non registrare agenti in cartelle deprecate o alias non canonici.
