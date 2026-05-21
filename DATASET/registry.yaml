@@ -35,3 +35,5 @@ datasets:
   path: DATASET/INDUSTRIA_INGEGNERIA/dataset_operativo.yaml
 - id: sicurezza_rischio_operativo
   path: DATASET/SICUREZZA_RISCHIO/dataset_operativo.yaml
+- id: prodotto_digital_wow
+  path: DATASET/PRODOTTO/digital_wow.yaml

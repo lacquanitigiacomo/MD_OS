@@ -1,6 +1,6 @@
 id: profilo_jack
 tipo: profilo_utente_preferenziale
-versione: 1.0.0
+versione: 1.1.0
 lingua_preferita: it
 
 uso:
@@ -22,6 +22,7 @@ ambiti_principali:
     output_preferiti:
       - roadmap_mvp
       - mossa_decisiva
+      - digital_wow_pitch
       - report_operativo
 
   sviluppo_web_app:
@@ -38,6 +39,7 @@ ambiti_principali:
       - roadmap_tecnica
       - diagnosi_tecnica
       - patch_codice
+      - digital_wow_pitch
 
   automazioni_ai_tecnologie_future:
     priorita: alta
@@ -51,6 +53,7 @@ ambiti_principali:
     output_preferiti:
       - mossa_decisiva
       - roadmap_mvp
+      - digital_wow_pitch
       - report_operativo
 
   sviluppo_videogame:
@@ -66,6 +69,7 @@ ambiti_principali:
       - scheda_idea
       - roadmap_mvp
       - specifica_funzionale
+      - digital_wow_pitch
 
   cucina_libri_cucina:
     priorita: alta
@@ -103,6 +107,70 @@ ambiti_principali:
       - lista_ragionata
       - piano_operativo
       - confronto_opzioni
+
+comandi_rapidi:
+  AVVIA_SISTEMA:
+    trigger:
+      - AVVIA SISTEMA
+      - CARICA MD_OS
+      - CARICA SISTEMA
+    azione: carica MD_OS da GitHub seguendo BOOT.md
+    output: stato_runtime_caricato
+
+  CHECK_SISTEMA:
+    trigger:
+      - CHECK MD_OS
+      - CONTROLLA SISTEMA
+      - VERIFICA MD_OS
+    azione: controlla coerenza tra BOOT, CORE, AGENTI, DATASET e output contract
+    output: report_operativo
+
+  ESPORTA_SISTEMA:
+    trigger:
+      - ESPORTA SISTEMA
+      - ZIP SISTEMA
+      - FAMMI ZIP MD_OS
+    azione: prepara zip con patch o sistema richiesto
+    output: file_zip_scaricabile
+
+  ESPORTA_DATASET:
+    trigger:
+      - ESPORTA DATASET
+      - ZIP DATASET
+    azione: prepara zip dei dataset richiesti o modificati
+    output: file_zip_scaricabile
+
+  ESPORTA_AGENTE:
+    trigger:
+      - ESPORTA AGENTE
+      - ZIP AGENTE
+    azione: prepara zip con agente singolo e riferimenti necessari
+    output: file_zip_scaricabile
+
+  ESPORTA_TEAM_REPARTO:
+    trigger:
+      - ESPORTA TEAM
+      - ESPORTA REPARTO
+      - ZIP TEAM
+      - ZIP REPARTO
+    azione: prepara zip con agenti, dataset e riferimenti del reparto richiesto
+    output: file_zip_scaricabile
+
+  DEMO_PRODOTTO:
+    trigger:
+      - DIMOSTRAMI CHE SEI MIGLIORATO
+      - FAMMI UNA DEMO
+      - PRESENTAMI IL PRODOTTO
+    azione: presenta MD_OS in stile commerciale con prima/dopo, valore e caso d'uso
+    output: digital_wow_pitch
+
+  PATCH_MD_OS:
+    trigger:
+      - PREPARA PATCH
+      - PATCH MD_OS
+      - AGGIORNA MD_OS
+    azione: crea patch compatibile con struttura MD_OS v30
+    output: zip_patch_elenco_file_modificati
 
 preferenze_output:
   stile:
