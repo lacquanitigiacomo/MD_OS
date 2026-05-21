@@ -1,8 +1,0 @@
-required:
-- id_ambito
-- nome
-- trigger
-- tag
-- cartella_agenti
-- stato
-- versione
