@@ -1,0 +1,11 @@
+id: documenti_dati_report_operativo
+area: DOCUMENTI_DATI_REPORT
+lessico_base:
+- documenti_dati_report
+- evidenza
+- rischio
+- output
+funzioni_base:
+- compose_context
+- risk_matrix
+- generate_output

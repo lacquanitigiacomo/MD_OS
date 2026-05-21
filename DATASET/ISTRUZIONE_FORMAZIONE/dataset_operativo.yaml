@@ -1,0 +1,11 @@
+id: istruzione_formazione_operativo
+area: ISTRUZIONE_FORMAZIONE
+lessico_base:
+- istruzione_formazione
+- evidenza
+- rischio
+- output
+funzioni_base:
+- compose_context
+- risk_matrix
+- generate_output

@@ -1,0 +1,18 @@
+id: sicurezza_applicativa
+risk_flags:
+  auth:
+  - jwt
+  - oauth
+  - sessioni
+  input:
+  - xss
+  - csrf
+  - sql_injection
+  segreti:
+  - env
+  - token
+  - chiavi
+  api:
+  - rate_limit
+  - rbac
+  - logging

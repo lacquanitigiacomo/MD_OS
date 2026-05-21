@@ -1,0 +1,11 @@
+id: sicurezza_rischio_operativo
+area: SICUREZZA_RISCHIO
+lessico_base:
+- sicurezza_rischio
+- evidenza
+- rischio
+- output
+funzioni_base:
+- compose_context
+- risk_matrix
+- generate_output

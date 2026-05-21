@@ -1,0 +1,11 @@
+id: economia_finanza_operativo
+area: ECONOMIA_FINANZA
+lessico_base:
+- economia_finanza
+- evidenza
+- rischio
+- output
+funzioni_base:
+- compose_context
+- risk_matrix
+- generate_output

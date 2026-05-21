@@ -1,0 +1,11 @@
+id: impresa_management_operativo
+area: IMPRESA_MANAGEMENT
+lessico_base:
+- impresa_management
+- evidenza
+- rischio
+- output
+funzioni_base:
+- compose_context
+- risk_matrix
+- generate_output

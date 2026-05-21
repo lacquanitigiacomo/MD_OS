@@ -1,0 +1,26 @@
+id: voci_busta_paga
+voci:
+  WMINPM:
+    nome: Minor presenza mese
+    controlli:
+    - ferie
+    - rol
+    - assenze
+    - ore_programmate
+  TFR:
+    nome: Trattamento fine rapporto
+    controlli:
+    - imponibile utile
+    - quota annua
+  notturno:
+    nome: Maggiorazione notturna
+    controlli:
+    - ore
+    - percentuale
+    - ccnl
+  ROL:
+    nome: Riduzione orario lavoro
+    controlli:
+    - maturato
+    - goduto
+    - residuo

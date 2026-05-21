@@ -1,0 +1,13 @@
+id: contesto_base
+type: base
+items:
+  regole:
+  - dataset_first
+  - funzioni_per_calcoli
+  - agenti_per_specificita
+  - output_contract
+  distinzioni:
+  - dato
+  - inferenza
+  - ipotesi
+  - limite

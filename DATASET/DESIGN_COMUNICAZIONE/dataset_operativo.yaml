@@ -1,0 +1,11 @@
+id: design_comunicazione_operativo
+area: DESIGN_COMUNICAZIONE
+lessico_base:
+- design_comunicazione
+- evidenza
+- rischio
+- output
+funzioni_base:
+- compose_context
+- risk_matrix
+- generate_output

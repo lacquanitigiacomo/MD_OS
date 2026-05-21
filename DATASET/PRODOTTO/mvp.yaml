@@ -1,0 +1,16 @@
+id: mvp
+criteri:
+  core:
+  - risolve problema principale
+  - testabile in poco tempo
+  - riduce funzioni non essenziali
+  priorita:
+  - impatto
+  - sforzo
+  - rischio
+  - apprendimento
+output:
+- scheda_idea
+- funzioni_core
+- esclusioni
+- roadmap

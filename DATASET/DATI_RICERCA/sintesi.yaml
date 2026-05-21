@@ -1,0 +1,6 @@
+id: sintesi_strategica
+azioni:
+- rimuovi_rumore
+- trova_pattern
+- identifica_leva
+- proponi_mossa_decisiva

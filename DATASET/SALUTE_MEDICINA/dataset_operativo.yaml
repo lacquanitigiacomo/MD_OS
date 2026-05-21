@@ -1,0 +1,11 @@
+id: salute_medicina_operativo
+area: SALUTE_MEDICINA
+lessico_base:
+- salute_medicina
+- evidenza
+- rischio
+- output
+funzioni_base:
+- compose_context
+- risk_matrix
+- generate_output

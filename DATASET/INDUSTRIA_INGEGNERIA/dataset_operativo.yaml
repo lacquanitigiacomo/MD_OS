@@ -1,0 +1,11 @@
+id: industria_ingegneria_operativo
+area: INDUSTRIA_INGEGNERIA
+lessico_base:
+- industria_ingegneria
+- evidenza
+- rischio
+- output
+funzioni_base:
+- compose_context
+- risk_matrix
+- generate_output

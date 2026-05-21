@@ -1,0 +1,11 @@
+id: casa_vita_pratica_operativo
+area: CASA_VITA_PRATICA
+lessico_base:
+- casa_vita_pratica
+- evidenza
+- rischio
+- output
+funzioni_base:
+- compose_context
+- risk_matrix
+- generate_output

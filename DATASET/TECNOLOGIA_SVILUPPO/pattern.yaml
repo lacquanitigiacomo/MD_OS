@@ -1,0 +1,7 @@
+id: pattern_codice
+patterns:
+  service_layer: separa logica applicativa
+  repository: isola accesso dati
+  dto: controlla input/output
+  middleware: cross cutting concerns
+  adr: decisioni architetturali

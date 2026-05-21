@@ -1,0 +1,20 @@
+id: anomalie_payroll
+anomalie:
+  minor_presenza_ricorrente:
+    severity: media
+    richiede:
+    - orari
+    - ferie_rol
+    - cedolino
+  saldo_ferie_negativo:
+    severity: media
+  notturno_elevato:
+    severity: alta
+    richiede:
+    - turni
+    - riposi
+  delta_ore:
+    severity: alta
+    richiede:
+    - presenze
+    - ore_paghe

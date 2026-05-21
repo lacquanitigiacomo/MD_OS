@@ -1,0 +1,10 @@
+required:
+- id
+- area
+- level
+- skills
+- lessico
+- funzioni
+- formule
+- datasets
+- outputs

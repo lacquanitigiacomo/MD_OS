@@ -1,0 +1,11 @@
+id: scienze_sociali_operativo
+area: SCIENZE_SOCIALI
+lessico_base:
+- scienze_sociali
+- evidenza
+- rischio
+- output
+funzioni_base:
+- compose_context
+- risk_matrix
+- generate_output

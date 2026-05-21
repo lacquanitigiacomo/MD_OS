@@ -1,0 +1,11 @@
+id: lavoro_professioni_operativo
+area: LAVORO_PROFESSIONI
+lessico_base:
+- lavoro_professioni
+- evidenza
+- rischio
+- output
+funzioni_base:
+- compose_context
+- risk_matrix
+- generate_output
