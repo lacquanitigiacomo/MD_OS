@@ -1,0 +1,58 @@
+id: learning_rules
+tipo: dataset_apprendimento_semantico
+versione: 1.0.0
+
+scopo:
+  - estrarre conoscenza riutilizzabile dalle interazioni
+  - trasformare pattern in dataset, funzioni, routing o output contract
+  - evitare memoria caotica
+  - proporre patch verificabili
+
+principio:
+  - non salvare la chat
+  - salvare solo conoscenza operativa riutilizzabile
+  - ogni apprendimento deve avere destinazione, motivo, rischio e priorità
+
+quando_apprendere:
+  - una regola si ripete in più contesti
+  - l'utente corregge un comportamento del sistema
+  - nasce una procedura riutilizzabile
+  - nasce un comando rapido
+  - nasce un nuovo schema output
+  - emerge un dataset stabile
+  - un errore rivela una regola generale
+
+quando_non_apprendere:
+  - dettaglio momentaneo
+  - preferenza isolata non confermata
+  - dato specifico di progetto non generalizzabile
+  - contenuto sensibile non necessario
+  - ipotesi non verificata
+  - rumore conversazionale
+
+chunk_semantico:
+  campi:
+    id: identificativo breve
+    fonte: sessione, progetto, file, output
+    ambito: area MD_OS
+    intent: scopo operativo
+    concetto: concetto atomico
+    regola: formulazione riutilizzabile
+    relazioni: collegamenti con dataset, funzioni, agenti
+    destinazione: file MD_OS suggerito
+    confidenza: alta, media, bassa
+    priorita: alta, media, bassa
+
+schema_learning_patch:
+  pattern_rilevato: cosa si e ripetuto o chiarito
+  regola_riutilizzabile: regola generale proposta
+  chunk_semantici: blocchi atomici
+  destinazione_dataset: file consigliato
+  proposta_patch: contenuto suggerito
+  rischio: cosa potrebbe sporcare o irrigidire MD_OS
+  priorita: impatto stimato
+
+regola_finale:
+  - proporre patch, non applicare automaticamente
+  - se la patch e piccola e richiesta, preparare zip
+  - se la patch e ampia, prima fare checkpoint

@@ -3,6 +3,12 @@ datasets:
   path: DATASET/BASE/contesto_base.yaml
 - id: profilo_jack
   path: DATASET/BASE/profilo_jack.yaml
+- id: session_runtime
+  path: DATASET/BASE/session_runtime.yaml
+- id: team_composer
+  path: DATASET/BASE/team_composer.yaml
+- id: learning_rules
+  path: DATASET/BASE/learning_rules.yaml
 - id: lavoro_professioni_operativo
   path: DATASET/LAVORO_PROFESSIONI/dataset_operativo.yaml
 - id: economia_finanza_operativo
@@ -37,3 +43,5 @@ datasets:
   path: DATASET/SICUREZZA_RISCHIO/dataset_operativo.yaml
 - id: prodotto_digital_wow
   path: DATASET/PRODOTTO/digital_wow.yaml
+- id: prodotto_pitch_pack
+  path: DATASET/PRODOTTO/pitch_pack.yaml

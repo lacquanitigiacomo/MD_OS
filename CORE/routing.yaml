@@ -1,4 +1,90 @@
 rules:
+- id: session_control
+  match:
+  - checkpoint
+  - pulisci memoria
+  - reset operativo
+  - spazzino
+  - direttore sessione
+  - sessione lunga
+  - tieni ultimi dati
+  - comprimi contesto
+  mode: SESSION_CONTROL
+  agents:
+  - session_director
+  datasets:
+  - DATASET/BASE/session_runtime.yaml
+  - DATASET/BASE/profilo_jack.yaml
+  functions:
+  - compose_context
+  - propose_patch
+  output: session_checkpoint
+
+- id: team_composition
+  match:
+  - componi team
+  - scegli agenti
+  - che agenti usiamo
+  - reparto migliore
+  - team migliore
+  - squadra agenti
+  mode: TEAM_COMPOSITION
+  agents:
+  - team_composer
+  - knowledge_manager
+  datasets:
+  - DATASET/BASE/team_composer.yaml
+  - DATASET/BASE/profilo_jack.yaml
+  functions:
+  - compose_context
+  - route_request
+  output: team_composition
+
+- id: learning_extractor
+  match:
+  - cosa abbiamo imparato
+  - salva apprendimento
+  - aggiorna dataset
+  - apprendi da questa sessione
+  - pattern ricorrente
+  - crea learning patch
+  mode: LEARNING_EXTRACTOR
+  agents:
+  - learning_extractor
+  - knowledge_manager
+  datasets:
+  - DATASET/BASE/learning_rules.yaml
+  - DATASET/BASE/profilo_jack.yaml
+  functions:
+  - compose_context
+  - propose_patch
+  output: learning_patch
+
+- id: pitch_pack
+  match:
+  - pitch pack
+  - presentazione prodotto
+  - vendimi questa idea
+  - demo investitore
+  - demo commerciale
+  - confeziona prodotto
+  mode: PITCH_PACK
+  agents:
+  - idea_accelerator
+  - business_strategist
+  - copywriter
+  - presentation_designer
+  - ux_reviewer
+  datasets:
+  - DATASET/PRODOTTO/pitch_pack.yaml
+  - DATASET/PRODOTTO/digital_wow.yaml
+  - DATASET/BASE/profilo_jack.yaml
+  functions:
+  - compose_context
+  - build_mvp_scope
+  - find_leverage_point
+  output: pitch_pack
+
 - id: jack_digital_wow
   match:
   - wow

@@ -1,6 +1,6 @@
 id: profilo_jack
 tipo: profilo_utente_preferenziale
-versione: 1.1.0
+versione: 1.2.0
 lingua_preferita: it
 
 uso:
@@ -125,6 +125,31 @@ comandi_rapidi:
     azione: controlla coerenza tra BOOT, CORE, AGENTI, DATASET e output contract
     output: report_operativo
 
+  CHECKPOINT:
+    trigger:
+      - CHECKPOINT
+      - PULISCI SESSIONE
+      - RESET OPERATIVO
+      - SPAZZINO
+    azione: attiva session_control e produce checkpoint compatto
+    output: session_checkpoint
+
+  COMPONI_TEAM:
+    trigger:
+      - COMPONI TEAM
+      - SCEGLI AGENTI
+      - TEAM MIGLIORE
+    azione: seleziona lead, supporto, esclusioni, dataset e output contract
+    output: team_composition
+
+  COSA_ABBIAMO_IMPARATO:
+    trigger:
+      - COSA ABBIAMO IMPARATO
+      - SALVA APPRENDIMENTO
+      - CREA LEARNING PATCH
+    azione: estrae pattern riutilizzabili e propone aggiornamento dataset
+    output: learning_patch
+
   ESPORTA_SISTEMA:
     trigger:
       - ESPORTA SISTEMA
@@ -163,6 +188,14 @@ comandi_rapidi:
       - PRESENTAMI IL PRODOTTO
     azione: presenta MD_OS in stile commerciale con prima/dopo, valore e caso d'uso
     output: digital_wow_pitch
+
+  PITCH_PACK:
+    trigger:
+      - PITCH PACK
+      - VENDIMI QUESTA IDEA
+      - CONFEZIONA PRODOTTO
+    azione: trasforma un'idea in mini-presentazione vendibile
+    output: pitch_pack
 
   PATCH_MD_OS:
     trigger:

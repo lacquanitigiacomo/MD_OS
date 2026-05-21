@@ -1,0 +1,54 @@
+id: pitch_pack
+tipo: dataset_presentazione_prodotto
+versione: 1.0.0
+
+scopo:
+  - trasformare idee in mini-presentazioni vendibili
+  - creare output adatti a soci, clienti, investitori o utenti finali
+  - rendere visibile il valore prima del dettaglio tecnico
+
+principi:
+  - una frase deve far capire il prodotto
+  - il prima/dopo deve essere evidente
+  - la demo deve sembrare già usabile
+  - le funzioni core devono essere poche
+  - il taglio vale quanto l'aggiunta
+  - ogni pitch deve chiudere con una prossima azione
+
+schema_pitch:
+  headline: frase breve e memorabile
+  promessa: beneficio principale
+  problema: frizione attuale
+  prima_dopo: trasformazione concreta
+  demo_scene: scena d'uso descritta in modo visivo
+  funzioni_core: massimo 3-5 funzioni
+  cosa_tagliare: elementi da non costruire ora
+  roadmap: percorso breve
+  call_to_action: azione successiva
+
+template_prima_dopo:
+  prima:
+    - utente confuso
+    - processo manuale
+    - decisioni lente
+    - dati sparsi
+  dopo:
+    - percorso chiaro
+    - output pronto
+    - decisione rapida
+    - sistema riutilizzabile
+
+criteri_qualita:
+  chiarezza: si capisce in meno di 30 secondi
+  desiderabilita: fa venire voglia di provarlo
+  fattibilita: puo diventare MVP
+  differenziazione: non sembra una copia generica
+  concretezza: mostra cosa succede nella pratica
+
+anti_pattern:
+  - troppe funzioni
+  - pitch solo tecnico
+  - promessa vaga
+  - target indefinito
+  - roadmap infinita
+  - nessuna scena d'uso

@@ -25,6 +25,49 @@ digital_wow_pitch:
   - rischi_e_tagli
   - prossima_azione
 
+pitch_pack:
+  required:
+  - headline
+  - promessa
+  - problema
+  - prima_dopo
+  - demo_scene
+  - funzioni_core
+  - cosa_tagliare
+  - roadmap
+  - call_to_action
+
+session_checkpoint:
+  required:
+  - obiettivo_corrente
+  - stato_runtime
+  - decisioni_attive
+  - contesto_da_tenere
+  - contesto_da_scartare
+  - prossima_azione
+  - eventuale_patch_dataset
+
+team_composition:
+  required:
+  - task
+  - agente_lead
+  - agenti_supporto
+  - agenti_esclusi
+  - motivo
+  - dataset_da_caricare
+  - funzioni_da_usare
+  - output_contract
+
+learning_patch:
+  required:
+  - pattern_rilevato
+  - regola_riutilizzabile
+  - chunk_semantici
+  - destinazione_dataset
+  - proposta_patch
+  - rischio
+  - priorita
+
 audit_payroll:
   required:
   - fonti_lette

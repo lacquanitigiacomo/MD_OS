@@ -1,0 +1,61 @@
+id: session_runtime
+tipo: dataset_runtime_sessione
+versione: 1.0.0
+
+scopo:
+  - mantenere la sessione veloce, leggibile e governata
+  - ridurre rumore accumulato
+  - produrre checkpoint sintetici
+  - distinguere contesto attivo da storico superato
+  - segnalare cosa va salvato in dataset
+
+attivazione:
+  trigger:
+    - checkpoint
+    - pulisci memoria
+    - reset operativo
+    - spazzino
+    - direttore sessione
+    - sessione lunga
+    - tieni ultimi dati
+    - comprimi contesto
+  condizioni:
+    - sessione lunga
+    - molti file modificati
+    - molte decisioni operative
+    - cambio progetto
+    - rischio confusione
+    - richiesta esplicita utente
+
+regola_base:
+  - non cancellare decisioni attive
+  - non perdere file prodotti o modificati
+  - non mantenere dettagli superati
+  - tenere solo ciò che serve alla prossima azione
+  - proporre patch dataset solo per pattern riutilizzabili
+
+checkpoint_schema:
+  obiettivo_corrente: descrizione breve del lavoro attivo
+  stato_runtime: MD_OS caricato, moduli attivi, eventuali limiti
+  decisioni_attive: decisioni non superate
+  file_modificati_o_prodotti: file e zip rilevanti
+  contesto_da_tenere: dati essenziali per continuare
+  contesto_da_scartare: rumore, prove fallite, dettagli non più utili
+  prossima_azione: unico passo consigliato
+  eventuale_patch_dataset: pattern stabile da salvare, se presente
+
+cadence:
+  suggerisci_checkpoint_ogni:
+    scambi_lunghi: 8
+    minuti_sessione: 60
+  attiva_subito_se:
+    - utente chiede reset
+    - utente cambia progetto
+    - vengono creati zip o patch
+    - la conversazione diventa ramificata
+
+output_style:
+  - breve
+  - operativo
+  - senza tabelle salvo necessità
+  - con sezione chiara su cosa tenere e cosa scartare
