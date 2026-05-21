@@ -1,0 +1,54 @@
+roadmap_mvp:
+  required:
+  - sintesi_idea
+  - problema
+  - target
+  - funzioni_core
+  - esclusioni
+  - stack_o_strumenti
+  - rischi
+  - roadmap
+  - prossima_azione
+audit_payroll:
+  required:
+  - fonti_lette
+  - voci_estratte
+  - ccnl_dataset
+  - calcoli
+  - anomalie
+  - limiti
+  - azioni
+diagnosi_tecnica:
+  required:
+  - problema
+  - stack
+  - evidenze
+  - causa_probabile
+  - soluzione
+  - rischi_regressione
+  - patch
+patch_md_os:
+  required:
+  - file_destinazione
+  - sezione
+  - contenuto
+  - motivo
+  - impatto
+  - rischio
+mossa_decisiva:
+  required:
+  - contesto
+  - problema_reale
+  - leva
+  - soluzione
+  - 3_step
+  - cosa_eliminare
+  - patch_se_utile
+report_operativo:
+  required:
+  - esito
+  - evidenze
+  - analisi
+  - decisioni
+  - limiti
+  - prossima_azione

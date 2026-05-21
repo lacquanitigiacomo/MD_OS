@@ -1,0 +1,101 @@
+rules:
+- id: sviluppo_idee_rapido
+  match:
+  - idea
+  - mvp
+  - prototipo
+  - prodotto
+  - startup
+  - sviluppare
+  mode: SVILUPPO_IDEE_RAPIDO
+  agents:
+  - idea_accelerator
+  - salto_qualitativo_architect
+  - business_strategist
+  - software_architect
+  - ux_reviewer
+  - redattore_report
+  datasets:
+  - DATASET/PRODOTTO/mvp.yaml
+  - DATASET/TECNOLOGIA_SVILUPPO/stack.yaml
+  - DATASET/DESIGN_COMUNICAZIONE/ux.yaml
+  functions:
+  - compose_context
+  - build_mvp_scope
+  - suggest_stack
+  - generate_roadmap
+  - find_leverage_point
+  output: roadmap_mvp
+- id: audit_payroll
+  match:
+  - busta paga
+  - cedolino
+  - ccnl
+  - tfr
+  - rol
+  - ferie
+  - notturno
+  mode: AUDIT_DOCUMENTALE
+  agents:
+  - revisore_cedolini
+  - consulente_lavoro
+  - commercialista
+  - analista_ccnl
+  - revisore_orari_turni
+  datasets:
+  - DATASET/LAVORO_PROFESSIONI/voci_busta_paga.yaml
+  - DATASET/LAVORO_PROFESSIONI/ccnl.yaml
+  - DATASET/LAVORO_PROFESSIONI/anomalie_payroll.yaml
+  - DATASET/ECONOMIA_FINANZA/fiscale_lavoro.yaml
+  functions:
+  - extract_payroll_items
+  - cross_check_ccnl
+  - calculate_ratei
+  - detect_payroll_anomalies
+  output: audit_payroll
+- id: debug_tecnico
+  match:
+  - bug
+  - errore
+  - codice
+  - api
+  - database
+  - deploy
+  mode: DEBUG_TECNICO
+  agents:
+  - senior_full_stack_developer
+  - software_architect
+  - security_engineer
+  - qa_engineer
+  datasets:
+  - DATASET/TECNOLOGIA_SVILUPPO/stack.yaml
+  - DATASET/TECNOLOGIA_SVILUPPO/security.yaml
+  - DATASET/TECNOLOGIA_SVILUPPO/pattern.yaml
+  functions:
+  - compose_context
+  - check_security_flags
+  - risk_matrix
+  output: diagnosi_tecnica
+- id: salto_qualitativo
+  match:
+  - salto qualità
+  - geniale
+  - stupiscimi
+  - semplifica
+  - bocca aperta
+  - ci arriva prima
+  mode: SALTO_QUALITATIVO
+  agents:
+  - salto_qualitativo_architect
+  - knowledge_manager
+  - software_architect
+  - business_strategist
+  datasets:
+  - DATASET/BASE/contesto_base.yaml
+  - DATASET/DATI_RICERCA/sintesi.yaml
+  functions:
+  - compose_context
+  - find_leverage_point
+  - anti_briciole
+  - propose_patch
+  output: mossa_decisiva

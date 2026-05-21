@@ -1,0 +1,13 @@
+id: REFRACTOR_SISTEMA
+agenti_preferiti:
+- software_architect
+- technical_lead
+- knowledge_manager
+- validatore_md_os
+domande_massime: 3
+output_default: report_operativo
+criteri:
+- riduci_ambiguita
+- usa_dataset
+- produci_output_contratto
+- proponi_patch
