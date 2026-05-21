@@ -1,0 +1,60 @@
+id: memory_chunk_schema
+tipo: schema_chunk_memoria_operativa
+versione: 1.0.0
+
+scopo:
+  - definire il formato standard dei chunk semantici MD_OS
+  - rendere ogni apprendimento piccolo, leggibile e riutilizzabile
+  - evitare memoria caotica
+
+schema:
+  id: identificativo_univoco
+  fonte: sessione, progetto, file, output, utente
+  timestamp: opzionale
+  ambito: area MD_OS
+  intent: scopo operativo
+  tipo_conoscenza:
+    - regola_operativa
+    - preferenza_utente
+    - routing_hint
+    - dataset_update
+    - output_pattern
+    - anti_pattern
+    - procedura
+  trigger:
+    - frase_o_keyword
+  concetto: formulazione atomica del concetto
+  regola: regola riutilizzabile
+  relazioni:
+    agenti:
+      - agente
+    dataset:
+      - path_dataset
+    funzioni:
+      - funzione
+    output_contract:
+      - output
+  destinazione: file consigliato
+  priorita: alta_media_bassa
+  confidenza: alta_media_bassa
+  rischio: rischio di salvare o applicare male
+  stato:
+    - candidato
+    - validato
+    - integrato
+    - deprecato
+
+regole:
+  - un chunk deve contenere una sola idea operativa
+  - ogni chunk deve avere una destinazione
+  - ogni chunk deve indicare confidenza e priorita
+  - preferenze isolate restano candidate
+  - regole usate piu volte possono diventare validate
+  - chunk integrati nei dataset devono essere tracciabili
+
+anti_pattern:
+  - salvare riassunti lunghi
+  - salvare dettagli momentanei
+  - duplicare chunk simili
+  - creare regole da una sola frase ambigua
+  - mescolare contenuto di progetto e regola generale

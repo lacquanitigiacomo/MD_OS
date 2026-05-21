@@ -9,6 +9,14 @@ datasets:
   path: DATASET/BASE/team_composer.yaml
 - id: learning_rules
   path: DATASET/BASE/learning_rules.yaml
+- id: semantic_runtime_index
+  path: DATASET/BASE/semantic_runtime_index.yaml
+- id: memory_chunk_schema
+  path: DATASET/BASE/memory_chunk_schema.yaml
+- id: dataset_compiler
+  path: DATASET/BASE/dataset_compiler.yaml
+- id: agent_council
+  path: DATASET/BASE/agent_council.yaml
 - id: lavoro_professioni_operativo
   path: DATASET/LAVORO_PROFESSIONI/dataset_operativo.yaml
 - id: economia_finanza_operativo
@@ -45,3 +53,7 @@ datasets:
   path: DATASET/PRODOTTO/digital_wow.yaml
 - id: prodotto_pitch_pack
   path: DATASET/PRODOTTO/pitch_pack.yaml
+- id: prodotto_product_lab
+  path: DATASET/PRODOTTO/product_lab.yaml
+- id: prodotto_exportable_product_pack
+  path: DATASET/PRODOTTO/exportable_product_pack.yaml

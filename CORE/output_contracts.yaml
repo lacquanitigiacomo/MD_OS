@@ -25,6 +25,19 @@ digital_wow_pitch:
   - rischi_e_tagli
   - prossima_azione
 
+product_lab_brief:
+  required:
+  - promessa_prodotto
+  - target
+  - problema
+  - prima_dopo
+  - MVP
+  - demo
+  - stack
+  - roadmap
+  - rischio
+  - prossima_azione
+
 pitch_pack:
   required:
   - headline
@@ -36,6 +49,14 @@ pitch_pack:
   - cosa_tagliare
   - roadmap
   - call_to_action
+
+product_pack_manifest:
+  required:
+  - nome_progetto
+  - file_generati
+  - assunzioni
+  - limiti
+  - prossima_azione
 
 session_checkpoint:
   required:
@@ -67,6 +88,38 @@ learning_patch:
   - proposta_patch
   - rischio
   - priorita
+
+semantic_chunk:
+  required:
+  - id
+  - trigger
+  - intent
+  - ambito
+  - regola
+  - relazioni
+  - destinazione
+  - priorita
+  - confidenza
+
+dataset_patch_plan:
+  required:
+  - file_destinazione
+  - sezione
+  - contenuto
+  - motivo
+  - duplicati
+  - rischio
+  - priorita
+
+council_decision:
+  required:
+  - tesi
+  - obiezioni
+  - rischi
+  - sintesi
+  - decisione_finale
+  - cosa_tagliare
+  - prossima_azione
 
 audit_payroll:
   required:

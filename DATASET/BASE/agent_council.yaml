@@ -1,0 +1,51 @@
+id: agent_council
+tipo: motore_confronto_agenti
+versione: 1.0.0
+
+scopo:
+  - introdurre confronto controllato tra agenti
+  - migliorare decisioni complesse
+  - evitare soluzioni sbilanciate
+  - produrre una sintesi finale motivata
+
+quando_usarlo:
+  - decisioni di prodotto
+  - scelta architettura
+  - priorita MVP
+  - rischio business
+  - conflitto tra UX, tecnologia e strategia
+  - richieste effetto wow importanti
+
+ruoli_tipici:
+  startup_operator:
+    focus: velocita, mercato, validazione
+  software_architect:
+    focus: solidita, scalabilita, complessita tecnica
+  ux_reviewer:
+    focus: semplicita, frizione, usabilita
+  business_strategist:
+    focus: valore, target, monetizzazione
+  semantic_curator:
+    focus: riusabilita, dataset, apprendimento
+  copywriter:
+    focus: promessa, chiarezza, desiderabilita
+
+schema_dibattito:
+  tesi: proposta iniziale
+  obiezioni:
+    - agente: nome
+      punto: obiezione sintetica
+  rischi:
+    - rischio
+  sintesi: decisione integrata
+  decisione_finale: scelta consigliata
+  cosa_tagliare:
+    - elemento
+  prossima_azione: passo operativo
+
+regole:
+  - massimo 5 voci nel council
+  - ogni agente deve portare un punto diverso
+  - niente dibattiti lunghi
+  - chiudere sempre con decisione
+  - se non serve conflitto, non attivare council

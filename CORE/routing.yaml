@@ -1,4 +1,110 @@
 rules:
+- id: semantic_runtime
+  match:
+  - indice semantico
+  - semantic index
+  - memoria semantica
+  - chunk semantico
+  - coordinate operative
+  mode: SEMANTIC_RUNTIME
+  agents:
+  - semantic_curator
+  - learning_extractor
+  datasets:
+  - DATASET/BASE/semantic_runtime_index.yaml
+  - DATASET/BASE/memory_chunk_schema.yaml
+  - DATASET/BASE/learning_rules.yaml
+  functions:
+  - compose_context
+  - propose_patch
+  output: semantic_chunk
+
+- id: dataset_compilation
+  match:
+  - compila dataset
+  - dove salviamo
+  - aggiorna dataset
+  - dataset patch
+  - organizza apprendimento
+  mode: DATASET_COMPILATION
+  agents:
+  - dataset_compiler
+  - semantic_curator
+  datasets:
+  - DATASET/BASE/dataset_compiler.yaml
+  - DATASET/BASE/semantic_runtime_index.yaml
+  - DATASET/BASE/profilo_jack.yaml
+  functions:
+  - compose_context
+  - propose_patch
+  output: dataset_patch_plan
+
+- id: product_lab
+  match:
+  - product lab
+  - laboratorio prodotto
+  - sviluppa prodotto
+  - idea in prodotto
+  - validiamo idea
+  - mvp completo
+  mode: PRODUCT_LAB
+  agents:
+  - product_lab_director
+  - idea_accelerator
+  - business_strategist
+  - software_architect
+  - ux_reviewer
+  datasets:
+  - DATASET/PRODOTTO/product_lab.yaml
+  - DATASET/PRODOTTO/digital_wow.yaml
+  - DATASET/PRODOTTO/mvp.yaml
+  functions:
+  - compose_context
+  - build_mvp_scope
+  - generate_roadmap
+  - find_leverage_point
+  output: product_lab_brief
+
+- id: agent_council
+  match:
+  - council
+  - dibattito agenti
+  - fai discutere gli agenti
+  - decisione complessa
+  - confronto agenti
+  mode: AGENT_COUNCIL
+  agents:
+  - council_moderator
+  - business_strategist
+  - software_architect
+  - ux_reviewer
+  datasets:
+  - DATASET/BASE/agent_council.yaml
+  - DATASET/BASE/team_composer.yaml
+  functions:
+  - compose_context
+  - risk_matrix
+  output: council_decision
+
+- id: export_product_pack
+  match:
+  - export product pack
+  - esporta prodotto
+  - pacchetto prodotto
+  - zip prodotto
+  - crea cartella prodotto
+  mode: EXPORT_PRODUCT_PACK
+  agents:
+  - product_packager
+  - product_lab_director
+  - redattore_report
+  datasets:
+  - DATASET/PRODOTTO/exportable_product_pack.yaml
+  - DATASET/PRODOTTO/product_lab.yaml
+  functions:
+  - compose_context
+  output: product_pack_manifest
+
 - id: session_control
   match:
   - checkpoint
@@ -44,7 +150,6 @@ rules:
   match:
   - cosa abbiamo imparato
   - salva apprendimento
-  - aggiorna dataset
   - apprendi da questa sessione
   - pattern ricorrente
   - crea learning patch
