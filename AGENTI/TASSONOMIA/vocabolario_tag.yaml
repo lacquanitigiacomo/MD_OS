@@ -1,21 +1,15 @@
-tag_globali:
-- audit
-- analisi
-- progetto
+tag_base:
+- idea
+- mvp
+- prototipo
+- codice
+- design
 - dataset
 - report
-- rischio
-- qualita
+- audit
+- sicurezza
+- finanza
+- lavoro
+- ricerca
 - output
 - patch
-- refactor
-- fonti
-- verifica
-- sicurezza
-- tempo
-- costo
-- documento
-- codice
-- contratto
-- salute
-- design

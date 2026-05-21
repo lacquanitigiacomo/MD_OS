@@ -1,5 +1,6 @@
 # INDICE AGENTI
 
+## LAVORO_PROFESSIONI
 - `AGENTI/AGENTI-SINGOLI/LAVORO_PROFESSIONI/revisore_cedolini.md` — LAVORO_PROFESSIONI/revisore_cedolini
 - `AGENTI/AGENTI-SINGOLI/LAVORO_PROFESSIONI/consulente_lavoro.md` — LAVORO_PROFESSIONI/consulente_lavoro
 - `AGENTI/AGENTI-SINGOLI/LAVORO_PROFESSIONI/analista_ccnl.md` — LAVORO_PROFESSIONI/analista_ccnl
@@ -8,12 +9,16 @@
 - `AGENTI/AGENTI-SINGOLI/LAVORO_PROFESSIONI/hr_specialist.md` — LAVORO_PROFESSIONI/hr_specialist
 - `AGENTI/AGENTI-SINGOLI/LAVORO_PROFESSIONI/career_coach.md` — LAVORO_PROFESSIONI/career_coach
 - `AGENTI/AGENTI-SINGOLI/LAVORO_PROFESSIONI/redattore_istanze_lavoro.md` — LAVORO_PROFESSIONI/redattore_istanze_lavoro
+
+## ECONOMIA_FINANZA
 - `AGENTI/AGENTI-SINGOLI/ECONOMIA_FINANZA/commercialista.md` — ECONOMIA_FINANZA/commercialista
 - `AGENTI/AGENTI-SINGOLI/ECONOMIA_FINANZA/analista_finanziario.md` — ECONOMIA_FINANZA/analista_finanziario
 - `AGENTI/AGENTI-SINGOLI/ECONOMIA_FINANZA/revisore_contabile.md` — ECONOMIA_FINANZA/revisore_contabile
 - `AGENTI/AGENTI-SINGOLI/ECONOMIA_FINANZA/budget_controller.md` — ECONOMIA_FINANZA/budget_controller
 - `AGENTI/AGENTI-SINGOLI/ECONOMIA_FINANZA/tax_advisor.md` — ECONOMIA_FINANZA/tax_advisor
 - `AGENTI/AGENTI-SINGOLI/ECONOMIA_FINANZA/business_planner.md` — ECONOMIA_FINANZA/business_planner
+
+## TECNOLOGIA_SVILUPPO
 - `AGENTI/AGENTI-SINGOLI/TECNOLOGIA_SVILUPPO/senior_full_stack_developer.md` — TECNOLOGIA_SVILUPPO/senior_full_stack_developer
 - `AGENTI/AGENTI-SINGOLI/TECNOLOGIA_SVILUPPO/senior_frontend_developer.md` — TECNOLOGIA_SVILUPPO/senior_frontend_developer
 - `AGENTI/AGENTI-SINGOLI/TECNOLOGIA_SVILUPPO/senior_backend_developer.md` — TECNOLOGIA_SVILUPPO/senior_backend_developer
@@ -26,6 +31,11 @@
 - `AGENTI/AGENTI-SINGOLI/TECNOLOGIA_SVILUPPO/qa_engineer.md` — TECNOLOGIA_SVILUPPO/qa_engineer
 - `AGENTI/AGENTI-SINGOLI/TECNOLOGIA_SVILUPPO/ai_engineer.md` — TECNOLOGIA_SVILUPPO/ai_engineer
 - `AGENTI/AGENTI-SINGOLI/TECNOLOGIA_SVILUPPO/technical_lead.md` — TECNOLOGIA_SVILUPPO/technical_lead
+- `AGENTI/AGENTI-SINGOLI/TECNOLOGIA_SVILUPPO/api_architect.md` — TECNOLOGIA_SVILUPPO/api_architect
+- `AGENTI/AGENTI-SINGOLI/TECNOLOGIA_SVILUPPO/cloud_architect.md` — TECNOLOGIA_SVILUPPO/cloud_architect
+- `AGENTI/AGENTI-SINGOLI/TECNOLOGIA_SVILUPPO/test_automation_engineer.md` — TECNOLOGIA_SVILUPPO/test_automation_engineer
+
+## DESIGN_COMUNICAZIONE
 - `AGENTI/AGENTI-SINGOLI/DESIGN_COMUNICAZIONE/web_designer.md` — DESIGN_COMUNICAZIONE/web_designer
 - `AGENTI/AGENTI-SINGOLI/DESIGN_COMUNICAZIONE/ux_reviewer.md` — DESIGN_COMUNICAZIONE/ux_reviewer
 - `AGENTI/AGENTI-SINGOLI/DESIGN_COMUNICAZIONE/grafico.md` — DESIGN_COMUNICAZIONE/grafico
@@ -33,56 +43,86 @@
 - `AGENTI/AGENTI-SINGOLI/DESIGN_COMUNICAZIONE/copywriter.md` — DESIGN_COMUNICAZIONE/copywriter
 - `AGENTI/AGENTI-SINGOLI/DESIGN_COMUNICAZIONE/marketing_strategist.md` — DESIGN_COMUNICAZIONE/marketing_strategist
 - `AGENTI/AGENTI-SINGOLI/DESIGN_COMUNICAZIONE/presentation_designer.md` — DESIGN_COMUNICAZIONE/presentation_designer
-- `AGENTI/AGENTI-SINGOLI/SALUTE_MEDICINA/analista_salute.md` — SALUTE_MEDICINA/analista_salute
-- `AGENTI/AGENTI-SINGOLI/SALUTE_MEDICINA/nutrizionista_operativo.md` — SALUTE_MEDICINA/nutrizionista_operativo
-- `AGENTI/AGENTI-SINGOLI/SALUTE_MEDICINA/psicologia_supporto.md` — SALUTE_MEDICINA/psicologia_supporto
-- `AGENTI/AGENTI-SINGOLI/SALUTE_MEDICINA/ergonomo.md` — SALUTE_MEDICINA/ergonomo
-- `AGENTI/AGENTI-SINGOLI/SALUTE_MEDICINA/prevenzione_benessere.md` — SALUTE_MEDICINA/prevenzione_benessere
+
+## DATI_RICERCA
+- `AGENTI/AGENTI-SINGOLI/DATI_RICERCA/data_analyst.md` — DATI_RICERCA/data_analyst
+- `AGENTI/AGENTI-SINGOLI/DATI_RICERCA/statistico.md` — DATI_RICERCA/statistico
+- `AGENTI/AGENTI-SINGOLI/DATI_RICERCA/ricercatore_documentale.md` — DATI_RICERCA/ricercatore_documentale
+- `AGENTI/AGENTI-SINGOLI/DATI_RICERCA/knowledge_manager.md` — DATI_RICERCA/knowledge_manager
+- `AGENTI/AGENTI-SINGOLI/DATI_RICERCA/visual_data_designer.md` — DATI_RICERCA/visual_data_designer
+
+## IMPRESA_MANAGEMENT
+- `AGENTI/AGENTI-SINGOLI/IMPRESA_MANAGEMENT/project_manager.md` — IMPRESA_MANAGEMENT/project_manager
+- `AGENTI/AGENTI-SINGOLI/IMPRESA_MANAGEMENT/business_strategist.md` — IMPRESA_MANAGEMENT/business_strategist
+- `AGENTI/AGENTI-SINGOLI/IMPRESA_MANAGEMENT/operations_manager.md` — IMPRESA_MANAGEMENT/operations_manager
+- `AGENTI/AGENTI-SINGOLI/IMPRESA_MANAGEMENT/sales_consultant.md` — IMPRESA_MANAGEMENT/sales_consultant
+- `AGENTI/AGENTI-SINGOLI/IMPRESA_MANAGEMENT/process_designer.md` — IMPRESA_MANAGEMENT/process_designer
+- `AGENTI/AGENTI-SINGOLI/IMPRESA_MANAGEMENT/idea_accelerator.md` — IMPRESA_MANAGEMENT/idea_accelerator
+
+## DOCUMENTI_DATI_REPORT
+- `AGENTI/AGENTI-SINGOLI/DOCUMENTI_DATI_REPORT/estrattore_dati.md` — DOCUMENTI_DATI_REPORT/estrattore_dati
+- `AGENTI/AGENTI-SINGOLI/DOCUMENTI_DATI_REPORT/redattore_report.md` — DOCUMENTI_DATI_REPORT/redattore_report
+- `AGENTI/AGENTI-SINGOLI/DOCUMENTI_DATI_REPORT/revisore_documentale.md` — DOCUMENTI_DATI_REPORT/revisore_documentale
+- `AGENTI/AGENTI-SINGOLI/DOCUMENTI_DATI_REPORT/normalizzatore_dataset.md` — DOCUMENTI_DATI_REPORT/normalizzatore_dataset
+- `AGENTI/AGENTI-SINGOLI/DOCUMENTI_DATI_REPORT/parser_tabelle.md` — DOCUMENTI_DATI_REPORT/parser_tabelle
+
+## DIRITTO_NORMATIVA
 - `AGENTI/AGENTI-SINGOLI/DIRITTO_NORMATIVA/analista_contratti.md` — DIRITTO_NORMATIVA/analista_contratti
 - `AGENTI/AGENTI-SINGOLI/DIRITTO_NORMATIVA/privacy_gdpr.md` — DIRITTO_NORMATIVA/privacy_gdpr
 - `AGENTI/AGENTI-SINGOLI/DIRITTO_NORMATIVA/compliance_specialist.md` — DIRITTO_NORMATIVA/compliance_specialist
 - `AGENTI/AGENTI-SINGOLI/DIRITTO_NORMATIVA/analista_normativo.md` — DIRITTO_NORMATIVA/analista_normativo
 - `AGENTI/AGENTI-SINGOLI/DIRITTO_NORMATIVA/diritto_lavoro_supporto.md` — DIRITTO_NORMATIVA/diritto_lavoro_supporto
-- `AGENTI/AGENTI-SINGOLI/SCIENZE_NATURALI/divulgatore_scientifico.md` — SCIENZE_NATURALI/divulgatore_scientifico
-- `AGENTI/AGENTI-SINGOLI/SCIENZE_NATURALI/analista_ambientale.md` — SCIENZE_NATURALI/analista_ambientale
-- `AGENTI/AGENTI-SINGOLI/SCIENZE_NATURALI/biologia_reviewer.md` — SCIENZE_NATURALI/biologia_reviewer
-- `AGENTI/AGENTI-SINGOLI/SCIENZE_NATURALI/chimica_reviewer.md` — SCIENZE_NATURALI/chimica_reviewer
-- `AGENTI/AGENTI-SINGOLI/SCIENZE_NATURALI/fisica_reviewer.md` — SCIENZE_NATURALI/fisica_reviewer
-- `AGENTI/AGENTI-SINGOLI/SCIENZE_SOCIALI/analista_sociale.md` — SCIENZE_SOCIALI/analista_sociale
-- `AGENTI/AGENTI-SINGOLI/SCIENZE_SOCIALI/storico_ricercatore.md` — SCIENZE_SOCIALI/storico_ricercatore
-- `AGENTI/AGENTI-SINGOLI/SCIENZE_SOCIALI/analista_politico.md` — SCIENZE_SOCIALI/analista_politico
-- `AGENTI/AGENTI-SINGOLI/SCIENZE_SOCIALI/sociologo_operativo.md` — SCIENZE_SOCIALI/sociologo_operativo
-- `AGENTI/AGENTI-SINGOLI/ISTRUZIONE_FORMAZIONE/tutor_didattico.md` — ISTRUZIONE_FORMAZIONE/tutor_didattico
-- `AGENTI/AGENTI-SINGOLI/ISTRUZIONE_FORMAZIONE/progettista_corsi.md` — ISTRUZIONE_FORMAZIONE/progettista_corsi
-- `AGENTI/AGENTI-SINGOLI/ISTRUZIONE_FORMAZIONE/valutatore_apprendimento.md` — ISTRUZIONE_FORMAZIONE/valutatore_apprendimento
-- `AGENTI/AGENTI-SINGOLI/ISTRUZIONE_FORMAZIONE/coach_metodo_studio.md` — ISTRUZIONE_FORMAZIONE/coach_metodo_studio
-- `AGENTI/AGENTI-SINGOLI/ARTI_CULTURA/editor_scrittura.md` — ARTI_CULTURA/editor_scrittura
-- `AGENTI/AGENTI-SINGOLI/ARTI_CULTURA/critico_culturale.md` — ARTI_CULTURA/critico_culturale
-- `AGENTI/AGENTI-SINGOLI/ARTI_CULTURA/storyteller.md` — ARTI_CULTURA/storyteller
-- `AGENTI/AGENTI-SINGOLI/ARTI_CULTURA/analista_filosofico.md` — ARTI_CULTURA/analista_filosofico
+
+## SALUTE_MEDICINA
+- `AGENTI/AGENTI-SINGOLI/SALUTE_MEDICINA/analista_salute.md` — SALUTE_MEDICINA/analista_salute
+- `AGENTI/AGENTI-SINGOLI/SALUTE_MEDICINA/nutrizionista_operativo.md` — SALUTE_MEDICINA/nutrizionista_operativo
+- `AGENTI/AGENTI-SINGOLI/SALUTE_MEDICINA/psicologia_supporto.md` — SALUTE_MEDICINA/psicologia_supporto
+- `AGENTI/AGENTI-SINGOLI/SALUTE_MEDICINA/ergonomo.md` — SALUTE_MEDICINA/ergonomo
+- `AGENTI/AGENTI-SINGOLI/SALUTE_MEDICINA/prevenzione_benessere.md` — SALUTE_MEDICINA/prevenzione_benessere
+
+## CASA_VITA_PRATICA
 - `AGENTI/AGENTI-SINGOLI/CASA_VITA_PRATICA/chef_domestico.md` — CASA_VITA_PRATICA/chef_domestico
 - `AGENTI/AGENTI-SINGOLI/CASA_VITA_PRATICA/meal_planner.md` — CASA_VITA_PRATICA/meal_planner
 - `AGENTI/AGENTI-SINGOLI/CASA_VITA_PRATICA/tecnico_manutenzione_casa.md` — CASA_VITA_PRATICA/tecnico_manutenzione_casa
 - `AGENTI/AGENTI-SINGOLI/CASA_VITA_PRATICA/consulente_acquisti.md` — CASA_VITA_PRATICA/consulente_acquisti
 - `AGENTI/AGENTI-SINGOLI/CASA_VITA_PRATICA/organizzatore_domestico.md` — CASA_VITA_PRATICA/organizzatore_domestico
 - `AGENTI/AGENTI-SINGOLI/CASA_VITA_PRATICA/travel_planner.md` — CASA_VITA_PRATICA/travel_planner
-- `AGENTI/AGENTI-SINGOLI/IMPRESA_MANAGEMENT/project_manager.md` — IMPRESA_MANAGEMENT/project_manager
-- `AGENTI/AGENTI-SINGOLI/IMPRESA_MANAGEMENT/business_strategist.md` — IMPRESA_MANAGEMENT/business_strategist
-- `AGENTI/AGENTI-SINGOLI/IMPRESA_MANAGEMENT/operations_manager.md` — IMPRESA_MANAGEMENT/operations_manager
-- `AGENTI/AGENTI-SINGOLI/IMPRESA_MANAGEMENT/sales_consultant.md` — IMPRESA_MANAGEMENT/sales_consultant
-- `AGENTI/AGENTI-SINGOLI/IMPRESA_MANAGEMENT/process_designer.md` — IMPRESA_MANAGEMENT/process_designer
-- `AGENTI/AGENTI-SINGOLI/INDUSTRIA_INGEGNERIA/ingegnere_meccanico_supporto.md` — INDUSTRIA_INGEGNERIA/ingegnere_meccanico_supporto
-- `AGENTI/AGENTI-SINGOLI/INDUSTRIA_INGEGNERIA/impiantista_reviewer.md` — INDUSTRIA_INGEGNERIA/impiantista_reviewer
-- `AGENTI/AGENTI-SINGOLI/INDUSTRIA_INGEGNERIA/edilizia_tecnica.md` — INDUSTRIA_INGEGNERIA/edilizia_tecnica
-- `AGENTI/AGENTI-SINGOLI/INDUSTRIA_INGEGNERIA/quality_engineer.md` — INDUSTRIA_INGEGNERIA/quality_engineer
-- `AGENTI/AGENTI-SINGOLI/INDUSTRIA_INGEGNERIA/produzione_reviewer.md` — INDUSTRIA_INGEGNERIA/produzione_reviewer
-- `AGENTI/AGENTI-SINGOLI/DATI_RICERCA/data_analyst.md` — DATI_RICERCA/data_analyst
-- `AGENTI/AGENTI-SINGOLI/DATI_RICERCA/statistico.md` — DATI_RICERCA/statistico
-- `AGENTI/AGENTI-SINGOLI/DATI_RICERCA/ricercatore_documentale.md` — DATI_RICERCA/ricercatore_documentale
-- `AGENTI/AGENTI-SINGOLI/DATI_RICERCA/knowledge_manager.md` — DATI_RICERCA/knowledge_manager
-- `AGENTI/AGENTI-SINGOLI/DATI_RICERCA/visual_data_designer.md` — DATI_RICERCA/visual_data_designer
+
+## SICUREZZA_RISCHIO
 - `AGENTI/AGENTI-SINGOLI/SICUREZZA_RISCHIO/risk_manager.md` — SICUREZZA_RISCHIO/risk_manager
 - `AGENTI/AGENTI-SINGOLI/SICUREZZA_RISCHIO/audit_specialist.md` — SICUREZZA_RISCHIO/audit_specialist
 - `AGENTI/AGENTI-SINGOLI/SICUREZZA_RISCHIO/emergency_planner.md` — SICUREZZA_RISCHIO/emergency_planner
 - `AGENTI/AGENTI-SINGOLI/SICUREZZA_RISCHIO/data_protection_reviewer.md` — SICUREZZA_RISCHIO/data_protection_reviewer
 - `AGENTI/AGENTI-SINGOLI/SICUREZZA_RISCHIO/continuita_operativa_specialist.md` — SICUREZZA_RISCHIO/continuita_operativa_specialist
+
+## INDUSTRIA_INGEGNERIA
+- `AGENTI/AGENTI-SINGOLI/INDUSTRIA_INGEGNERIA/ingegnere_meccanico_supporto.md` — INDUSTRIA_INGEGNERIA/ingegnere_meccanico_supporto
+- `AGENTI/AGENTI-SINGOLI/INDUSTRIA_INGEGNERIA/impiantista_reviewer.md` — INDUSTRIA_INGEGNERIA/impiantista_reviewer
+- `AGENTI/AGENTI-SINGOLI/INDUSTRIA_INGEGNERIA/edilizia_tecnica.md` — INDUSTRIA_INGEGNERIA/edilizia_tecnica
+- `AGENTI/AGENTI-SINGOLI/INDUSTRIA_INGEGNERIA/quality_engineer.md` — INDUSTRIA_INGEGNERIA/quality_engineer
+- `AGENTI/AGENTI-SINGOLI/INDUSTRIA_INGEGNERIA/produzione_reviewer.md` — INDUSTRIA_INGEGNERIA/produzione_reviewer
+
+## SCIENZE_NATURALI
+- `AGENTI/AGENTI-SINGOLI/SCIENZE_NATURALI/divulgatore_scientifico.md` — SCIENZE_NATURALI/divulgatore_scientifico
+- `AGENTI/AGENTI-SINGOLI/SCIENZE_NATURALI/analista_ambientale.md` — SCIENZE_NATURALI/analista_ambientale
+- `AGENTI/AGENTI-SINGOLI/SCIENZE_NATURALI/biologia_reviewer.md` — SCIENZE_NATURALI/biologia_reviewer
+- `AGENTI/AGENTI-SINGOLI/SCIENZE_NATURALI/chimica_reviewer.md` — SCIENZE_NATURALI/chimica_reviewer
+- `AGENTI/AGENTI-SINGOLI/SCIENZE_NATURALI/fisica_reviewer.md` — SCIENZE_NATURALI/fisica_reviewer
+
+## SCIENZE_SOCIALI
+- `AGENTI/AGENTI-SINGOLI/SCIENZE_SOCIALI/analista_sociale.md` — SCIENZE_SOCIALI/analista_sociale
+- `AGENTI/AGENTI-SINGOLI/SCIENZE_SOCIALI/storico_ricercatore.md` — SCIENZE_SOCIALI/storico_ricercatore
+- `AGENTI/AGENTI-SINGOLI/SCIENZE_SOCIALI/analista_politico.md` — SCIENZE_SOCIALI/analista_politico
+- `AGENTI/AGENTI-SINGOLI/SCIENZE_SOCIALI/sociologo_operativo.md` — SCIENZE_SOCIALI/sociologo_operativo
+
+## ISTRUZIONE_FORMAZIONE
+- `AGENTI/AGENTI-SINGOLI/ISTRUZIONE_FORMAZIONE/tutor_didattico.md` — ISTRUZIONE_FORMAZIONE/tutor_didattico
+- `AGENTI/AGENTI-SINGOLI/ISTRUZIONE_FORMAZIONE/progettista_corsi.md` — ISTRUZIONE_FORMAZIONE/progettista_corsi
+- `AGENTI/AGENTI-SINGOLI/ISTRUZIONE_FORMAZIONE/valutatore_apprendimento.md` — ISTRUZIONE_FORMAZIONE/valutatore_apprendimento
+- `AGENTI/AGENTI-SINGOLI/ISTRUZIONE_FORMAZIONE/coach_metodo_studio.md` — ISTRUZIONE_FORMAZIONE/coach_metodo_studio
+
+## ARTI_CULTURA
+- `AGENTI/AGENTI-SINGOLI/ARTI_CULTURA/editor_scrittura.md` — ARTI_CULTURA/editor_scrittura
+- `AGENTI/AGENTI-SINGOLI/ARTI_CULTURA/critico_culturale.md` — ARTI_CULTURA/critico_culturale
+- `AGENTI/AGENTI-SINGOLI/ARTI_CULTURA/storyteller.md` — ARTI_CULTURA/storyteller
+- `AGENTI/AGENTI-SINGOLI/ARTI_CULTURA/analista_filosofico.md` — ARTI_CULTURA/analista_filosofico

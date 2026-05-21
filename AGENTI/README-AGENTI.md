@@ -1,7 +1,7 @@
-# README AGENTI — MD_OS
+# README AGENTI — MD_OS v8
 
 ## Scopo
-La cartella `AGENTI/` è un modulo auto-descrittivo. Definisce tassonomia, schema agente, schema ambito e funzioni di caricamento.
+La cartella `AGENTI/` è il modulo auto-descrittivo di competenze. Definisce tassonomia, schema agente, schema ambito, discovery, selezione e caricamento progressivo.
 
 ## Struttura
 ```txt
@@ -44,12 +44,9 @@ Ogni agente è un singolo file `.md` con frontmatter YAML e sezioni operative:
 27. Patch e miglioramento continuo
 28. Metriche di efficacia
 
-## Schema ambito
-Ogni ambito dichiara perimetro, sottoaree, trigger, agenti preferiti, dataset, funzioni comuni, logiche, schemi, output, metriche e regole di discovery.
-
 ## Funzione DISCOVERY_AGENTI
 1. Leggere `TASSONOMIA/albero_ambiti.yaml`.
-2. Identificare macro-area e sottoarea dalla richiesta.
+2. Identificare macro-area, sottoarea e modalità trasversale dalla richiesta.
 3. Leggere gli ambiti pertinenti.
 4. Scansionare `AGENTI-SINGOLI/<MACRO_AREA>/`.
 5. Leggere frontmatter e sezioni Trigger/Tag/Output degli agenti.
@@ -57,7 +54,12 @@ Ogni ambito dichiara perimetro, sottoaree, trigger, agenti preferiti, dataset, f
 7. Caricare integralmente solo agenti selezionati.
 
 ## Algoritmo di selezione
-Punteggio = trigger_match*3 + tag_match*2 + sottoarea_match*4 + output_match*2 - peso_token_penalty.
+```txt
+punteggio = trigger_match*3 + tag_match*2 + sottoarea_match*4 + output_match*2 + modalita_match*5 - peso_token_penalty
+```
 
 ## Regola token
-Non leggere tutti gli agenti. Leggere tutto il file agente solo se selezionato.
+Non leggere tutti gli agenti. Leggere tutto il file agente solo se selezionato come principale o supporto essenziale.
+
+## Regola miglioramento
+Ogni nuova logica stabile emersa dall'uso deve produrre una patch a: tassonomia, agente, ambito o dataset.

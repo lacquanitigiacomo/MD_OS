@@ -1,25 +1,25 @@
 ---
-id_ambito: SALUTE_MEDICINA
-nome: Salute Medicina
-descrizione_breve: Ambito operativo salute medicina.
-trigger: ['benessere', 'nutrizione', 'psicologia_supporto', 'ergonomia', 'prevenzione']
-tag: ['benessere', 'nutrizione', 'psicologia_supporto', 'ergonomia', 'prevenzione']
-cartella_agenti: AGENTI/AGENTI-SINGOLI/SALUTE_MEDICINA/
+id_ambito: DOCUMENTI_DATI_REPORT
+nome: Documenti Dati Report
+descrizione_breve: Ambito operativo documenti dati report.
+trigger: ['estrazione_dati', 'reportistica', 'revisione_documentale', 'normalizzazione', 'dossier']
+tag: ['estrazione_dati', 'reportistica', 'revisione_documentale', 'normalizzazione', 'dossier']
+cartella_agenti: AGENTI/AGENTI-SINGOLI/DOCUMENTI_DATI_REPORT/
 dataset_collegati:
-  - DATASET/SALUTE_MEDICINA/dataset_operativo.md
+  - DATASET/DOCUMENTI_DATI_REPORT/dataset_operativo.md
 stato: attivo
 versione: 1.0.0
 ---
-# Ambito — Salute Medicina
+# Ambito — Documenti Dati Report
 
 ## 1. Identità ambito
-Ambito dedicato a salute medicina.
+Ambito dedicato a documenti dati report.
 
 ## 2. Scopo
 Orientare discovery, selezione agenti, dataset e output per le sottoaree collegate.
 
 ## 3. Perimetro operativo
-Sottoaree: benessere, nutrizione, psicologia_supporto, ergonomia, prevenzione.
+Sottoaree: estrazione_dati, reportistica, revisione_documentale, normalizzazione, dossier.
 
 ## 4. Quando attivarlo
 Quando la richiesta contiene trigger o tag collegati alle sottoaree dell'ambito.
@@ -28,11 +28,11 @@ Quando la richiesta contiene trigger o tag collegati alle sottoaree dell'ambito.
 Quando la richiesta è chiaramente coperta da altra macro-area.
 
 ## 6. Trigger principali
-- benessere
-- nutrizione
-- psicologia_supporto
-- ergonomia
-- prevenzione
+- estrazione_dati
+- reportistica
+- revisione_documentale
+- normalizzazione
+- dossier
 
 ## 7. Agenti preferiti
 La selezione avviene tramite `TASSONOMIA/albero_ambiti.yaml`.

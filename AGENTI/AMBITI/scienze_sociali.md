@@ -1,64 +1,66 @@
 ---
 id_ambito: SCIENZE_SOCIALI
 nome: Scienze Sociali
-stato: attivo
-versione: 1.0.0
+descrizione_breve: Ambito operativo scienze sociali.
+trigger: ['sociologia', 'storia', 'politica', 'antropologia']
+tag: ['sociologia', 'storia', 'politica', 'antropologia']
 cartella_agenti: AGENTI/AGENTI-SINGOLI/SCIENZE_SOCIALI/
-trigger: ['sociologia', 'politica', 'storia', 'antropologia', 'economia_sociale']
-tag: ['sociologia', 'politica', 'storia', 'antropologia', 'economia_sociale', 'psicologia_sociale']
 dataset_collegati:
   - DATASET/SCIENZE_SOCIALI/dataset_operativo.md
+stato: attivo
+versione: 1.0.0
 ---
-
 # Ambito — Scienze Sociali
 
-## Identità ambito
-Macro-area operativa per scienze sociali.
+## 1. Identità ambito
+Ambito dedicato a scienze sociali.
 
-## Sottoaree
+## 2. Scopo
+Orientare discovery, selezione agenti, dataset e output per le sottoaree collegate.
+
+## 3. Perimetro operativo
+Sottoaree: sociologia, storia, politica, antropologia.
+
+## 4. Quando attivarlo
+Quando la richiesta contiene trigger o tag collegati alle sottoaree dell'ambito.
+
+## 5. Quando non attivarlo
+Quando la richiesta è chiaramente coperta da altra macro-area.
+
+## 6. Trigger principali
 - sociologia
-- politica
 - storia
+- politica
 - antropologia
-- economia_sociale
-- psicologia_sociale
 
-## Funzioni comuni di ambito
-- classificare richieste;
-- selezionare agenti pertinenti;
-- applicare dataset di ambito;
-- produrre output specifici;
-- proporre patch di miglioramento.
+## 7. Agenti preferiti
+La selezione avviene tramite `TASSONOMIA/albero_ambiti.yaml`.
 
-## Logiche comuni di ambito
-1. Identificare sottoarea.
-2. Selezionare agente principale.
-3. Selezionare supporti minimi.
-4. Caricare dataset operativo.
-5. Produrre risultato verificabile.
+## 8. Funzioni comuni di ambito
+- classificare richiesta;
+- scegliere sottoarea;
+- selezionare agente principale;
+- caricare dataset operativo;
+- produrre output standard;
+- proporre patch.
 
-## Schemi comuni di ambito
-| Campo | Uso |
-|---|---|
-| richiesta | input utente |
-| sottoarea | contesto raffinato |
-| agente_principale | responsabile |
-| supporti | agenti secondari |
-| dataset | fonti interne |
-| output | formato finale |
+## 9. Logiche comuni di ambito
+1. Riconoscere trigger.
+2. Isolare obiettivo.
+3. Identificare output richiesto.
+4. Caricare agente minimo sufficiente.
+5. Validare risultato con checklist.
 
-## Output tipici
-- analisi strutturata;
-- tabella decisionale;
-- report breve;
+## 10. Output tipici
+- analisi;
+- checklist;
+- tabella;
+- piano operativo;
 - patch MD_OS;
-- checklist operativa.
+- report.
 
-## Regole di selezione agenti
-Usare `TASSONOMIA/albero_ambiti.yaml` e i frontmatter degli agenti.
-
-## Metriche di efficacia
-- pochi agenti caricati;
-- risposta precisa;
+## 11. Metriche di efficacia
+- riduzione domande inutili;
 - output riutilizzabile;
-- limiti dichiarati.
+- agenti corretti selezionati;
+- dataset pertinente caricato.

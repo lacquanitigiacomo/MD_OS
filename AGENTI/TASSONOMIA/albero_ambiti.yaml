@@ -1,5 +1,5 @@
-versione: 1.0.0
-scopo: Tassonomia gerarchica macro-area/sottoarea/agenti per MD_OS
+versione: 1.1.0
+scopo: Tassonomia gerarchica macro-area/sottoarea/agenti per MD_OS v8
 macro_aree:
   LAVORO_PROFESSIONI:
     nome: Lavoro Professioni
@@ -33,17 +33,17 @@ macro_aree:
         - orari turni
         - orari
         agenti_preferiti:
-        - revisore_cedolini
+        - revisore_orari_turni
+        - analista_sicurezza_lavoro
         - consulente_lavoro
-        - analista_ccnl
       salute_sicurezza_lavoro:
         trigger:
         - salute sicurezza lavoro
         - salute
         agenti_preferiti:
-        - revisore_cedolini
-        - consulente_lavoro
-        - analista_ccnl
+        - analista_sicurezza_lavoro
+        - ergonomo
+        - risk_manager
       mansioni_inquadramento:
         trigger:
         - mansioni inquadramento
@@ -73,9 +73,8 @@ macro_aree:
         - carriera
         - carriera
         agenti_preferiti:
-        - revisore_cedolini
-        - consulente_lavoro
-        - analista_ccnl
+        - career_coach
+        - hr_specialist
   ECONOMIA_FINANZA:
     nome: Economia Finanza
     sottoaree:
@@ -103,6 +102,14 @@ macro_aree:
         - commercialista
         - analista_finanziario
         - revisore_contabile
+      business_plan:
+        trigger:
+        - business plan
+        - business
+        agenti_preferiti:
+        - commercialista
+        - analista_finanziario
+        - revisore_contabile
       investimenti:
         trigger:
         - investimenti
@@ -115,22 +122,6 @@ macro_aree:
         trigger:
         - revisione
         - revisione
-        agenti_preferiti:
-        - commercialista
-        - analista_finanziario
-        - revisore_contabile
-      business_plan:
-        trigger:
-        - business plan
-        - business
-        agenti_preferiti:
-        - commercialista
-        - analista_finanziario
-        - revisore_contabile
-      costo_lavoro:
-        trigger:
-        - costo lavoro
-        - costo
         agenti_preferiti:
         - commercialista
         - analista_finanziario
@@ -151,69 +142,77 @@ macro_aree:
         - frontend ui
         - frontend
         agenti_preferiti:
-        - senior_full_stack_developer
         - senior_frontend_developer
-        - senior_backend_developer
+        - ux_reviewer
+        - senior_full_stack_developer
       backend_api:
         trigger:
         - backend api
         - backend
         agenti_preferiti:
-        - senior_full_stack_developer
-        - senior_frontend_developer
         - senior_backend_developer
+        - api_architect
+        - senior_full_stack_developer
       database:
         trigger:
         - database
         - database
         agenti_preferiti:
-        - senior_full_stack_developer
-        - senior_frontend_developer
+        - database_architect
         - senior_backend_developer
+        - data_engineer
       devops_cloud:
         trigger:
         - devops cloud
         - devops
         agenti_preferiti:
-        - senior_full_stack_developer
-        - senior_frontend_developer
-        - senior_backend_developer
+        - devops_engineer
+        - cloud_architect
+        - technical_lead
       cybersecurity:
         trigger:
         - cybersecurity
         - cybersecurity
         agenti_preferiti:
-        - senior_full_stack_developer
-        - senior_frontend_developer
+        - security_engineer
+        - data_protection_reviewer
         - senior_backend_developer
       intelligenza_artificiale:
         trigger:
         - intelligenza artificiale
         - intelligenza
         agenti_preferiti:
-        - senior_full_stack_developer
-        - senior_frontend_developer
-        - senior_backend_developer
+        - ai_engineer
+        - data_engineer
+        - software_architect
       data_engineering:
         trigger:
         - data engineering
         - data
         agenti_preferiti:
-        - senior_full_stack_developer
-        - senior_frontend_developer
-        - senior_backend_developer
+        - data_engineer
+        - database_architect
+        - data_analyst
       qa_testing:
         trigger:
         - qa testing
         - qa
         agenti_preferiti:
+        - qa_engineer
+        - test_automation_engineer
         - senior_full_stack_developer
-        - senior_frontend_developer
-        - senior_backend_developer
       architettura_software:
         trigger:
         - architettura software
         - architettura
+        agenti_preferiti:
+        - software_architect
+        - technical_lead
+        - senior_full_stack_developer
+      automazioni:
+        trigger:
+        - automazioni
+        - automazioni
         agenti_preferiti:
         - senior_full_stack_developer
         - senior_frontend_developer
@@ -229,26 +228,26 @@ macro_aree:
         - web_designer
         - ux_reviewer
         - grafico
-      ui_ux:
+      ui_design:
         trigger:
-        - ui ux
+        - ui design
         - ui
         agenti_preferiti:
         - web_designer
         - ux_reviewer
         - grafico
-      branding:
+      ux_research:
         trigger:
-        - branding
-        - branding
+        - ux research
+        - ux
         agenti_preferiti:
         - web_designer
         - ux_reviewer
         - grafico
-      marketing:
+      brand_identity:
         trigger:
-        - marketing
-        - marketing
+        - brand identity
+        - brand
         agenti_preferiti:
         - web_designer
         - ux_reviewer
@@ -261,14 +260,6 @@ macro_aree:
         - web_designer
         - ux_reviewer
         - grafico
-      contenuti_social:
-        trigger:
-        - contenuti social
-        - contenuti
-        agenti_preferiti:
-        - web_designer
-        - ux_reviewer
-        - grafico
       presentazioni:
         trigger:
         - presentazioni
@@ -277,57 +268,155 @@ macro_aree:
         - web_designer
         - ux_reviewer
         - grafico
-  SALUTE_MEDICINA:
-    nome: Salute Medicina
+      marketing_digitale:
+        trigger:
+        - marketing digitale
+        - marketing
+        agenti_preferiti:
+        - web_designer
+        - ux_reviewer
+        - grafico
+  DATI_RICERCA:
+    nome: Dati Ricerca
     sottoaree:
-      medicina_generale:
+      analisi_dati:
         trigger:
-        - medicina generale
-        - medicina
+        - analisi dati
+        - analisi
         agenti_preferiti:
-        - analista_salute
-        - nutrizionista_operativo
-        - psicologia_supporto
-      nutrizione:
+        - data_analyst
+        - statistico
+        - ricercatore_documentale
+      statistica:
         trigger:
-        - nutrizione
-        - nutrizione
+        - statistica
+        - statistica
         agenti_preferiti:
-        - analista_salute
-        - nutrizionista_operativo
-        - psicologia_supporto
-      psicologia:
+        - data_analyst
+        - statistico
+        - ricercatore_documentale
+      ricerca_documentale:
         trigger:
-        - psicologia
-        - psicologia
+        - ricerca documentale
+        - ricerca
         agenti_preferiti:
-        - analista_salute
-        - nutrizionista_operativo
-        - psicologia_supporto
-      prevenzione:
+        - data_analyst
+        - statistico
+        - ricercatore_documentale
+      knowledge_management:
         trigger:
-        - prevenzione
-        - prevenzione
+        - knowledge management
+        - knowledge
         agenti_preferiti:
-        - analista_salute
-        - nutrizionista_operativo
-        - psicologia_supporto
-      ergonomia:
+        - data_analyst
+        - statistico
+        - ricercatore_documentale
+      visualizzazione_dati:
         trigger:
-        - ergonomia
-        - ergonomia
+        - visualizzazione dati
+        - visualizzazione
         agenti_preferiti:
-        - analista_salute
-        - nutrizionista_operativo
-        - psicologia_supporto
-      salute_lavoro:
+        - data_analyst
+        - statistico
+        - ricercatore_documentale
+  IMPRESA_MANAGEMENT:
+    nome: Impresa Management
+    sottoaree:
+      project_management:
         trigger:
-        - salute lavoro
-        - salute
+        - project management
+        - project
         agenti_preferiti:
-        - analista_salute
-        - nutrizionista_operativo
-        - psicologia_supporto
+        - project_manager
+        - business_strategist
+        - operations_manager
+      strategia_business:
+        trigger:
+        - strategia business
+        - strategia
+        agenti_preferiti:
+        - project_manager
+        - business_strategist
+        - operations_manager
+      operations:
+        trigger:
+        - operations
+        - operations
+        agenti_preferiti:
+        - project_manager
+        - business_strategist
+        - operations_manager
+      processi:
+        trigger:
+        - processi
+        - processi
+        agenti_preferiti:
+        - project_manager
+        - business_strategist
+        - operations_manager
+      sales:
+        trigger:
+        - sales
+        - sales
+        agenti_preferiti:
+        - project_manager
+        - business_strategist
+        - operations_manager
+      sviluppo_idee_rapido:
+        trigger:
+        - sviluppo idee rapido
+        - sviluppo
+        agenti_preferiti:
+        - idea_accelerator
+        - project_manager
+        - business_strategist
+        - knowledge_manager
+        - software_architect
+        - ux_reviewer
+        - redattore_report
+  DOCUMENTI_DATI_REPORT:
+    nome: Documenti Dati Report
+    sottoaree:
+      estrazione_dati:
+        trigger:
+        - estrazione dati
+        - estrazione
+        agenti_preferiti:
+        - estrattore_dati
+        - redattore_report
+        - revisore_documentale
+      reportistica:
+        trigger:
+        - reportistica
+        - reportistica
+        agenti_preferiti:
+        - estrattore_dati
+        - redattore_report
+        - revisore_documentale
+      revisione_documentale:
+        trigger:
+        - revisione documentale
+        - revisione
+        agenti_preferiti:
+        - estrattore_dati
+        - redattore_report
+        - revisore_documentale
+      normalizzazione:
+        trigger:
+        - normalizzazione
+        - normalizzazione
+        agenti_preferiti:
+        - estrattore_dati
+        - redattore_report
+        - revisore_documentale
+      dossier:
+        trigger:
+        - dossier
+        - dossier
+        agenti_preferiti:
+        - estrattore_dati
+        - redattore_report
+        - revisore_documentale
   DIRITTO_NORMATIVA:
     nome: Diritto Normativa
     sottoaree:
@@ -355,10 +444,10 @@ macro_aree:
         - analista_contratti
         - privacy_gdpr
         - compliance_specialist
-      diritto_civile:
+      normativa:
         trigger:
-        - diritto civile
-        - diritto
+        - normativa
+        - normativa
         agenti_preferiti:
         - analista_contratti
         - privacy_gdpr
@@ -371,14 +460,178 @@ macro_aree:
         - analista_contratti
         - privacy_gdpr
         - compliance_specialist
-      amministrativo:
+  SALUTE_MEDICINA:
+    nome: Salute Medicina
+    sottoaree:
+      benessere:
         trigger:
-        - amministrativo
-        - amministrativo
+        - benessere
+        - benessere
         agenti_preferiti:
-        - analista_contratti
-        - privacy_gdpr
-        - compliance_specialist
+        - analista_salute
+        - nutrizionista_operativo
+        - psicologia_supporto
+      nutrizione:
+        trigger:
+        - nutrizione
+        - nutrizione
+        agenti_preferiti:
+        - analista_salute
+        - nutrizionista_operativo
+        - psicologia_supporto
+      psicologia_supporto:
+        trigger:
+        - psicologia supporto
+        - psicologia
+        agenti_preferiti:
+        - analista_salute
+        - nutrizionista_operativo
+        - psicologia_supporto
+      ergonomia:
+        trigger:
+        - ergonomia
+        - ergonomia
+        agenti_preferiti:
+        - analista_salute
+        - nutrizionista_operativo
+        - psicologia_supporto
+      prevenzione:
+        trigger:
+        - prevenzione
+        - prevenzione
+        agenti_preferiti:
+        - analista_salute
+        - nutrizionista_operativo
+        - psicologia_supporto
+  CASA_VITA_PRATICA:
+    nome: Casa Vita Pratica
+    sottoaree:
+      cucina:
+        trigger:
+        - cucina
+        - cucina
+        agenti_preferiti:
+        - chef_domestico
+        - meal_planner
+        - tecnico_manutenzione_casa
+      manutenzione_casa:
+        trigger:
+        - manutenzione casa
+        - manutenzione
+        agenti_preferiti:
+        - chef_domestico
+        - meal_planner
+        - tecnico_manutenzione_casa
+      organizzazione:
+        trigger:
+        - organizzazione
+        - organizzazione
+        agenti_preferiti:
+        - chef_domestico
+        - meal_planner
+        - tecnico_manutenzione_casa
+      acquisti:
+        trigger:
+        - acquisti
+        - acquisti
+        agenti_preferiti:
+        - chef_domestico
+        - meal_planner
+        - tecnico_manutenzione_casa
+      viaggi:
+        trigger:
+        - viaggi
+        - viaggi
+        agenti_preferiti:
+        - chef_domestico
+        - meal_planner
+        - tecnico_manutenzione_casa
+  SICUREZZA_RISCHIO:
+    nome: Sicurezza Rischio
+    sottoaree:
+      risk_management:
+        trigger:
+        - risk management
+        - risk
+        agenti_preferiti:
+        - risk_manager
+        - audit_specialist
+        - emergency_planner
+      audit:
+        trigger:
+        - audit
+        - audit
+        agenti_preferiti:
+        - risk_manager
+        - audit_specialist
+        - emergency_planner
+      data_protection:
+        trigger:
+        - data protection
+        - data
+        agenti_preferiti:
+        - risk_manager
+        - audit_specialist
+        - emergency_planner
+      continuita_operativa:
+        trigger:
+        - continuita operativa
+        - continuita
+        agenti_preferiti:
+        - risk_manager
+        - audit_specialist
+        - emergency_planner
+      emergenze:
+        trigger:
+        - emergenze
+        - emergenze
+        agenti_preferiti:
+        - risk_manager
+        - audit_specialist
+        - emergency_planner
+  INDUSTRIA_INGEGNERIA:
+    nome: Industria Ingegneria
+    sottoaree:
+      meccanica:
+        trigger:
+        - meccanica
+        - meccanica
+        agenti_preferiti:
+        - ingegnere_meccanico_supporto
+        - impiantista_reviewer
+        - edilizia_tecnica
+      impianti:
+        trigger:
+        - impianti
+        - impianti
+        agenti_preferiti:
+        - ingegnere_meccanico_supporto
+        - impiantista_reviewer
+        - edilizia_tecnica
+      edilizia:
+        trigger:
+        - edilizia
+        - edilizia
+        agenti_preferiti:
+        - ingegnere_meccanico_supporto
+        - impiantista_reviewer
+        - edilizia_tecnica
+      qualita:
+        trigger:
+        - qualita
+        - qualita
+        agenti_preferiti:
+        - ingegnere_meccanico_supporto
+        - impiantista_reviewer
+        - edilizia_tecnica
+      produzione:
+        trigger:
+        - produzione
+        - produzione
+        agenti_preferiti:
+        - ingegnere_meccanico_supporto
+        - impiantista_reviewer
+        - edilizia_tecnica
   SCIENZE_NATURALI:
     nome: Scienze Naturali
     sottoaree:
@@ -422,14 +675,6 @@ macro_aree:
         - divulgatore_scientifico
         - analista_ambientale
         - biologia_reviewer
-      astronomia:
-        trigger:
-        - astronomia
-        - astronomia
-        agenti_preferiti:
-        - divulgatore_scientifico
-        - analista_ambientale
-        - biologia_reviewer
   SCIENZE_SOCIALI:
     nome: Scienze Sociali
     sottoaree:
@@ -437,14 +682,6 @@ macro_aree:
         trigger:
         - sociologia
         - sociologia
-        agenti_preferiti:
-        - analista_sociale
-        - storico_ricercatore
-        - analista_politico
-      politica:
-        trigger:
-        - politica
-        - politica
         agenti_preferiti:
         - analista_sociale
         - storico_ricercatore
@@ -457,6 +694,14 @@ macro_aree:
         - analista_sociale
         - storico_ricercatore
         - analista_politico
+      politica:
+        trigger:
+        - politica
+        - politica
+        agenti_preferiti:
+        - analista_sociale
+        - storico_ricercatore
+        - analista_politico
       antropologia:
         trigger:
         - antropologia
@@ -465,33 +710,9 @@ macro_aree:
         - analista_sociale
         - storico_ricercatore
         - analista_politico
-      economia_sociale:
-        trigger:
-        - economia sociale
-        - economia
-        agenti_preferiti:
-        - analista_sociale
-        - storico_ricercatore
-        - analista_politico
-      psicologia_sociale:
-        trigger:
-        - psicologia sociale
-        - psicologia
-        agenti_preferiti:
-        - analista_sociale
-        - storico_ricercatore
-        - analista_politico
   ISTRUZIONE_FORMAZIONE:
     nome: Istruzione Formazione
     sottoaree:
-      didattica:
-        trigger:
-        - didattica
-        - didattica
-        agenti_preferiti:
-        - tutor_didattico
-        - progettista_corsi
-        - valutatore_apprendimento
       tutoring:
         trigger:
         - tutoring
@@ -500,18 +721,18 @@ macro_aree:
         - tutor_didattico
         - progettista_corsi
         - valutatore_apprendimento
-      valutazione:
-        trigger:
-        - valutazione
-        - valutazione
-        agenti_preferiti:
-        - tutor_didattico
-        - progettista_corsi
-        - valutatore_apprendimento
       progettazione_corsi:
         trigger:
         - progettazione corsi
         - progettazione
+        agenti_preferiti:
+        - tutor_didattico
+        - progettista_corsi
+        - valutatore_apprendimento
+      valutazione:
+        trigger:
+        - valutazione
+        - valutazione
         agenti_preferiti:
         - tutor_didattico
         - progettista_corsi
@@ -535,26 +756,18 @@ macro_aree:
         - editor_scrittura
         - critico_culturale
         - storyteller
-      musica:
+      critica_culturale:
         trigger:
-        - musica
-        - musica
+        - critica culturale
+        - critica
         agenti_preferiti:
         - editor_scrittura
         - critico_culturale
         - storyteller
-      cinema:
+      storytelling:
         trigger:
-        - cinema
-        - cinema
-        agenti_preferiti:
-        - editor_scrittura
-        - critico_culturale
-        - storyteller
-      arte:
-        trigger:
-        - arte
-        - arte
+        - storytelling
+        - storytelling
         agenti_preferiti:
         - editor_scrittura
         - critico_culturale
@@ -567,266 +780,38 @@ macro_aree:
         - editor_scrittura
         - critico_culturale
         - storyteller
-      letteratura:
-        trigger:
-        - letteratura
-        - letteratura
-        agenti_preferiti:
-        - editor_scrittura
-        - critico_culturale
-        - storyteller
-  CASA_VITA_PRATICA:
-    nome: Casa Vita Pratica
-    sottoaree:
-      cucina:
-        trigger:
-        - cucina
-        - cucina
-        agenti_preferiti:
-        - chef_domestico
-        - meal_planner
-        - tecnico_manutenzione_casa
-      manutenzione_domestica:
-        trigger:
-        - manutenzione domestica
-        - manutenzione
-        agenti_preferiti:
-        - chef_domestico
-        - meal_planner
-        - tecnico_manutenzione_casa
-      organizzazione_casa:
-        trigger:
-        - organizzazione casa
-        - organizzazione
-        agenti_preferiti:
-        - chef_domestico
-        - meal_planner
-        - tecnico_manutenzione_casa
-      acquisti:
-        trigger:
-        - acquisti
-        - acquisti
-        agenti_preferiti:
-        - chef_domestico
-        - meal_planner
-        - tecnico_manutenzione_casa
-      viaggi:
-        trigger:
-        - viaggi
-        - viaggi
-        agenti_preferiti:
-        - chef_domestico
-        - meal_planner
-        - tecnico_manutenzione_casa
-      auto_moto:
-        trigger:
-        - auto moto
-        - auto
-        agenti_preferiti:
-        - chef_domestico
-        - meal_planner
-        - tecnico_manutenzione_casa
-      giardinaggio:
-        trigger:
-        - giardinaggio
-        - giardinaggio
-        agenti_preferiti:
-        - chef_domestico
-        - meal_planner
-        - tecnico_manutenzione_casa
-  IMPRESA_MANAGEMENT:
-    nome: Impresa Management
-    sottoaree:
-      strategia:
-        trigger:
-        - strategia
-        - strategia
-        agenti_preferiti:
-        - project_manager
-        - business_strategist
-        - operations_manager
-      project_management:
-        trigger:
-        - project management
-        - project
-        agenti_preferiti:
-        - project_manager
-        - business_strategist
-        - operations_manager
-      operations:
-        trigger:
-        - operations
-        - operations
-        agenti_preferiti:
-        - project_manager
-        - business_strategist
-        - operations_manager
-      vendite:
-        trigger:
-        - vendite
-        - vendite
-        agenti_preferiti:
-        - project_manager
-        - business_strategist
-        - operations_manager
-      processi:
-        trigger:
-        - processi
-        - processi
-        agenti_preferiti:
-        - project_manager
-        - business_strategist
-        - operations_manager
-      leadership:
-        trigger:
-        - leadership
-        - leadership
-        agenti_preferiti:
-        - project_manager
-        - business_strategist
-        - operations_manager
-  INDUSTRIA_INGEGNERIA:
-    nome: Industria Ingegneria
-    sottoaree:
-      meccanica:
-        trigger:
-        - meccanica
-        - meccanica
-        agenti_preferiti:
-        - ingegnere_meccanico_supporto
-        - impiantista_reviewer
-        - edilizia_tecnica
-      elettrica:
-        trigger:
-        - elettrica
-        - elettrica
-        agenti_preferiti:
-        - ingegnere_meccanico_supporto
-        - impiantista_reviewer
-        - edilizia_tecnica
-      edilizia:
-        trigger:
-        - edilizia
-        - edilizia
-        agenti_preferiti:
-        - ingegnere_meccanico_supporto
-        - impiantista_reviewer
-        - edilizia_tecnica
-      impianti:
-        trigger:
-        - impianti
-        - impianti
-        agenti_preferiti:
-        - ingegnere_meccanico_supporto
-        - impiantista_reviewer
-        - edilizia_tecnica
-      produzione:
-        trigger:
-        - produzione
-        - produzione
-        agenti_preferiti:
-        - ingegnere_meccanico_supporto
-        - impiantista_reviewer
-        - edilizia_tecnica
-      qualita:
-        trigger:
-        - qualita
-        - qualita
-        agenti_preferiti:
-        - ingegnere_meccanico_supporto
-        - impiantista_reviewer
-        - edilizia_tecnica
-  DATI_RICERCA:
-    nome: Dati Ricerca
-    sottoaree:
-      analisi_dati:
-        trigger:
-        - analisi dati
-        - analisi
-        agenti_preferiti:
-        - data_analyst
-        - statistico
-        - ricercatore_documentale
-      statistica:
-        trigger:
-        - statistica
-        - statistica
-        agenti_preferiti:
-        - data_analyst
-        - statistico
-        - ricercatore_documentale
-      ricerca:
-        trigger:
-        - ricerca
-        - ricerca
-        agenti_preferiti:
-        - data_analyst
-        - statistico
-        - ricercatore_documentale
-      knowledge_management:
-        trigger:
-        - knowledge management
-        - knowledge
-        agenti_preferiti:
-        - data_analyst
-        - statistico
-        - ricercatore_documentale
-      documenti_report:
-        trigger:
-        - documenti report
-        - documenti
-        agenti_preferiti:
-        - data_analyst
-        - statistico
-        - ricercatore_documentale
-      visualizzazione:
-        trigger:
-        - visualizzazione
-        - visualizzazione
-        agenti_preferiti:
-        - data_analyst
-        - statistico
-        - ricercatore_documentale
-  SICUREZZA_RISCHIO:
-    nome: Sicurezza Rischio
-    sottoaree:
-      sicurezza_fisica:
-        trigger:
-        - sicurezza fisica
-        - sicurezza
-        agenti_preferiti:
-        - risk_manager
-        - audit_specialist
-        - emergency_planner
-      emergenze:
-        trigger:
-        - emergenze
-        - emergenze
-        agenti_preferiti:
-        - risk_manager
-        - audit_specialist
-        - emergency_planner
-      audit_rischio:
-        trigger:
-        - audit rischio
-        - audit
-        agenti_preferiti:
-        - risk_manager
-        - audit_specialist
-        - emergency_planner
-      protezione_dati:
-        trigger:
-        - protezione dati
-        - protezione
-        agenti_preferiti:
-        - risk_manager
-        - audit_specialist
-        - emergency_planner
-      continuita_operativa:
-        trigger:
-        - continuita operativa
-        - continuita
-        agenti_preferiti:
-        - risk_manager
-        - audit_specialist
-        - emergency_planner
+modalita_trasversali:
+  SVILUPPO_IDEE_RAPIDO:
+    trigger:
+    - idea
+    - sviluppare idea
+    - progetto
+    - mvp
+    - prototipo
+    - startup
+    - prodotto
+    - validare idea
+    - roadmap
+    macro_aree_coinvolte:
+    - IMPRESA_MANAGEMENT
+    - DATI_RICERCA
+    - TECNOLOGIA_SVILUPPO
+    - DESIGN_COMUNICAZIONE
+    - DOCUMENTI_DATI_REPORT
+    agenti_preferiti:
+    - idea_accelerator
+    - project_manager
+    - business_strategist
+    - knowledge_manager
+    - software_architect
+    - senior_full_stack_developer
+    - ux_reviewer
+    - copywriter
+    - redattore_report
+    output_tipici:
+    - scheda idea
+    - roadmap
+    - MVP
+    - specifica funzionale
+    - prototipo logico
+    - pitch sintetico
