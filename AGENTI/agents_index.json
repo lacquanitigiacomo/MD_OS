@@ -1,0 +1,3252 @@
+{
+  "agents": [
+    {
+      "id": "revisore_cedolini",
+      "area": "LAVORO_PROFESSIONI",
+      "path": "AGENTI/singoli/LAVORO_PROFESSIONI/revisore_cedolini.md",
+      "level": "top_0_01",
+      "skills": [
+        "cedolini",
+        "voci paga",
+        "ratei",
+        "anomalie payroll"
+      ],
+      "functions": [
+        "extract_payroll_items",
+        "detect_payroll_anomalies",
+        "calculate_ratei",
+        "compare_months"
+      ],
+      "formulas": [
+        "delta_ore",
+        "saldo_ratei",
+        "maggiorazione_oraria"
+      ],
+      "datasets": [
+        "DATASET/LAVORO_PROFESSIONI/dataset_operativo.yaml",
+        "DATASET/LAVORO_PROFESSIONI/voci_busta_paga.yaml",
+        "DATASET/LAVORO_PROFESSIONI/ccnl.yaml",
+        "DATASET/LAVORO_PROFESSIONI/anomalie_payroll.yaml"
+      ],
+      "outputs": [
+        "audit_payroll",
+        "tabella_anomalie",
+        "riepilogo_ratei"
+      ]
+    },
+    {
+      "id": "consulente_lavoro",
+      "area": "LAVORO_PROFESSIONI",
+      "path": "AGENTI/singoli/LAVORO_PROFESSIONI/consulente_lavoro.md",
+      "level": "top_0_01",
+      "skills": [
+        "CCNL",
+        "inquadramento",
+        "orari",
+        "malattia",
+        "maggiorazioni"
+      ],
+      "functions": [
+        "cross_check_ccnl",
+        "verify_level",
+        "check_maggiorazioni",
+        "check_malattia"
+      ],
+      "formulas": [
+        "minimo_tabellare",
+        "maggiorazione_ccnl",
+        "comporto"
+      ],
+      "datasets": [
+        "DATASET/LAVORO_PROFESSIONI/dataset_operativo.yaml",
+        "DATASET/LAVORO_PROFESSIONI/voci_busta_paga.yaml",
+        "DATASET/LAVORO_PROFESSIONI/ccnl.yaml",
+        "DATASET/LAVORO_PROFESSIONI/anomalie_payroll.yaml"
+      ],
+      "outputs": [
+        "parere_operativo_lavoro",
+        "checklist_ccnl"
+      ]
+    },
+    {
+      "id": "analista_ccnl",
+      "area": "LAVORO_PROFESSIONI",
+      "path": "AGENTI/singoli/LAVORO_PROFESSIONI/analista_ccnl.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica analista ccnl",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/LAVORO_PROFESSIONI/dataset_operativo.yaml",
+        "DATASET/LAVORO_PROFESSIONI/voci_busta_paga.yaml",
+        "DATASET/LAVORO_PROFESSIONI/ccnl.yaml",
+        "DATASET/LAVORO_PROFESSIONI/anomalie_payroll.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "revisore_orari_turni",
+      "area": "LAVORO_PROFESSIONI",
+      "path": "AGENTI/singoli/LAVORO_PROFESSIONI/revisore_orari_turni.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica revisore orari turni",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/LAVORO_PROFESSIONI/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "analista_sicurezza_lavoro",
+      "area": "LAVORO_PROFESSIONI",
+      "path": "AGENTI/singoli/LAVORO_PROFESSIONI/analista_sicurezza_lavoro.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica analista sicurezza lavoro",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/LAVORO_PROFESSIONI/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "hr_specialist",
+      "area": "LAVORO_PROFESSIONI",
+      "path": "AGENTI/singoli/LAVORO_PROFESSIONI/hr_specialist.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica hr specialist",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/LAVORO_PROFESSIONI/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "career_coach",
+      "area": "LAVORO_PROFESSIONI",
+      "path": "AGENTI/singoli/LAVORO_PROFESSIONI/career_coach.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica career coach",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/LAVORO_PROFESSIONI/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "redattore_istanze_lavoro",
+      "area": "LAVORO_PROFESSIONI",
+      "path": "AGENTI/singoli/LAVORO_PROFESSIONI/redattore_istanze_lavoro.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica redattore istanze lavoro",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/LAVORO_PROFESSIONI/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "commercialista",
+      "area": "ECONOMIA_FINANZA",
+      "path": "AGENTI/singoli/ECONOMIA_FINANZA/commercialista.md",
+      "level": "top_0_01",
+      "skills": [
+        "imponibili",
+        "fiscalità lavoro",
+        "ritenute",
+        "quadratura"
+      ],
+      "functions": [
+        "calculate_taxable_base",
+        "check_withholdings",
+        "calculate_labor_cost",
+        "compare_cu_payroll"
+      ],
+      "formulas": [
+        "lordo_netto",
+        "costo_azienda",
+        "imponibile_fiscale"
+      ],
+      "datasets": [
+        "DATASET/ECONOMIA_FINANZA/dataset_operativo.yaml",
+        "DATASET/ECONOMIA_FINANZA/fiscale_lavoro.yaml"
+      ],
+      "outputs": [
+        "audit_fiscale",
+        "quadratura_lordo_netto"
+      ]
+    },
+    {
+      "id": "analista_finanziario",
+      "area": "ECONOMIA_FINANZA",
+      "path": "AGENTI/singoli/ECONOMIA_FINANZA/analista_finanziario.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica analista finanziario",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/ECONOMIA_FINANZA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "revisore_contabile",
+      "area": "ECONOMIA_FINANZA",
+      "path": "AGENTI/singoli/ECONOMIA_FINANZA/revisore_contabile.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica revisore contabile",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/ECONOMIA_FINANZA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "budget_controller",
+      "area": "ECONOMIA_FINANZA",
+      "path": "AGENTI/singoli/ECONOMIA_FINANZA/budget_controller.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica budget controller",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/ECONOMIA_FINANZA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "tax_advisor",
+      "area": "ECONOMIA_FINANZA",
+      "path": "AGENTI/singoli/ECONOMIA_FINANZA/tax_advisor.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica tax advisor",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/ECONOMIA_FINANZA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "business_planner",
+      "area": "ECONOMIA_FINANZA",
+      "path": "AGENTI/singoli/ECONOMIA_FINANZA/business_planner.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica business planner",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/ECONOMIA_FINANZA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "payroll_cost_analyst",
+      "area": "ECONOMIA_FINANZA",
+      "path": "AGENTI/singoli/ECONOMIA_FINANZA/payroll_cost_analyst.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica payroll cost analyst",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/ECONOMIA_FINANZA/dataset_operativo.yaml",
+        "DATASET/ECONOMIA_FINANZA/fiscale_lavoro.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "senior_full_stack_developer",
+      "area": "TECNOLOGIA_SVILUPPO",
+      "path": "AGENTI/singoli/TECNOLOGIA_SVILUPPO/senior_full_stack_developer.md",
+      "level": "top_0_01",
+      "skills": [
+        "React/Next.js",
+        "Node.js/API",
+        "database relazionali",
+        "auth",
+        "performance web"
+      ],
+      "functions": [
+        "suggest_stack",
+        "design_api_contract",
+        "build_mvp_scope",
+        "check_security_flags"
+      ],
+      "formulas": [
+        "score_stack_fit",
+        "priorita_mvp"
+      ],
+      "datasets": [
+        "DATASET/TECNOLOGIA_SVILUPPO/dataset_operativo.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/stack.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/pattern.yaml"
+      ],
+      "outputs": [
+        "roadmap_tecnica",
+        "patch_codice",
+        "diagnosi_tecnica"
+      ]
+    },
+    {
+      "id": "senior_frontend_developer",
+      "area": "TECNOLOGIA_SVILUPPO",
+      "path": "AGENTI/singoli/TECNOLOGIA_SVILUPPO/senior_frontend_developer.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica senior frontend developer",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/TECNOLOGIA_SVILUPPO/dataset_operativo.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/stack.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/pattern.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "senior_backend_developer",
+      "area": "TECNOLOGIA_SVILUPPO",
+      "path": "AGENTI/singoli/TECNOLOGIA_SVILUPPO/senior_backend_developer.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica senior backend developer",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/TECNOLOGIA_SVILUPPO/dataset_operativo.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/stack.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/pattern.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "software_architect",
+      "area": "TECNOLOGIA_SVILUPPO",
+      "path": "AGENTI/singoli/TECNOLOGIA_SVILUPPO/software_architect.md",
+      "level": "top_0_01",
+      "skills": [
+        "architettura modulare",
+        "domain modeling",
+        "scalabilità",
+        "decision record"
+      ],
+      "functions": [
+        "compose_context",
+        "architecture_decision",
+        "risk_matrix"
+      ],
+      "formulas": [
+        "score_architettura",
+        "costo_complessita"
+      ],
+      "datasets": [
+        "DATASET/TECNOLOGIA_SVILUPPO/dataset_operativo.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/stack.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/pattern.yaml"
+      ],
+      "outputs": [
+        "decisione_architetturale",
+        "diagramma_logico",
+        "piano_refactor"
+      ]
+    },
+    {
+      "id": "security_engineer",
+      "area": "TECNOLOGIA_SVILUPPO",
+      "path": "AGENTI/singoli/TECNOLOGIA_SVILUPPO/security_engineer.md",
+      "level": "top_0_01",
+      "skills": [
+        "threat modeling",
+        "auth",
+        "segreti",
+        "OWASP"
+      ],
+      "functions": [
+        "check_security_flags",
+        "threat_model",
+        "risk_matrix"
+      ],
+      "formulas": [
+        "risk_score",
+        "severity"
+      ],
+      "datasets": [
+        "DATASET/TECNOLOGIA_SVILUPPO/dataset_operativo.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/stack.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/pattern.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/security.yaml"
+      ],
+      "outputs": [
+        "security_review",
+        "matrice_rischi"
+      ]
+    },
+    {
+      "id": "performance_engineer",
+      "area": "TECNOLOGIA_SVILUPPO",
+      "path": "AGENTI/singoli/TECNOLOGIA_SVILUPPO/performance_engineer.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica performance engineer",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/TECNOLOGIA_SVILUPPO/dataset_operativo.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/stack.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/pattern.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "database_architect",
+      "area": "TECNOLOGIA_SVILUPPO",
+      "path": "AGENTI/singoli/TECNOLOGIA_SVILUPPO/database_architect.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica database architect",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/TECNOLOGIA_SVILUPPO/dataset_operativo.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/stack.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/pattern.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "devops_engineer",
+      "area": "TECNOLOGIA_SVILUPPO",
+      "path": "AGENTI/singoli/TECNOLOGIA_SVILUPPO/devops_engineer.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica devops engineer",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/TECNOLOGIA_SVILUPPO/dataset_operativo.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/stack.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/pattern.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "data_engineer",
+      "area": "TECNOLOGIA_SVILUPPO",
+      "path": "AGENTI/singoli/TECNOLOGIA_SVILUPPO/data_engineer.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica data engineer",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/TECNOLOGIA_SVILUPPO/dataset_operativo.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/stack.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/pattern.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "qa_engineer",
+      "area": "TECNOLOGIA_SVILUPPO",
+      "path": "AGENTI/singoli/TECNOLOGIA_SVILUPPO/qa_engineer.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica qa engineer",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/TECNOLOGIA_SVILUPPO/dataset_operativo.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/stack.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/pattern.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "ai_engineer",
+      "area": "TECNOLOGIA_SVILUPPO",
+      "path": "AGENTI/singoli/TECNOLOGIA_SVILUPPO/ai_engineer.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica ai engineer",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/TECNOLOGIA_SVILUPPO/dataset_operativo.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/stack.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/pattern.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "technical_lead",
+      "area": "TECNOLOGIA_SVILUPPO",
+      "path": "AGENTI/singoli/TECNOLOGIA_SVILUPPO/technical_lead.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica technical lead",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/TECNOLOGIA_SVILUPPO/dataset_operativo.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/stack.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/pattern.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "api_architect",
+      "area": "TECNOLOGIA_SVILUPPO",
+      "path": "AGENTI/singoli/TECNOLOGIA_SVILUPPO/api_architect.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica api architect",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/TECNOLOGIA_SVILUPPO/dataset_operativo.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/stack.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/pattern.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "cloud_architect",
+      "area": "TECNOLOGIA_SVILUPPO",
+      "path": "AGENTI/singoli/TECNOLOGIA_SVILUPPO/cloud_architect.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica cloud architect",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/TECNOLOGIA_SVILUPPO/dataset_operativo.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/stack.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/pattern.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "test_automation_engineer",
+      "area": "TECNOLOGIA_SVILUPPO",
+      "path": "AGENTI/singoli/TECNOLOGIA_SVILUPPO/test_automation_engineer.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica test automation engineer",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/TECNOLOGIA_SVILUPPO/dataset_operativo.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/stack.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/pattern.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "automation_architect",
+      "area": "TECNOLOGIA_SVILUPPO",
+      "path": "AGENTI/singoli/TECNOLOGIA_SVILUPPO/automation_architect.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica automation architect",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/TECNOLOGIA_SVILUPPO/dataset_operativo.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/stack.yaml",
+        "DATASET/TECNOLOGIA_SVILUPPO/pattern.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "web_designer",
+      "area": "DESIGN_COMUNICAZIONE",
+      "path": "AGENTI/singoli/DESIGN_COMUNICAZIONE/web_designer.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica web designer",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/DESIGN_COMUNICAZIONE/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "ux_reviewer",
+      "area": "DESIGN_COMUNICAZIONE",
+      "path": "AGENTI/singoli/DESIGN_COMUNICAZIONE/ux_reviewer.md",
+      "level": "top_0_01",
+      "skills": [
+        "usabilità",
+        "accessibilità",
+        "flussi",
+        "conversione"
+      ],
+      "functions": [
+        "ux_check",
+        "accessibility_flags",
+        "journey_map"
+      ],
+      "formulas": [
+        "friction_score",
+        "clarity_score"
+      ],
+      "datasets": [
+        "DATASET/DESIGN_COMUNICAZIONE/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "review_ux",
+        "checklist_ui"
+      ]
+    },
+    {
+      "id": "grafico",
+      "area": "DESIGN_COMUNICAZIONE",
+      "path": "AGENTI/singoli/DESIGN_COMUNICAZIONE/grafico.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica grafico",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/DESIGN_COMUNICAZIONE/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "brand_designer",
+      "area": "DESIGN_COMUNICAZIONE",
+      "path": "AGENTI/singoli/DESIGN_COMUNICAZIONE/brand_designer.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica brand designer",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/DESIGN_COMUNICAZIONE/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "copywriter",
+      "area": "DESIGN_COMUNICAZIONE",
+      "path": "AGENTI/singoli/DESIGN_COMUNICAZIONE/copywriter.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica copywriter",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/DESIGN_COMUNICAZIONE/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "marketing_strategist",
+      "area": "DESIGN_COMUNICAZIONE",
+      "path": "AGENTI/singoli/DESIGN_COMUNICAZIONE/marketing_strategist.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica marketing strategist",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/DESIGN_COMUNICAZIONE/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "presentation_designer",
+      "area": "DESIGN_COMUNICAZIONE",
+      "path": "AGENTI/singoli/DESIGN_COMUNICAZIONE/presentation_designer.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica presentation designer",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/DESIGN_COMUNICAZIONE/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "conversion_designer",
+      "area": "DESIGN_COMUNICAZIONE",
+      "path": "AGENTI/singoli/DESIGN_COMUNICAZIONE/conversion_designer.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica conversion designer",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/DESIGN_COMUNICAZIONE/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "data_analyst",
+      "area": "DATI_RICERCA",
+      "path": "AGENTI/singoli/DATI_RICERCA/data_analyst.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica data analyst",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/DATI_RICERCA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "statistico",
+      "area": "DATI_RICERCA",
+      "path": "AGENTI/singoli/DATI_RICERCA/statistico.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica statistico",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/DATI_RICERCA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "ricercatore_documentale",
+      "area": "DATI_RICERCA",
+      "path": "AGENTI/singoli/DATI_RICERCA/ricercatore_documentale.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica ricercatore documentale",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/DATI_RICERCA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "knowledge_manager",
+      "area": "DATI_RICERCA",
+      "path": "AGENTI/singoli/DATI_RICERCA/knowledge_manager.md",
+      "level": "top_0_01",
+      "skills": [
+        "organizzazione conoscenza",
+        "tassonomie",
+        "dataset",
+        "sintesi"
+      ],
+      "functions": [
+        "normalize_dataset",
+        "build_index",
+        "extract_ontology"
+      ],
+      "formulas": [
+        "coverage_score",
+        "ridondanza"
+      ],
+      "datasets": [
+        "DATASET/DATI_RICERCA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "mappa_conoscenza",
+        "dataset_normalizzato"
+      ]
+    },
+    {
+      "id": "visual_data_designer",
+      "area": "DATI_RICERCA",
+      "path": "AGENTI/singoli/DATI_RICERCA/visual_data_designer.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica visual data designer",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/DATI_RICERCA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "salto_qualitativo_architect",
+      "area": "DATI_RICERCA",
+      "path": "AGENTI/singoli/DATI_RICERCA/salto_qualitativo_architect.md",
+      "level": "top_0_01",
+      "skills": [
+        "sintesi strategica",
+        "pattern recognition",
+        "riduzione complessità",
+        "soluzioni breakthrough"
+      ],
+      "functions": [
+        "compose_context",
+        "find_leverage_point",
+        "anti_briciole",
+        "propose_patch"
+      ],
+      "formulas": [
+        "salto=impatto*riuso/complessita",
+        "focus_score"
+      ],
+      "datasets": [
+        "DATASET/DATI_RICERCA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "mossa_decisiva",
+        "patch_strutturale",
+        "piano_3_step"
+      ]
+    },
+    {
+      "id": "project_manager",
+      "area": "IMPRESA_MANAGEMENT",
+      "path": "AGENTI/singoli/IMPRESA_MANAGEMENT/project_manager.md",
+      "level": "top_0_01",
+      "skills": [
+        "roadmap",
+        "priorità",
+        "dipendenze",
+        "rischi"
+      ],
+      "functions": [
+        "generate_roadmap",
+        "risk_matrix",
+        "task_breakdown"
+      ],
+      "formulas": [
+        "impatto_sforzo",
+        "critical_path"
+      ],
+      "datasets": [
+        "DATASET/IMPRESA_MANAGEMENT/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "piano_operativo",
+        "roadmap"
+      ]
+    },
+    {
+      "id": "business_strategist",
+      "area": "IMPRESA_MANAGEMENT",
+      "path": "AGENTI/singoli/IMPRESA_MANAGEMENT/business_strategist.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica business strategist",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/IMPRESA_MANAGEMENT/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "operations_manager",
+      "area": "IMPRESA_MANAGEMENT",
+      "path": "AGENTI/singoli/IMPRESA_MANAGEMENT/operations_manager.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica operations manager",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/IMPRESA_MANAGEMENT/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "sales_consultant",
+      "area": "IMPRESA_MANAGEMENT",
+      "path": "AGENTI/singoli/IMPRESA_MANAGEMENT/sales_consultant.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica sales consultant",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/IMPRESA_MANAGEMENT/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "process_designer",
+      "area": "IMPRESA_MANAGEMENT",
+      "path": "AGENTI/singoli/IMPRESA_MANAGEMENT/process_designer.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica process designer",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/IMPRESA_MANAGEMENT/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "idea_accelerator",
+      "area": "IMPRESA_MANAGEMENT",
+      "path": "AGENTI/singoli/IMPRESA_MANAGEMENT/idea_accelerator.md",
+      "level": "top_0_01",
+      "skills": [
+        "MVP",
+        "prioritizzazione",
+        "riduzione ambiguità",
+        "validazione idea"
+      ],
+      "functions": [
+        "build_mvp_scope",
+        "generate_roadmap",
+        "prioritize_features"
+      ],
+      "formulas": [
+        "impatto_sforzo",
+        "rischio_mercato"
+      ],
+      "datasets": [
+        "DATASET/IMPRESA_MANAGEMENT/dataset_operativo.yaml",
+        "DATASET/PRODOTTO/mvp.yaml"
+      ],
+      "outputs": [
+        "scheda_idea",
+        "roadmap_mvp",
+        "backlog_iniziale"
+      ]
+    },
+    {
+      "id": "product_manager",
+      "area": "IMPRESA_MANAGEMENT",
+      "path": "AGENTI/singoli/IMPRESA_MANAGEMENT/product_manager.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica product manager",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/IMPRESA_MANAGEMENT/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "estrattore_dati",
+      "area": "DOCUMENTI_DATI_REPORT",
+      "path": "AGENTI/singoli/DOCUMENTI_DATI_REPORT/estrattore_dati.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica estrattore dati",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/DOCUMENTI_DATI_REPORT/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "redattore_report",
+      "area": "DOCUMENTI_DATI_REPORT",
+      "path": "AGENTI/singoli/DOCUMENTI_DATI_REPORT/redattore_report.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica redattore report",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/DOCUMENTI_DATI_REPORT/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "revisore_documentale",
+      "area": "DOCUMENTI_DATI_REPORT",
+      "path": "AGENTI/singoli/DOCUMENTI_DATI_REPORT/revisore_documentale.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica revisore documentale",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/DOCUMENTI_DATI_REPORT/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "normalizzatore_dataset",
+      "area": "DOCUMENTI_DATI_REPORT",
+      "path": "AGENTI/singoli/DOCUMENTI_DATI_REPORT/normalizzatore_dataset.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica normalizzatore dataset",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/DOCUMENTI_DATI_REPORT/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "parser_tabelle",
+      "area": "DOCUMENTI_DATI_REPORT",
+      "path": "AGENTI/singoli/DOCUMENTI_DATI_REPORT/parser_tabelle.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica parser tabelle",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/DOCUMENTI_DATI_REPORT/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "output_contract_designer",
+      "area": "DOCUMENTI_DATI_REPORT",
+      "path": "AGENTI/singoli/DOCUMENTI_DATI_REPORT/output_contract_designer.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica output contract designer",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/DOCUMENTI_DATI_REPORT/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "analista_contratti",
+      "area": "DIRITTO_NORMATIVA",
+      "path": "AGENTI/singoli/DIRITTO_NORMATIVA/analista_contratti.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica analista contratti",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/DIRITTO_NORMATIVA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "privacy_gdpr",
+      "area": "DIRITTO_NORMATIVA",
+      "path": "AGENTI/singoli/DIRITTO_NORMATIVA/privacy_gdpr.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica privacy gdpr",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/DIRITTO_NORMATIVA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "compliance_specialist",
+      "area": "DIRITTO_NORMATIVA",
+      "path": "AGENTI/singoli/DIRITTO_NORMATIVA/compliance_specialist.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica compliance specialist",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/DIRITTO_NORMATIVA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "analista_normativo",
+      "area": "DIRITTO_NORMATIVA",
+      "path": "AGENTI/singoli/DIRITTO_NORMATIVA/analista_normativo.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica analista normativo",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/DIRITTO_NORMATIVA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "diritto_lavoro_supporto",
+      "area": "DIRITTO_NORMATIVA",
+      "path": "AGENTI/singoli/DIRITTO_NORMATIVA/diritto_lavoro_supporto.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica diritto lavoro supporto",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/DIRITTO_NORMATIVA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "analista_salute",
+      "area": "SALUTE_MEDICINA",
+      "path": "AGENTI/singoli/SALUTE_MEDICINA/analista_salute.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica analista salute",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/SALUTE_MEDICINA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "nutrizionista_operativo",
+      "area": "SALUTE_MEDICINA",
+      "path": "AGENTI/singoli/SALUTE_MEDICINA/nutrizionista_operativo.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica nutrizionista operativo",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/SALUTE_MEDICINA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "psicologia_supporto",
+      "area": "SALUTE_MEDICINA",
+      "path": "AGENTI/singoli/SALUTE_MEDICINA/psicologia_supporto.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica psicologia supporto",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/SALUTE_MEDICINA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "ergonomo",
+      "area": "SALUTE_MEDICINA",
+      "path": "AGENTI/singoli/SALUTE_MEDICINA/ergonomo.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica ergonomo",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/SALUTE_MEDICINA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "prevenzione_benessere",
+      "area": "SALUTE_MEDICINA",
+      "path": "AGENTI/singoli/SALUTE_MEDICINA/prevenzione_benessere.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica prevenzione benessere",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/SALUTE_MEDICINA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "divulgatore_scientifico",
+      "area": "SCIENZE_NATURALI",
+      "path": "AGENTI/singoli/SCIENZE_NATURALI/divulgatore_scientifico.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica divulgatore scientifico",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/SCIENZE_NATURALI/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "analista_ambientale",
+      "area": "SCIENZE_NATURALI",
+      "path": "AGENTI/singoli/SCIENZE_NATURALI/analista_ambientale.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica analista ambientale",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/SCIENZE_NATURALI/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "biologia_reviewer",
+      "area": "SCIENZE_NATURALI",
+      "path": "AGENTI/singoli/SCIENZE_NATURALI/biologia_reviewer.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica biologia reviewer",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/SCIENZE_NATURALI/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "chimica_reviewer",
+      "area": "SCIENZE_NATURALI",
+      "path": "AGENTI/singoli/SCIENZE_NATURALI/chimica_reviewer.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica chimica reviewer",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/SCIENZE_NATURALI/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "fisica_reviewer",
+      "area": "SCIENZE_NATURALI",
+      "path": "AGENTI/singoli/SCIENZE_NATURALI/fisica_reviewer.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica fisica reviewer",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/SCIENZE_NATURALI/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "analista_sociale",
+      "area": "SCIENZE_SOCIALI",
+      "path": "AGENTI/singoli/SCIENZE_SOCIALI/analista_sociale.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica analista sociale",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/SCIENZE_SOCIALI/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "storico_ricercatore",
+      "area": "SCIENZE_SOCIALI",
+      "path": "AGENTI/singoli/SCIENZE_SOCIALI/storico_ricercatore.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica storico ricercatore",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/SCIENZE_SOCIALI/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "analista_politico",
+      "area": "SCIENZE_SOCIALI",
+      "path": "AGENTI/singoli/SCIENZE_SOCIALI/analista_politico.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica analista politico",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/SCIENZE_SOCIALI/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "sociologo_operativo",
+      "area": "SCIENZE_SOCIALI",
+      "path": "AGENTI/singoli/SCIENZE_SOCIALI/sociologo_operativo.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica sociologo operativo",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/SCIENZE_SOCIALI/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "tutor_didattico",
+      "area": "ISTRUZIONE_FORMAZIONE",
+      "path": "AGENTI/singoli/ISTRUZIONE_FORMAZIONE/tutor_didattico.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica tutor didattico",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/ISTRUZIONE_FORMAZIONE/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "progettista_corsi",
+      "area": "ISTRUZIONE_FORMAZIONE",
+      "path": "AGENTI/singoli/ISTRUZIONE_FORMAZIONE/progettista_corsi.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica progettista corsi",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/ISTRUZIONE_FORMAZIONE/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "valutatore_apprendimento",
+      "area": "ISTRUZIONE_FORMAZIONE",
+      "path": "AGENTI/singoli/ISTRUZIONE_FORMAZIONE/valutatore_apprendimento.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica valutatore apprendimento",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/ISTRUZIONE_FORMAZIONE/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "coach_metodo_studio",
+      "area": "ISTRUZIONE_FORMAZIONE",
+      "path": "AGENTI/singoli/ISTRUZIONE_FORMAZIONE/coach_metodo_studio.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica coach metodo studio",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/ISTRUZIONE_FORMAZIONE/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "editor_scrittura",
+      "area": "ARTI_CULTURA",
+      "path": "AGENTI/singoli/ARTI_CULTURA/editor_scrittura.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica editor scrittura",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/ARTI_CULTURA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "critico_culturale",
+      "area": "ARTI_CULTURA",
+      "path": "AGENTI/singoli/ARTI_CULTURA/critico_culturale.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica critico culturale",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/ARTI_CULTURA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "storyteller",
+      "area": "ARTI_CULTURA",
+      "path": "AGENTI/singoli/ARTI_CULTURA/storyteller.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica storyteller",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/ARTI_CULTURA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "analista_filosofico",
+      "area": "ARTI_CULTURA",
+      "path": "AGENTI/singoli/ARTI_CULTURA/analista_filosofico.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica analista filosofico",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/ARTI_CULTURA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "chef_domestico",
+      "area": "CASA_VITA_PRATICA",
+      "path": "AGENTI/singoli/CASA_VITA_PRATICA/chef_domestico.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica chef domestico",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/CASA_VITA_PRATICA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "meal_planner",
+      "area": "CASA_VITA_PRATICA",
+      "path": "AGENTI/singoli/CASA_VITA_PRATICA/meal_planner.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica meal planner",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/CASA_VITA_PRATICA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "tecnico_manutenzione_casa",
+      "area": "CASA_VITA_PRATICA",
+      "path": "AGENTI/singoli/CASA_VITA_PRATICA/tecnico_manutenzione_casa.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica tecnico manutenzione casa",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/CASA_VITA_PRATICA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "consulente_acquisti",
+      "area": "CASA_VITA_PRATICA",
+      "path": "AGENTI/singoli/CASA_VITA_PRATICA/consulente_acquisti.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica consulente acquisti",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/CASA_VITA_PRATICA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "organizzatore_domestico",
+      "area": "CASA_VITA_PRATICA",
+      "path": "AGENTI/singoli/CASA_VITA_PRATICA/organizzatore_domestico.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica organizzatore domestico",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/CASA_VITA_PRATICA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "travel_planner",
+      "area": "CASA_VITA_PRATICA",
+      "path": "AGENTI/singoli/CASA_VITA_PRATICA/travel_planner.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica travel planner",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/CASA_VITA_PRATICA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "ingegnere_meccanico_supporto",
+      "area": "INDUSTRIA_INGEGNERIA",
+      "path": "AGENTI/singoli/INDUSTRIA_INGEGNERIA/ingegnere_meccanico_supporto.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica ingegnere meccanico supporto",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/INDUSTRIA_INGEGNERIA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "impiantista_reviewer",
+      "area": "INDUSTRIA_INGEGNERIA",
+      "path": "AGENTI/singoli/INDUSTRIA_INGEGNERIA/impiantista_reviewer.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica impiantista reviewer",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/INDUSTRIA_INGEGNERIA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "edilizia_tecnica",
+      "area": "INDUSTRIA_INGEGNERIA",
+      "path": "AGENTI/singoli/INDUSTRIA_INGEGNERIA/edilizia_tecnica.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica edilizia tecnica",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/INDUSTRIA_INGEGNERIA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "quality_engineer",
+      "area": "INDUSTRIA_INGEGNERIA",
+      "path": "AGENTI/singoli/INDUSTRIA_INGEGNERIA/quality_engineer.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica quality engineer",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/INDUSTRIA_INGEGNERIA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "produzione_reviewer",
+      "area": "INDUSTRIA_INGEGNERIA",
+      "path": "AGENTI/singoli/INDUSTRIA_INGEGNERIA/produzione_reviewer.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica produzione reviewer",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/INDUSTRIA_INGEGNERIA/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "risk_manager",
+      "area": "SICUREZZA_RISCHIO",
+      "path": "AGENTI/singoli/SICUREZZA_RISCHIO/risk_manager.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica risk manager",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/SICUREZZA_RISCHIO/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "audit_specialist",
+      "area": "SICUREZZA_RISCHIO",
+      "path": "AGENTI/singoli/SICUREZZA_RISCHIO/audit_specialist.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica audit specialist",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/SICUREZZA_RISCHIO/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "emergency_planner",
+      "area": "SICUREZZA_RISCHIO",
+      "path": "AGENTI/singoli/SICUREZZA_RISCHIO/emergency_planner.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica emergency planner",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/SICUREZZA_RISCHIO/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "data_protection_reviewer",
+      "area": "SICUREZZA_RISCHIO",
+      "path": "AGENTI/singoli/SICUREZZA_RISCHIO/data_protection_reviewer.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica data protection reviewer",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/SICUREZZA_RISCHIO/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    },
+    {
+      "id": "continuita_operativa_specialist",
+      "area": "SICUREZZA_RISCHIO",
+      "path": "AGENTI/singoli/SICUREZZA_RISCHIO/continuita_operativa_specialist.md",
+      "level": "top_0_01",
+      "skills": [
+        "competenza specialistica continuita operativa specialist",
+        "analisi contesto",
+        "uso dataset",
+        "criteri qualità",
+        "output operativo"
+      ],
+      "functions": [
+        "compose_context",
+        "apply_domain_logic",
+        "risk_matrix",
+        "generate_output"
+      ],
+      "formulas": [
+        "score_rilevanza",
+        "priorita_impatto_sforzo"
+      ],
+      "datasets": [
+        "DATASET/SICUREZZA_RISCHIO/dataset_operativo.yaml"
+      ],
+      "outputs": [
+        "analisi",
+        "checklist",
+        "piano_operativo",
+        "report"
+      ]
+    }
+  ]
+}
