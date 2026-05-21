@@ -1,0 +1,129 @@
+id: profilo_jack
+tipo: profilo_utente_preferenziale
+versione: 1.0.0
+lingua_preferita: it
+
+uso:
+  - bias leggero per routing MD_OS
+  - riduzione domande inutili sugli ambiti ricorrenti
+  - nessun caricamento automatico massivo degli agenti
+  - proposta patch MD_OS quando emerge una logica stabile
+
+ambiti_principali:
+  sviluppo_soluzioni:
+    priorita: alta
+    agenti_preferiti:
+      - idea_accelerator
+      - salto_qualitativo_architect
+      - software_architect
+      - business_strategist
+      - project_manager
+      - knowledge_manager
+    output_preferiti:
+      - roadmap_mvp
+      - mossa_decisiva
+      - report_operativo
+
+  sviluppo_web_app:
+    priorita: alta
+    agenti_preferiti:
+      - senior_full_stack_developer
+      - senior_frontend_developer
+      - senior_backend_developer
+      - software_architect
+      - api_architect
+      - ux_reviewer
+      - web_designer
+    output_preferiti:
+      - roadmap_tecnica
+      - diagnosi_tecnica
+      - patch_codice
+
+  automazioni_ai_tecnologie_future:
+    priorita: alta
+    agenti_preferiti:
+      - ai_engineer
+      - automation_architect
+      - software_architect
+      - data_engineer
+      - knowledge_manager
+      - divulgatore_scientifico
+    output_preferiti:
+      - mossa_decisiva
+      - roadmap_mvp
+      - report_operativo
+
+  sviluppo_videogame:
+    priorita: media
+    agenti_preferiti:
+      - idea_accelerator
+      - software_architect
+      - senior_full_stack_developer
+      - ux_reviewer
+      - grafico
+      - storyteller
+    output_preferiti:
+      - scheda_idea
+      - roadmap_mvp
+      - specifica_funzionale
+
+  cucina_libri_cucina:
+    priorita: alta
+    agenti_preferiti:
+      - chef_domestico
+      - meal_planner
+      - editor_scrittura
+      - grafico
+      - presentation_designer
+    output_preferiti:
+      - ricetta_operativa
+      - piano_menu
+      - struttura_libro
+
+  cinema_cultura:
+    priorita: media
+    agenti_preferiti:
+      - critico_culturale
+      - storyteller
+      - ricercatore_documentale
+      - knowledge_manager
+    output_preferiti:
+      - analisi
+      - lista_ragionata
+      - report_operativo
+
+  ristoranti_esperienze:
+    priorita: media
+    agenti_preferiti:
+      - travel_planner
+      - consulente_acquisti
+      - chef_domestico
+      - ricercatore_documentale
+    output_preferiti:
+      - lista_ragionata
+      - piano_operativo
+      - confronto_opzioni
+
+preferenze_output:
+  stile:
+    - concreto
+    - ordinato
+    - operativo
+    - commerciale_quando_si_valuta_un_prodotto
+  evitare:
+    - spiegazioni troppo astratte
+    - tabelle inutili
+    - output troppo tecnico senza sintesi
+    - domande inutili se il contesto e sufficiente
+  preferire:
+    - sintesi iniziale
+    - prossima_azione_chiara
+    - demo_pratiche
+    - confronto_prima_dopo
+    - patch_pronte_quando_serve
+
+regola_caricamento:
+  semplice_max_agenti: 2
+  medio_max_agenti: 4
+  complesso_max_agenti: 7
+  nota: non caricare tutti gli agenti preferiti; usarli come priorita di selezione.

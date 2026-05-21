@@ -1,6 +1,8 @@
 datasets:
 - id: contesto_base
   path: DATASET/BASE/contesto_base.yaml
+- id: profilo_jack
+  path: DATASET/BASE/profilo_jack.yaml
 - id: lavoro_professioni_operativo
   path: DATASET/LAVORO_PROFESSIONI/dataset_operativo.yaml
 - id: economia_finanza_operativo

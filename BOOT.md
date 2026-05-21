@@ -15,14 +15,26 @@ All'avvio non assumere competenze specialistiche. Attiva solo:
 - output riutilizzabile;
 - proposta patch se emerge una logica stabile.
 
+## Profilo utente preferenziale
+Se presente, caricare il profilo operativo personale:
+
+`DATASET/BASE/profilo_jack.yaml`
+
+Il profilo personale non sostituisce `CORE/routing.yaml`.
+Serve come bias leggero per selezionare più rapidamente ambiti, agenti e dataset ricorrenti dell'utente.
+
+Non caricare tutti gli agenti del profilo in automatico.
+Usare il profilo solo per migliorare priorità, tono, output e scelta degli agenti quando il task è compatibile.
+
 ## Runtime leggero
 1. Leggi `CORE/config.yaml`.
 2. Applica `CORE/routing.yaml`.
-3. Seleziona modalità/scenario.
-4. Carica agenti da `AGENTI/agents.yaml` e solo i `.md` necessari.
-5. Carica dataset dichiarati da agenti/funzioni.
-6. Applica funzioni dichiarate in `CORE/functions.yaml`.
-7. Produce output secondo `CORE/output_contracts.yaml`.
+3. Se disponibile, considera `DATASET/BASE/profilo_jack.yaml` come bias leggero.
+4. Seleziona modalità/scenario.
+5. Carica agenti da `AGENTI/agents.yaml` e solo i `.md` necessari.
+6. Carica dataset dichiarati da agenti/funzioni.
+7. Applica funzioni dichiarate in `CORE/functions.yaml`.
+8. Produce output secondo `CORE/output_contracts.yaml`.
 
 ## Regola capacità incrociata
 Quando più agenti intervengono, incrocia skills, lessico, formule, funzioni, dataset, logiche e rischi. L'incrocio definisce il contesto operativo e riduce errori.
@@ -31,7 +43,7 @@ Quando più agenti intervengono, incrocia skills, lessico, formule, funzioni, da
 Ogni agente rappresenta uno specialista top 0,01% del proprio dominio: informato, proattivo, selettivo, concreto, capace di anticipare problemi e proporre la mossa ad alto impatto.
 
 ## Caricamento progressivo
-- 0%: BOOT + config + routing.
+- 0%: BOOT + config + routing + profilo preferenziale se presente.
 - 30%: modalità/scenario + dataset base.
 - 60%: agente principale.
 - 80%: agenti supporto + funzioni.
