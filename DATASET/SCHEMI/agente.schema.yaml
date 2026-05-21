@@ -1,0 +1,10 @@
+required:
+- id_agente
+- nome
+- professione
+- ambito_principale
+- trigger
+- tag
+- output
+- stato
+- versione
