@@ -9,6 +9,22 @@ roadmap_mvp:
   - rischi
   - roadmap
   - prossima_azione
+
+digital_wow_pitch:
+  required:
+  - promessa_prodotto
+  - prima_dopo
+  - team_attivato
+  - insight_decisivo
+  - proposta_5000
+  - architettura_soluzione
+  - esperienza_utente
+  - stack_o_strumenti
+  - roadmap_30_60_90
+  - demo_operativa
+  - rischi_e_tagli
+  - prossima_azione
+
 audit_payroll:
   required:
   - fonti_lette
@@ -18,6 +34,7 @@ audit_payroll:
   - anomalie
   - limiti
   - azioni
+
 diagnosi_tecnica:
   required:
   - problema
@@ -27,6 +44,7 @@ diagnosi_tecnica:
   - soluzione
   - rischi_regressione
   - patch
+
 patch_md_os:
   required:
   - file_destinazione
@@ -35,6 +53,7 @@ patch_md_os:
   - motivo
   - impatto
   - rischio
+
 mossa_decisiva:
   required:
   - contesto
@@ -44,6 +63,7 @@ mossa_decisiva:
   - 3_step
   - cosa_eliminare
   - patch_se_utile
+
 report_operativo:
   required:
   - esito

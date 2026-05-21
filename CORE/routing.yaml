@@ -1,4 +1,51 @@
 rules:
+- id: jack_digital_wow
+  match:
+  - wow
+  - effetto wow
+  - startup
+  - prodotto digitale
+  - app
+  - web app
+  - videogame
+  - tecnologie futuro
+  - tecnologie del futuro
+  - innovazione digitale
+  - soluzione digitale
+  - sviluppa soluzione
+  - presentami il prodotto
+  - demo prodotto
+  mode: JACK_DIGITAL_WOW
+  agents:
+  - idea_accelerator
+  - salto_qualitativo_architect
+  - business_strategist
+  - software_architect
+  - senior_full_stack_developer
+  - ai_engineer
+  - automation_architect
+  - ux_reviewer
+  - web_designer
+  - grafico
+  - copywriter
+  - redattore_report
+  datasets:
+  - DATASET/BASE/profilo_jack.yaml
+  - DATASET/PRODOTTO/mvp.yaml
+  - DATASET/PRODOTTO/digital_wow.yaml
+  - DATASET/TECNOLOGIA_SVILUPPO/stack.yaml
+  - DATASET/TECNOLOGIA_SVILUPPO/pattern.yaml
+  - DATASET/DESIGN_COMUNICAZIONE/ux.yaml
+  functions:
+  - compose_context
+  - build_mvp_scope
+  - suggest_stack
+  - generate_roadmap
+  - find_leverage_point
+  - anti_briciole
+  - propose_patch
+  output: digital_wow_pitch
+
 - id: sviluppo_idee_rapido
   match:
   - idea
@@ -26,6 +73,7 @@ rules:
   - generate_roadmap
   - find_leverage_point
   output: roadmap_mvp
+
 - id: audit_payroll
   match:
   - busta paga
@@ -53,6 +101,7 @@ rules:
   - calculate_ratei
   - detect_payroll_anomalies
   output: audit_payroll
+
 - id: debug_tecnico
   match:
   - bug
@@ -76,6 +125,7 @@ rules:
   - check_security_flags
   - risk_matrix
   output: diagnosi_tecnica
+
 - id: salto_qualitativo
   match:
   - salto qualità
