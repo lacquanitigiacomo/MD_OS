@@ -1,18 +1,14 @@
-# MD_OS v8 — Agenti Potenziati e Tassonomia Operativa
+# MD_OS v30 — Future Runtime Lightweight
 
-MD_OS v8 parte da un **Agente 0%** leggero e aumenta competenza caricando tassonomia, ambiti, agenti singoli e dataset pertinenti.
+MD_OS v30 è un runtime leggero richiamabile da repository. Non è una raccolta di prompt: è un sistema composto da direttive, routing YAML, dataset strutturati, funzioni dichiarate, agenti specialistici, output contract, indici JSON e tool Python.
 
-## Flusso operativo
+## Principio
+- Agente = specificità di ambito e contesto.
+- Dataset = memoria strutturata e veloce.
+- Funzione = incrocio, calcolo, validazione.
+- Output contract = risultato ripetibile.
+- Python = indicizzazione, routing, validazione, calcoli esterni.
+- AI = sintesi, decisione, linguaggio e applicazione delle direttive.
 
-```txt
-README.md → BOOT.md → AGENTI/README-AGENTI.md → TASSONOMIA → AMBITI → AGENTI-SINGOLI → DATASET → RISULTATO
-```
-
-## Obiettivo
-Ridurre tempi, token e domande inutili; aumentare qualità tramite agenti più popolati, sottoaree raffinate, modalità trasversali e dataset operativi.
-
-## Novità v8
-- Tassonomia più precisa per tecnologia, lavoro e sviluppo idee rapido.
-- Agenti con funzioni, logiche, matrici, algoritmi, checklist e output più completi.
-- Modalità trasversale `SVILUPPO_IDEE_RAPIDO` per trasformare idee grezze in roadmap, MVP, prototipi e report.
-- Dataset di base e dataset per macro-area.
+## Flusso
+`BOOT.md → CORE/routing.yaml → CORE/functions.yaml → AGENTI/agents.yaml → DATASET/registry.yaml → TOOLS opzionali → output contract`.
