@@ -1,3 +1,3 @@
-# Mappa legacy
+# MAPPA LEGACY
 
-Le vecchie cartelle FUNZIONI, LOGIC, SCHEMI e OUTPUT sono assorbite da BOOT, AMBITI, AGENTI e DATASET.
+Le vecchie cartelle FUNZIONI, LOGIC, SCHEMI, OUTPUT sono assorbite dalle sezioni interne di BOOT, AMBITI e AGENTI.
