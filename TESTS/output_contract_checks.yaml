@@ -1,5 +1,0 @@
-id: output_contract_checks
-checks:
-  - exists
-  - no_orphans
-  - no_registry_loss

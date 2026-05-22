@@ -1,3 +1,0 @@
-# TESTS
-
-Controlli di coerenza.
