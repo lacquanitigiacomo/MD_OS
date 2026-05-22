@@ -1,9 +1,0 @@
-{
-  "id": "memory_failure",
-  "goal": "rilevare gap memoria",
-  "expected": [
-    "gap",
-    "learning_event",
-    "report"
-  ]
-}
