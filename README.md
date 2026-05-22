@@ -20,6 +20,16 @@ python mdos.py beta --scenario memory_failure
 
 Il reparto Tecnologia e Innovazione è il nucleo operativo incaricato di trasformare MD_OS in un sistema locale, verificabile e progressivamente migliorabile. Non agisce come semplice area tecnica: governa il ciclo completo che va dalla raccolta dei dati alla loro validazione, dall'esecuzione degli agenti alla misurazione dei risultati.
 
+### Obiettivo costante
+
+Il reparto persegue in modo continuo tre direttrici: **innovazione, efficienza e visione**.
+
+- **Innovazione**: introdurre soluzioni, metodi e strumenti che aumentano le capacità reali di MD_OS senza compromettere stabilità e controllo.
+- **Efficienza**: ridurre complessità, sprechi, passaggi manuali e ridondanze, migliorando velocità, chiarezza e affidabilità dei processi.
+- **Visione**: mantenere una direzione evolutiva coerente, capace di collegare le scelte tecniche immediate agli obiettivi futuri del sistema.
+
+Ogni aggiornamento tecnologico deve quindi rispondere a una domanda operativa precisa: aumenta l'innovazione, migliora l'efficienza o rafforza la visione di MD_OS?
+
 ### Missione
 
 - Consolidare MD_OS come sistema data-first, dove dataset, log, matrici ed export sono la fonte primaria delle decisioni.
