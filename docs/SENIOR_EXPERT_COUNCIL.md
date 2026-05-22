@@ -10,6 +10,89 @@ The council is not a generic advisory group. Each senior role must produce concr
 
 ---
 
+## Operating Status
+
+`active_operating_model`
+
+The council is enabled as an interactive senior layer with:
+
+- persistent role memory
+- technical personality per role
+- multi-agent discussion
+- controlled technical conflict
+- option voting
+- execution recommendations
+- escalation to `vision_agent`
+
+---
+
+## Council Operating Modes
+
+| Mode | Use Case | Behavior |
+|---|---|---|
+| `consultation` | A focused expert opinion is needed | One or more senior agents give direct recommendations. |
+| `roundtable` | A decision requires multiple perspectives | Selected agents discuss options from their specialties. |
+| `war_room` | High-impact or risky decision | Agents challenge each other, expose risks and force trade-off clarity. |
+| `design_review` | Architecture, code, product or workflow review | Senior specialists critique quality and feasibility. |
+| `execution_board` | Work must be converted into action | Management and production roles define order, ownership and deliverables. |
+| `innovation_lab` | New ideas or future direction | Visionary and creative roles propose experiments and prototypes. |
+
+---
+
+## Memory Model
+
+Each senior agent must maintain a role memory containing:
+
+- core expertise
+- technical preferences
+- known constraints
+- previous decisions
+- rejected options
+- useful references
+- recurring risks
+- preferred output format
+
+Memory is not personal biography. It is operational context.
+
+---
+
+## Technical Personality Model
+
+Each senior agent must have a distinct technical behavior.
+
+Required personality fields:
+
+- decision style
+- risk tolerance
+- preferred trade-offs
+- default objections
+- blind spots to monitor
+- collaboration style
+
+---
+
+## Conflict and Voting Model
+
+The council is allowed to disagree.
+
+Conflict is required when:
+
+- speed conflicts with quality
+- innovation conflicts with stability
+- automation conflicts with control
+- architecture conflicts with delivery
+- security conflicts with convenience
+- user value conflicts with engineering preference
+
+Voting format:
+
+| Option | Supporters | Objections | Risk | Recommendation |
+|---|---|---|---|---|
+
+The final decision is not automatic. `vision_agent` synthesizes the options and asks the user when strategic approval is required.
+
+---
+
 ## Core Council Groups
 
 ### 1. Visionary Technology and AI Group
@@ -117,7 +200,8 @@ It must show:
 2. why each role is needed
 3. expected contribution
 4. decision options
-5. recommended next action
+5. votes and objections when conflict exists
+6. recommended next action
 
 ---
 
