@@ -1,4 +1,0 @@
-id,categoria,finding,impatto,stato
-AI001,agents,orchestrazione multi agente richiede memoria e retrieval,priorita architetturale,attivo
-AI002,retrieval,prima fase usa query locale sui dataset,riduce dipendenza da servizi esterni,attivo
-AI003,governance,fonti AI devono essere validate prima di aggiornare dataset,riduce hype,attivo

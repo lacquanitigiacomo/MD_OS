@@ -1,5 +1,0 @@
-scope,lettura,scrittura,contenuto
-globale,tutti gli agenti core,"memory_agent,interaction_agent",decisioni pattern gap sessioni
-ruolo,agente proprietario e vision_agent,agente proprietario,preferenze vincoli errori
-sessione,interaction_agent,interaction_agent,contesto temporaneo
-ricerca_ai,"ai_research_strategist,source_validation_agent",ai_research_strategist,finding fonti impatti

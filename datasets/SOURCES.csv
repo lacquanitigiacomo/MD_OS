@@ -1,4 +1,0 @@
-id,tipo,nome,uso,costo
-SRC001,interno,datasets,fonte primaria MD_OS,gratuito
-SRC002,web,documentazione ufficiale provider,AI_SCAN se richiesto,gratuito
-SRC003,web,paper e repository pubblici,ricerca tecnica,gratuito

@@ -1,3 +1,0 @@
-{"id": "LE001", "tipo": "decisione", "contenuto": "struttura congelata dopo refactor totale", "dataset": "DECISIONS.csv"}
-{"id": "LE002", "tipo": "pattern", "contenuto": "dataset prima della documentazione narrativa", "dataset": "PATTERNS.csv"}
-{"id": "LE003", "tipo": "innovazione", "contenuto": "REFACTOR produce almeno 10 avanzamenti", "dataset": "INNOVATIONS.csv"}
