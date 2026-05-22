@@ -1,6 +1,0 @@
-id: DOCUMENTS_DATA_REPORT_normalization_rules
-status: active
-purpose:
-  - dataset operativo MD_OS v31
-  - estendibile
-  - collegabile a registry, mesh e runtime packet

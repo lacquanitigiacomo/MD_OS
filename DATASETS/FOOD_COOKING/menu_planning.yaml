@@ -1,6 +1,0 @@
-id: FOOD_COOKING_menu_planning
-status: active
-purpose:
-  - dataset operativo MD_OS v31
-  - estendibile
-  - collegabile a registry, mesh e runtime packet

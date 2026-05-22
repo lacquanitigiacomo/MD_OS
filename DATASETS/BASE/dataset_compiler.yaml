@@ -1,6 +1,0 @@
-id: BASE_dataset_compiler
-status: active
-purpose:
-  - dataset operativo MD_OS v31
-  - estendibile
-  - collegabile a registry, mesh e runtime packet

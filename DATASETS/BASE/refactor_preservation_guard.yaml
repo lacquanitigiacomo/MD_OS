@@ -1,8 +1,0 @@
-id: refactor_preservation_guard
-regole:
-  - non perdere agenti
-  - non perdere dataset
-  - non perdere output
-  - non perdere logiche
-  - non cancellare senza manifest
-  - non rinominare senza alias
