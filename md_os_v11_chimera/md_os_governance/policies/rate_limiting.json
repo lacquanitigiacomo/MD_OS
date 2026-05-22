@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "limits": [
+    {
+      "role": "user",
+      "requests_per_minute": 60
+    },
+    {
+      "role": "guest",
+      "requests_per_minute": 10
+    }
+  ]
+}
