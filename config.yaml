@@ -1,0 +1,44 @@
+# MD_OS Core X12 Vision - Configurazione
+# Modificabile a runtime, struttura immutabile
+
+sistema:
+  nome: "MD_OS"
+  versione_nucleo: "12.0.0"
+  codename: "Vision"
+  lingua: "it"
+
+memoria:
+  dimensione_embedding: 384
+  indice_tipo: "hnsw_custom"
+  M_hnsw: 16
+  ef_construction: 200
+
+agente:
+  cartella_definizioni: "plugin/agente/definizioni"
+  profondita_ragionamento: 3
+  max_premesse: 10
+
+apprendimento:
+  architettura_rete: [384, 128, 64, 16, 1]
+  tasso_apprendimento: 0.001
+  epoche_feedback: 10
+
+matrice:
+  finestra_analisi_giorni: 30
+  soglia_anomalia_zscore: 2.0
+
+beta:
+  chaos_scenari:
+    - memory_pressure
+    - cpu_spike
+    - disk_full
+    - database_lock
+    - plugin_crash
+    - corrupted_data
+  benchmark_iterazioni: 100
+  fuzz_iterazioni: 200
+
+log:
+  livello_minimo: "INFO"
+  rotazione_mesi: 3
+  formato: "jsonl"

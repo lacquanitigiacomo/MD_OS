@@ -1,0 +1,14 @@
+# MD_OS Core X12 Vision
+# Dipendenze: opzionali, tutto il resto e' stdlib Python
+
+# Per hot-reload plugin (opzionale)
+watchdog>=3.0.0
+
+# Per definizioni agenti YAML (opzionale, fallback a JSON)
+pyyaml>=6.0
+
+# Per embedding ONNX (opzionale, fallback a TF-IDF puro)
+# onnxruntime>=1.15.0
+
+# NOTA: sentence-transformers NON e' piu' richiesto.
+# Il sistema usa HNSW custom + embedding ONNX o TF-IDF classico.
