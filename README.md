@@ -1,37 +1,47 @@
-# MD_OS v31 — Tabula Rasa Serverless Runtime
+# MD_OS 10G — Sistema Cognitivo a Memoria Leggera
 
-MD_OS v31 è una distribuzione completa, sostitutiva e repository-driven.
-
-## Principio
-
-GitHub è il database versionato.  
-File `.md`, `.yaml`, `.json` sono le API dichiarative.  
-L'AI è il runtime cognitivo.  
-MD_OS coordina agenti, dataset, skill, schemi, mesh e output caricando solo ciò che serve.
+MD_OS 10G e una struttura portabile per aumentare le capacita di un modello linguistico senza saturare il contesto.
 
 ## Formula
 
 ```text
-intent × profile × context × skill × dataset × output × quality_gate = runtime_packet
+INTENZIONE + PROFESSIONE + PROFILO + SKILL + DATASET + MATRICE + MEMORIA_LEGGERA = RISPOSTA MIGLIORE
 ```
 
-## Regola del Salto 10X
+## Obiettivo
 
-Ogni evoluzione importante deve chiedersi:
+Alleggerire la memoria durante l'interazione con AI usando:
 
-```text
-Stiamo facendo una micro-modifica o un salto di sistema?
-```
+- agenti professionali;
+- profili cognitivi geniali;
+- dataset aggiornabili;
+- matrici di selezione;
+- contesti compressi;
+- apprendimento da interazioni;
+- pacchetti runtime minimi.
 
-Se il miglioramento non produce almeno una delle seguenti leve, va ripensato:
+## I 3 aggiornamenti portanti
 
-- meno carico cognitivo;
-- meno contesto da caricare;
-- più riuso;
-- più qualità decisionale;
-- più automazione;
-- più leggibilità;
-- più esportabilità;
-- più sicurezza;
-- più capacità di apprendimento;
-- più effetto prodotto.
+1. **Memoria Leggera e Profilazione**: carica solo cio che serve.
+2. **Orchestratore e Squadre Dinamiche**: chiama professioni e profili su richiesta.
+3. **Apprendimento e Ottimizzazione**: aggiorna dataset, pesi e matrici dopo ogni interazione utile.
+
+## Struttura attiva
+
+- `00_AVVIO/`
+- `01_MANIFESTO/`
+- `02_CERVELLO/`
+- `04_PROFESSIONI/`
+- `05_PROFILI_GENIALI/`
+- `06_SKILL/`
+- `07_MATRICI/`
+- `08_DATASET/`
+- `09_SQUADRE/`
+- `10_OFFICINA_OPERATIVA/`
+- `11_VERIFICA/`
+- `12_APPRENDIMENTO/`
+- `15_ALGORITMI/`
+
+## Regola fondamentale
+
+Gli agenti sono professioni reali in italiano. I profili sono modalita cognitive applicate alle professioni.
