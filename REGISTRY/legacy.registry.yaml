@@ -1,5 +1,0 @@
-legacy:
-  preserved_paths:
-    - AGENTI
-    - DATASET
-  strategy: documented_alias_not_copied
