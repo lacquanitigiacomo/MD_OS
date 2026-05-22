@@ -1,3 +1,0 @@
-# SCHEMAS
-
-Contratti dati.

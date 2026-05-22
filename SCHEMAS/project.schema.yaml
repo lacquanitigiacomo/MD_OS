@@ -1,6 +1,0 @@
-id: project_schema
-type: object
-required:
-  - id
-  - purpose
-  - status

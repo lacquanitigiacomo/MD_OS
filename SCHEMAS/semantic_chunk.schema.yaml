@@ -1,6 +1,0 @@
-id: semantic_chunk_schema
-type: object
-required:
-  - id
-  - purpose
-  - status
