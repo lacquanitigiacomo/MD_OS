@@ -1,0 +1,6 @@
+id: skill_schema
+type: object
+required:
+  - id
+  - purpose
+  - status

@@ -1,0 +1,21 @@
+{
+  "name": "MD_OS_v31_tabula_rasa_serverless_runtime",
+  "files": 288,
+  "ten_x_rule": true,
+  "tabula_rasa": true,
+  "root_folders": [
+    "AGENTS",
+    "CORE",
+    "DATASETS",
+    "LEGACY",
+    "MESH",
+    "OUTPUTS",
+    "PATCHES",
+    "PROJECTS",
+    "REGISTRY",
+    "RUNTIME",
+    "SCHEMAS",
+    "SKILLS",
+    "TESTS"
+  ]
+}

@@ -1,0 +1,6 @@
+id: refactor_manifest_schema
+type: object
+required:
+  - id
+  - purpose
+  - status

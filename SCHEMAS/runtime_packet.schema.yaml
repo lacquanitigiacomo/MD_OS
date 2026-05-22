@@ -1,0 +1,6 @@
+id: runtime_packet_schema
+type: object
+required:
+  - id
+  - purpose
+  - status

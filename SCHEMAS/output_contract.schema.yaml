@@ -1,0 +1,6 @@
+id: output_contract_schema
+type: object
+required:
+  - id
+  - purpose
+  - status
