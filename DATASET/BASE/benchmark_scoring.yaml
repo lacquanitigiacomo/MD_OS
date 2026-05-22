@@ -1,0 +1,52 @@
+id: benchmark_scoring
+tipo: schema_valutazione_benchmark
+versione: 1.0.0
+
+scopo:
+  - valutare riferimenti esterni in modo consistente
+  - evitare entusiasmo non filtrato
+  - dare priorità a integrazioni ad alto impatto e basso costo
+  - distinguere trend utile da rumore
+
+score_fields:
+  relevance:
+    scala: 0-5
+    descrizione: quanto il riferimento è pertinente per MD_OS
+  novelty:
+    scala: 0-5
+    descrizione: quanto aggiunge una logica nuova
+  md_os_fit:
+    scala: 0-5
+    descrizione: quanto si integra con struttura v30
+  implementation_cost:
+    scala: 0-5
+    descrizione: costo di implementazione; 0 basso, 5 alto
+  risk:
+    scala: 0-5
+    descrizione: rischio di appesantire o rompere MD_OS
+  leverage:
+    scala: 0-5
+    descrizione: quanto migliora il sistema con poco sforzo
+  reuse_potential:
+    scala: 0-5
+    descrizione: riutilizzabilità in progetti diversi
+
+scorecard_output:
+  riferimento: nome o url
+  categoria: categoria innovation_radar
+  relevance: 0-5
+  novelty: 0-5
+  md_os_fit: 0-5
+  implementation_cost: 0-5
+  risk: 0-5
+  leverage: 0-5
+  reuse_potential: 0-5
+  priorita: alta | media | bassa | scartare
+  motivo: spiegazione sintetica
+
+regole:
+  - punire complessità non necessaria
+  - premiare pattern semplici e versionabili
+  - preferire integrazioni leggere in YAML/MD
+  - non copiare architetture esterne se non servono
+  - adattare sempre al runtime v30

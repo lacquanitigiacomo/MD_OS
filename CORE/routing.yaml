@@ -1,4 +1,54 @@
 rules:
+- id: innovation_radar
+  match:
+  - benchmark repo
+  - analizza github
+  - integriamo questo
+  - riferimento esterno
+  - awesome list
+  - scouting
+  - radar innovazione
+  - sistema all'avanguardia
+  mode: INNOVATION_RADAR
+  agents:
+  - innovation_radar_curator
+  - benchmark_analyst
+  - semantic_curator
+  - dataset_compiler
+  datasets:
+  - DATASET/BASE/innovation_radar.yaml
+  - DATASET/BASE/benchmark_scoring.yaml
+  - DATASET/BASE/external_reference_ingestion.yaml
+  - DATASET/BASE/semantic_runtime_index.yaml
+  functions:
+  - compose_context
+  - propose_patch
+  output: benchmark_integration_report
+
+- id: local_ai_strategy
+  match:
+  - ai locale
+  - gpt4all
+  - offline
+  - localdocs
+  - privacy dati
+  - modello locale
+  - no api
+  - cloud o locale
+  - strategia ibrida
+  mode: LOCAL_AI_STRATEGY
+  agents:
+  - local_ai_architect
+  - software_architect
+  - security_engineer
+  datasets:
+  - DATASET/BASE/local_ai_strategy.yaml
+  - DATASET/BASE/innovation_radar.yaml
+  functions:
+  - compose_context
+  - risk_matrix
+  output: local_ai_plan
+
 - id: semantic_runtime
   match:
   - indice semantico

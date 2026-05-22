@@ -25,6 +25,43 @@ digital_wow_pitch:
   - rischi_e_tagli
   - prossima_azione
 
+benchmark_integration_report:
+  required:
+  - riferimento
+  - categoria
+  - pattern_utili
+  - pattern_da_scartare
+  - adattamento_md_os
+  - file_da_modificare
+  - score
+  - priorita
+  - prossima_azione
+
+benchmark_scorecard:
+  required:
+  - riferimento
+  - categoria
+  - relevance
+  - novelty
+  - md_os_fit
+  - implementation_cost
+  - risk
+  - leverage
+  - reuse_potential
+  - priorita
+  - motivo
+
+local_ai_plan:
+  required:
+  - scenario
+  - dati_coinvolti
+  - rischio_privacy
+  - strategia_locale_cloud_ibrida
+  - strumenti_candidati
+  - architettura
+  - limiti
+  - prossima_azione
+
 product_lab_brief:
   required:
   - promessa_prodotto

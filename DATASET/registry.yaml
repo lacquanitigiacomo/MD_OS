@@ -17,6 +17,14 @@ datasets:
   path: DATASET/BASE/dataset_compiler.yaml
 - id: agent_council
   path: DATASET/BASE/agent_council.yaml
+- id: innovation_radar
+  path: DATASET/BASE/innovation_radar.yaml
+- id: benchmark_scoring
+  path: DATASET/BASE/benchmark_scoring.yaml
+- id: external_reference_ingestion
+  path: DATASET/BASE/external_reference_ingestion.yaml
+- id: local_ai_strategy
+  path: DATASET/BASE/local_ai_strategy.yaml
 - id: lavoro_professioni_operativo
   path: DATASET/LAVORO_PROFESSIONI/dataset_operativo.yaml
 - id: economia_finanza_operativo
