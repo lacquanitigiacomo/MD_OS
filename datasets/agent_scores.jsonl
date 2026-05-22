@@ -1,0 +1,11 @@
+{"id":"AGS-SCHEMA-0001","tipo":"schema","descrizione":"Schema base per misurare utilita e successo degli agenti.","campi":["agent_id","task_type","uses","success_score_avg","last_feedback","last_update","stato"],"stato":"schema_attivo"}
+{"agent_id":"AG-0001","task_type":"planning","uses":0,"success_score_avg":0,"last_feedback":null,"last_update":null,"stato":"inizializzato"}
+{"agent_id":"AG-0002","task_type":"memory_retrieval","uses":0,"success_score_avg":0,"last_feedback":null,"last_update":null,"stato":"inizializzato"}
+{"agent_id":"AG-0003","task_type":"technical_analysis","uses":0,"success_score_avg":0,"last_feedback":null,"last_update":null,"stato":"inizializzato"}
+{"agent_id":"AG-0004","task_type":"strategy","uses":0,"success_score_avg":0,"last_feedback":null,"last_update":null,"stato":"inizializzato"}
+{"agent_id":"AG-0005","task_type":"quality_review","uses":0,"success_score_avg":0,"last_feedback":null,"last_update":null,"stato":"inizializzato"}
+{"agent_id":"AG-0006","task_type":"next_action","uses":0,"success_score_avg":0,"last_feedback":null,"last_update":null,"stato":"inizializzato"}
+{"agent_id":"AG-0007","task_type":"systems_mapping","uses":0,"success_score_avg":0,"last_feedback":null,"last_update":null,"stato":"inizializzato"}
+{"agent_id":"AG-0008","task_type":"governance","uses":0,"success_score_avg":0,"last_feedback":null,"last_update":null,"stato":"inizializzato"}
+{"agent_id":"AG-0009","task_type":"research_mapping","uses":0,"success_score_avg":0,"last_feedback":null,"last_update":null,"stato":"inizializzato"}
+{"agent_id":"AG-0010","task_type":"interaction_training","uses":0,"success_score_avg":0,"last_feedback":null,"last_update":null,"stato":"inizializzato"}
