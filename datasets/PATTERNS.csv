@@ -1,0 +1,9 @@
+id,pattern,impatto,azione
+PAT001,dataset come cervello,critico,mantenere dati in CSV/JSONL
+PAT002,markdown descrittivo tende a duplicare,alto,spostare liste in dataset
+PAT003,agente come vista sui dataset,critico,usare AGENTS+CAPABILITIES+MEMORY_SCOPES
+PAT004,root rumorosa degrada governance,medio,root minima
+PAT005,memoria e retrieval determinano intelligenza percepita,critico,priorita release
+PAT006,beta debug produce consapevolezza,alto,ogni failure diventa dato
+PAT007,AI cambia velocemente,critico,AI_SCAN frequente
+PAT008,refactor senza output misurabile e solo discussione,alto,schema 10 avanzamenti

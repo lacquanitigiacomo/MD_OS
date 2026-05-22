@@ -1,0 +1,6 @@
+id,gap,priorita,azione
+GAP001,runtime reale incompleto,critica,engine locale minimo
+GAP002,memoria non implementata,critica,MEMORY_SCOPES + LEARNING_EVENTS
+GAP003,retrieval semantico assente,alta,query CSV prima di embeddings
+GAP004,fonti AI non indicizzate,alta,SOURCES + AI_KNOWLEDGE
+GAP005,profili agenti potenzialmente duplicati,media,agents solo override

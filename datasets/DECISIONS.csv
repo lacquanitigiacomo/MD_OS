@@ -1,0 +1,5 @@
+id,decisione,motivo,stato
+D001,lingua italiana primaria,coerenza utente e repo,attiva
+D002,struttura congelata,evitare deriva architetturale,attiva
+D003,dataset come fonte primaria,interrogabilità,attiva
+D004,agenti come viste sui dataset,scalabilità,attiva

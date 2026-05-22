@@ -1,0 +1,5 @@
+id,blocker,gravita,stato
+RB001,manca automazione completa release,media,aperto
+RB002,retrieval solo tabellare,media,accettato per v2
+RB003,nessun test CI,media,aperto
+RB004,autoapprendimento solo durante sessione,bassa,vincolo esplicito

@@ -1,0 +1,11 @@
+comando,trigger,output_minimo,dataset_target
+REFACTOR,utente scrive REFACTOR,10 avanzamenti concreti,"INNOVATIONS,PATTERNS,GAPS"
+FINE_SESSIONE,chiusura sessione,decisioni keyword pattern gap,"DECISIONS,LEARNING_EVENTS"
+MAP_SYSTEM,richiesta mappatura,profilo stato sistema,SYSTEM_PROFILE
+BETA_TEST,test funzionale,scenario e debug report,BETA_RESULTS
+RELEASE_CHECK,pre release,readiness e blocker,RELEASE_BLOCKERS
+PROFILE_AGENT,nuovo agente o modifica,capability memoria trigger vincoli,"AGENTS,CAPABILITIES"
+EXTRACT_DATASET,testo non strutturato,tabella dati,variabile
+AI_SCAN,novita AI o release,finding e impatto,"AI_KNOWLEDGE,SOURCES"
+QUERY,ricerca interna,righe filtrate,qualsiasi csv
+VALIDATE,controllo repo,errori e warning,RELEASE_BLOCKERS

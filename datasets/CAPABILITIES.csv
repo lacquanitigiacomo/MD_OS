@@ -1,0 +1,21 @@
+agent,capability,input,output,priorita
+vision_agent,direzione e coerenza,dataset+richiesta,dato o artefatto,alta
+interaction_agent,routing richieste e dialogo,dataset+richiesta,dato o artefatto,alta
+refactor_agent,produrre 10 avanzamenti,dataset+richiesta,dato o artefatto,alta
+dataset_normalizer_agent,convertire testo in dati,dataset+richiesta,dato o artefatto,alta
+system_profiler_agent,profilare stato gap pattern,dataset+richiesta,dato o artefatto,alta
+memory_agent,governare memoria,dataset+richiesta,dato o artefatto,media
+retrieval_agent,cercare dataset rilevanti,dataset+richiesta,dato o artefatto,media
+knowledge_gap_agent,rilevare mancanze,dataset+richiesta,dato o artefatto,alta
+ai_research_strategist,aggiornare conoscenza AI,dataset+richiesta,dato o artefatto,alta
+release_intelligence_agent,valutare readiness,dataset+richiesta,dato o artefatto,alta
+production_realist,tradurre idee in deliverable,dataset+richiesta,dato o artefatto,alta
+paranoid_security_reviewer,controllare rischi permessi dati,dataset+richiesta,dato o artefatto,alta
+senior_system_architect,coerenza strutturale,dataset+richiesta,dato o artefatto,alta
+senior_ai_architect,multi agent memoria retrieval,dataset+richiesta,dato o artefatto,alta
+innovation_agent,generare innovazioni,dataset+richiesta,dato o artefatto,alta
+capability_mapper_agent,mappare capacita e relazioni,dataset+richiesta,dato o artefatto,alta
+pattern_miner_agent,estrarre pattern,dataset+richiesta,dato o artefatto,alta
+source_validation_agent,valutare fonti gratuite,dataset+richiesta,dato o artefatto,alta
+beta_tester_agent,testare scenari e failure,dataset+richiesta,dato o artefatto,alta
+markdown_redactor_agent,redigere markdown italiani completi,dataset+richiesta,dato o artefatto,alta

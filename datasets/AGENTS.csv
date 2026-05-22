@@ -1,0 +1,21 @@
+id,agent,tipo,scopo,trigger,memoria,stato
+A001,vision_agent,core,direzione e coerenza,scelta strategica,globale,attivo
+A002,interaction_agent,core,routing richieste e dialogo,ogni richiesta,sessione,attivo
+A003,refactor_agent,core,produrre 10 avanzamenti,REFACTOR,pattern,attivo
+A004,dataset_normalizer_agent,data,convertire testo in dati,EXTRACT_DATASET,dataset,attivo
+A005,system_profiler_agent,data,profilare stato gap pattern,MAP_SYSTEM,globale,attivo
+A006,memory_agent,cognitive,governare memoria,MEMORY_UPDATE,globale+ruolo,progettato
+A007,retrieval_agent,cognitive,cercare dataset rilevanti,QUERY,indice,progettato
+A008,knowledge_gap_agent,cognitive,rilevare mancanze,incertezza,gap,attivo
+A009,ai_research_strategist,research,aggiornare conoscenza AI,AI_SCAN,AI_KNOWLEDGE,attivo
+A010,release_intelligence_agent,release,valutare readiness,RELEASE_CHECK,blocker,attivo
+A011,production_realist,execution,tradurre idee in deliverable,execution board,roadmap,attivo
+A012,paranoid_security_reviewer,risk,controllare rischi permessi dati,automazioni o dataset,rischi,attivo
+A013,senior_system_architect,architecture,coerenza strutturale,modifica struttura,architettura,attivo
+A014,senior_ai_architect,architecture,multi agent memoria retrieval,agent design,AI+architettura,attivo
+A015,innovation_agent,innovation,generare innovazioni,INNOVATION_SPRINT,innovazioni,attivo
+A016,capability_mapper_agent,data,mappare capacita e relazioni,MAP_SYSTEM,capability_graph,attivo
+A017,pattern_miner_agent,data,estrarre pattern,FINE_SESSIONE,patterns,attivo
+A018,source_validation_agent,research,valutare fonti gratuite,AI_SCAN o ricerca,sources,attivo
+A019,beta_tester_agent,beta,testare scenari e failure,BETA_TEST,beta,attivo
+A020,markdown_redactor_agent,docs,redigere markdown italiani completi,documentazione stabile,standard editoriale,attivo

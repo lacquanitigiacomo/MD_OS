@@ -1,0 +1,36 @@
+soggetto,relazione,oggetto,tipo
+vision_agent,usa_memoria,globale,agent-memory
+interaction_agent,usa_memoria,sessione,agent-memory
+refactor_agent,usa_memoria,pattern,agent-memory
+dataset_normalizer_agent,usa_memoria,dataset,agent-memory
+system_profiler_agent,usa_memoria,globale,agent-memory
+memory_agent,usa_memoria,globale+ruolo,agent-memory
+retrieval_agent,usa_memoria,indice,agent-memory
+knowledge_gap_agent,usa_memoria,gap,agent-memory
+ai_research_strategist,usa_memoria,AI_KNOWLEDGE,agent-memory
+release_intelligence_agent,usa_memoria,blocker,agent-memory
+production_realist,usa_memoria,roadmap,agent-memory
+paranoid_security_reviewer,usa_memoria,rischi,agent-memory
+senior_system_architect,usa_memoria,architettura,agent-memory
+senior_ai_architect,usa_memoria,AI+architettura,agent-memory
+innovation_agent,usa_memoria,innovazioni,agent-memory
+capability_mapper_agent,usa_memoria,capability_graph,agent-memory
+pattern_miner_agent,usa_memoria,patterns,agent-memory
+source_validation_agent,usa_memoria,sources,agent-memory
+beta_tester_agent,usa_memoria,beta,agent-memory
+markdown_redactor_agent,usa_memoria,standard editoriale,agent-memory
+INN001,produce_valore,trasforma richieste in avanzamenti,innovation-value
+INN002,produce_valore,riduce markdown statici,innovation-value
+INN003,produce_valore,riduce duplicazione,innovation-value
+INN004,produce_valore,collega agenti dati e file,innovation-value
+INN005,produce_valore,interrogazione gratuita,innovation-value
+INN006,produce_valore,controllo senza servizi esterni,innovation-value
+INN007,produce_valore,log incrementale append-only,innovation-value
+INN008,produce_valore,release basata su gap reali,innovation-value
+INN009,produce_valore,apprendimento AI frequente,innovation-value
+INN010,produce_valore,debug prima della release,innovation-value
+INN011,produce_valore,stato leggibile e aggiornabile,innovation-value
+INN012,produce_valore,ordine e stabilita,innovation-value
+REFACTOR,usa,INNOVATIONS.csv,command-dataset
+REFACTOR,usa,PATTERNS.csv,command-dataset
+RELEASE_CHECK,usa,RELEASE_BLOCKERS.csv,command-dataset
