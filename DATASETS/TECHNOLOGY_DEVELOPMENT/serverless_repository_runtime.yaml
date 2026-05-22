@@ -1,0 +1,6 @@
+id: TECHNOLOGY_DEVELOPMENT_serverless_repository_runtime
+status: active
+purpose:
+  - dataset operativo MD_OS v31
+  - estendibile
+  - collegabile a registry, mesh e runtime packet

@@ -1,0 +1,6 @@
+id: ECONOMY_FINANCE_fiscale_lavoro
+status: active
+purpose:
+  - dataset operativo MD_OS v31
+  - estendibile
+  - collegabile a registry, mesh e runtime packet

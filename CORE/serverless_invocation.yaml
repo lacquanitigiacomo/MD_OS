@@ -1,0 +1,16 @@
+serverless_invocation:
+  concept: repository_as_runtime
+  flow:
+    - trigger
+    - routing
+    - registry_lookup
+    - mesh_lookup
+    - runtime_packet
+    - skill_execution
+    - output_contract
+    - quality_gate
+    - learning_optional
+  principle:
+    - every_file_is_callable_knowledge
+    - every_skill_is_operational_endpoint
+    - every_registry_is_service_discovery

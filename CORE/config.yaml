@@ -1,0 +1,12 @@
+id: md_os_v31
+version: 31.0.0
+mode: tabula_rasa_serverless_runtime
+principles:
+  - repository_as_runtime
+  - datasets_first
+  - skills_as_operational_units
+  - agents_as_specialists
+  - mesh_as_cross_reference_layer
+  - runtime_packets_for_context_compression
+  - quality_gate_before_delivery
+  - ten_x_leap_rule

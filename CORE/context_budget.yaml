@@ -1,0 +1,11 @@
+context_budget:
+  default:
+    max_files: 8
+    max_agents: 6
+    max_datasets: 8
+  refactor:
+    max_files: 20
+    require_manifest: true
+  ten_x:
+    require_increment_matrix: true
+    require_quality_gate: true

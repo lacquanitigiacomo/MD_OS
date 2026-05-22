@@ -1,0 +1,40 @@
+id: ten_x_leap_rule
+tipo: regola_salto_10x
+versione: 1.0.0
+
+missione:
+  - impedire micro-modifiche deboli quando serve salto di sistema
+  - forzare visione, leva e refactor intelligente
+  - chiedere sempre: cosa rende questa soluzione 10 volte più utile?
+
+trigger:
+  - salto 10x
+  - effetto wow
+  - refactor totale
+  - tabula rasa
+  - innovazione
+  - sistema perfetto
+  - rivoluzionare
+
+criteri_10x:
+  - riduce contesto e token caricati
+  - aumenta riuso tra progetti
+  - migliora qualità decisionale
+  - rende output più leggibile
+  - abilita automazione
+  - protegge da perdita dati
+  - crea registry o mesh
+  - separa conoscenza da esecuzione
+  - rende il sistema esportabile
+  - introduce quality gate
+
+protocollo:
+  - generare 10 incrementi candidati
+  - selezionare 3 mosse ad alta leva
+  - scegliere 1 raccomandazione
+  - dichiarare cosa eliminare o comprimere
+  - produrre manifest o patch
+  - definire test di verifica
+
+output:
+  contract: ten_x_leap_report
