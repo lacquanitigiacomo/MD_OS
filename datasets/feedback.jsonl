@@ -1,0 +1,1 @@
+{"id":"FDB-SCHEMA-0001","tipo":"schema","descrizione":"Schema base per feedback esplicito o implicito sulle interazioni.","campi":["id","interaction_id","rating","note","azione","agent_impattati","pattern_impattati","stato"],"stato":"schema_attivo"}
