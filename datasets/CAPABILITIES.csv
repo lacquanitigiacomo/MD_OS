@@ -1,0 +1,16 @@
+capability_id,nome,descrizione,owner_agent
+cap_orchestration,orchestrazione,coordina agenti e modalità,vision_agent
+cap_refactor_x10,refactor x10,genera 10 avanzamenti,refactor_agent
+cap_query,query interna,cerca in dataset e file,retrieval_agent
+cap_learning,apprendimento,salva eventi append-only,learning_ingestion_agent
+cap_matrix,matrici,genera matrici operative,matrix_builder_agent
+cap_profile,profilazione,rileva stato e gap,system_profiler_agent
+cap_release,release intelligence,valuta readiness,release_intelligence_agent
+cap_beta,beta debug,test scenari,beta_tester_agent
+cap_memory,memoria,gestisce scope memoria,memory_agent
+cap_gap,gap detection,rileva mancanze,knowledge_gap_agent
+cap_ai_scan,AI scan,aggiorna conoscenza AI,ai_research_strategist
+cap_arch_freeze,architecture freeze,evita refactor continui,senior_system_architect
+cap_algorithm,algoritmi,scoring ranking funzioni,algorithm_designer_agent
+cap_integration,integrazioni,servizi gratuiti,service_integrator_agent
+cap_docs,redazione markdown,documenti completi italiani,senior_technical_writer

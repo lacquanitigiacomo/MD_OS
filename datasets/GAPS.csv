@@ -1,0 +1,6 @@
+id,gap,descrizione,priorita
+GAP-001,retrieval pesato,ranking avanzato,alto
+GAP-002,scheduler gratuito,routine locali o GitHub Actions,medio
+GAP-003,dashboard,visualizzazione dati,medio
+GAP-004,test automatici estesi,unit test motori,alto
+GAP-005,integrazione GitHub runtime,commit issue opzionali,medio
