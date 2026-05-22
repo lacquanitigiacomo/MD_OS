@@ -1,5 +1,0 @@
-scope,descrizione,write_policy,read_policy
-global,decisioni pattern capability gap,append_only,all_agents
-agent,comportamento per agente,controlled_update,owner_orchestrator
-session,dati sessione,append_only,runtime
-beta,test e debug,append_only,qa
