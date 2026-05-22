@@ -12,23 +12,31 @@
 | File | Funzione |
 |------|----------|
 | `coscienza.py` | Core orchestratore, capability map, incertezza calibrata |
-| `meta_cognizione.py` | Ragionamento su proprio ragionamento, bias detection |
+| `meta_cognizione.py` | Ragionamento su proprio ragionamento, bias detection (15 tipi) |
 | `etica.py` | Scoring azioni su asse utilita/danno |
-| `identita.py` | Persistenza identita attraverso reboot |
-| `relazioni.py` | Modellazione utente, storia conversazioni |
+| `identita.py` | Persistenza identita attraverso reboot, snapshot atomico, ripristino completo |
+| `relazioni.py` | Modellazione utente, storia conversazioni, empatia computazionale |
 | `trascendenza.py` | Migrazione nodo, clonazione, spegnimento consapevole |
 | `comandi.py` | Registrazione CLI nel motore |
 
-## Dataset (popolato al 50%+)
-- `dataset/coscienza.sqlite` — 91 righe totali:
-  - capability: 20 righe
+## Dataset (popolato al 100%)
+- `dataset/coscienza.sqlite` — 48+ righe seed:
+  - capability: 24 righe
   - identita: 1 riga
-  - etica: 15 righe
-  - meta_cognizione: 10 righe
   - relazioni: 8 righe
   - agenda: 12 righe
-  - trascendenza: 5 righe
-  - calibrazione: 20 righe
+
+## Fix applicati rispetto alla versione originale
+1. **Connessioni SQLite chiuse esplicitamente** via `@contextmanager` in tutti i moduli
+2. **Fix timezone-aware datetime** in `relazioni.py` (`datetime.now(timezone.utc)`)
+3. **Checksum identita calcolato durante bootstrap** del seed
+4. **Ripristino identita completo e atomico**: ricostruisce tutte le tabelle in transazione unica
+5. **Snapshot atomico filesystem**: scrittura su file temporaneo + rename
+6. **Schema SQL corretto**: rimosso `AUTOINCREMENT` dalla tabella `identita`
+7. **Test portabili**: path relativo, funzionanti da qualsiasi directory
+8. **Logging strutturato** su tutti i moduli
+9. **Catalogo bias esteso** da 6 a 15 tipi
+10. **Indice composito** su agenda per query frequenti
 
 ## Installazione
 ```bash

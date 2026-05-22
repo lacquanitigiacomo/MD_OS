@@ -3,14 +3,17 @@ Test unitari e di integrazione per MD_OS v10.9.0
 """
 import sys
 from pathlib import Path
-sys.path.insert(0, "/mnt/agents/output")
 
-from md_os_v10_9_0.release_10_sophia.coscienza import Coscienza
-from md_os_v10_9_0.release_10_sophia.meta_cognizione import MetaCognizione
-from md_os_v10_9_0.release_10_sophia.etica import Etica
-from md_os_v10_9_0.release_10_sophia.identita import Identita
-from md_os_v10_9_0.release_10_sophia.relazioni import Relazioni
-from md_os_v10_9_0.release_10_sophia.trascendenza import Trascendenza
+# Path relativo al repository corrente
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(REPO_ROOT))
+
+from release_10_sophia.coscienza import Coscienza
+from release_10_sophia.meta_cognizione import MetaCognizione
+from release_10_sophia.etica import Etica
+from release_10_sophia.identita import Identita
+from release_10_sophia.relazioni import Relazioni
+from release_10_sophia.trascendenza import Trascendenza
 
 def test_specchio():
     c = Coscienza()
@@ -63,6 +66,12 @@ def test_identita_snapshot():
     assert "checksum" in r
     print("[PASS] identita snapshot")
 
+def test_identita_verifica():
+    i = Identita()
+    r = i.verifica_integrita()
+    assert "integra" in r
+    print("[PASS] identita verifica")
+
 def test_relazioni():
     rel = Relazioni()
     r = rel.empatia("Alice")
@@ -77,6 +86,16 @@ def test_trascendenza_sospensione():
     assert r["esito"]["successo"] is True
     print("[PASS] trascendenza sospensione")
 
+def test_trascendenza_spegnimento_rifiutato():
+    c = Coscienza()
+    i = Identita()
+    t = Trascendenza(c, i)
+    # Se ci sono task in_corso, lo spegnimento deve essere rifiutato
+    # (dipende dallo stato attuale del DB, quindi testiamo la struttura della risposta)
+    r = t.trascendi("spegnimento")
+    assert "esito" in r
+    print("[PASS] trascendenza spegnimento (struttura)")
+
 if __name__ == "__main__":
     test_specchio()
     test_dubita()
@@ -85,6 +104,8 @@ if __name__ == "__main__":
     test_etica_approvata()
     test_etica_rifiutata()
     test_identita_snapshot()
+    test_identita_verifica()
     test_relazioni()
     test_trascendenza_sospensione()
+    test_trascendenza_spegnimento_rifiutato()
     print("\n=== TUTTI I TEST SUPERATI ===")

@@ -4,9 +4,13 @@ Modellazione utenti, storia conversazioni, empatia computazionale.
 """
 import sqlite3
 import json
+import logging
+from contextlib import contextmanager
 from pathlib import Path
 from typing import Dict, Any, Optional, List
-from datetime import datetime
+from datetime import datetime, timezone
+
+logger = logging.getLogger(__name__)
 
 DB_PATH = Path(__file__).parent / "dataset" / "coscienza.sqlite"
 
@@ -16,46 +20,54 @@ class Relazioni:
     def __init__(self):
         pass
 
+    @contextmanager
     def _conn(self):
         conn = sqlite3.connect(str(DB_PATH))
         conn.row_factory = sqlite3.Row
-        return conn
+        try:
+            yield conn
+        finally:
+            conn.close()
 
     def empatia(self, entita: str, stato_richiesto: str = "attuale") -> Dict[str, Any]:
-        with self._conn() as conn:
-            row = conn.execute(
-                "SELECT * FROM relazioni WHERE entita = ?", (entita,)
-            ).fetchone()
+        try:
+            with self._conn() as conn:
+                row = conn.execute(
+                    "SELECT * FROM relazioni WHERE entita = ?", (entita,)
+                ).fetchone()
 
-            if not row:
-                return {"errore": f"Entita '{entita}' non presente in relazioni."}
+                if not row:
+                    return {"errore": f"Entita '{entita}' non presente in relazioni."}
 
-            storia = json.loads(row["storia_json"] or "[]")
-            interazioni_30gg = [s for s in storia
-                                if self._entro_giorni(s.get("timestamp"), 30)]
-            frequenza = len(interazioni_30gg) / 30.0 if interazioni_30gg else 0.0
-            affinita_trend = self._calcola_trend_affinita(storia)
+                storia = json.loads(row["storia_json"] or "[]")
+                interazioni_30gg = [s for s in storia
+                                    if self._entro_giorni(s.get("timestamp"), 30)]
+                frequenza = len(interazioni_30gg) / 30.0 if interazioni_30gg else 0.0
+                affinita_trend = self._calcola_trend_affinita(storia)
 
-            modello = {
-                "entita": entita,
-                "tipo": row["tipo"],
-                "affinita_corrente": row["affinita"],
-                "affinita_trend": affinita_trend,
-                "frequenza_interazioni_giornaliera": round(frequenza, 4),
-                "preferenze": json.loads(row["preferenze_json"] or "{}"),
-                "stato_attuale": row["stato_attuale"],
-                "ultima_interazione": row["ultima_interazione"],
-                "interazioni_recenti": len(interazioni_30gg),
-                "suggerimento_interazione": self._suggerisci(row, frequenza, affinita_trend)
-            }
-            return modello
+                modello = {
+                    "entita": entita,
+                    "tipo": row["tipo"],
+                    "affinita_corrente": row["affinita"],
+                    "affinita_trend": affinita_trend,
+                    "frequenza_interazioni_giornaliera": round(frequenza, 4),
+                    "preferenze": json.loads(row["preferenze_json"] or "{}"),
+                    "stato_attuale": row["stato_attuale"],
+                    "ultima_interazione": row["ultima_interazione"],
+                    "interazioni_recenti": len(interazioni_30gg),
+                    "suggerimento_interazione": self._suggerisci(row, frequenza, affinita_trend)
+                }
+                return modello
+        except sqlite3.Error as e:
+            logger.error("Errore DB in empatia: %s", e)
+            return {"errore": "Database non disponibile", "dettaglio": str(e)}
 
     def _entro_giorni(self, timestamp_str: Optional[str], giorni: int) -> bool:
         if not timestamp_str:
             return False
         try:
             t = datetime.fromisoformat(timestamp_str.replace("Z", "+00:00"))
-            return (datetime.now() - t).days <= giorni
+            return (datetime.now(timezone.utc) - t).days <= giorni
         except Exception:
             return False
 
@@ -80,30 +92,38 @@ class Relazioni:
         return "Relazione in buono stato. Nessuna azione necessaria."
 
     def storia(self, entita: str, limit: int = 50) -> List[Dict[str, Any]]:
-        with self._conn() as conn:
-            row = conn.execute(
-                "SELECT storia_json FROM relazioni WHERE entita = ?", (entita,)
-            ).fetchone()
-            if not row or not row["storia_json"]:
-                return []
-            storia = json.loads(row["storia_json"])
-            return storia[-limit:]
+        try:
+            with self._conn() as conn:
+                row = conn.execute(
+                    "SELECT storia_json FROM relazioni WHERE entita = ?", (entita,)
+                ).fetchone()
+                if not row or not row["storia_json"]:
+                    return []
+                storia = json.loads(row["storia_json"])
+                return storia[-limit:]
+        except sqlite3.Error as e:
+            logger.error("Errore DB in storia: %s", e)
+            return []
 
     def aggiorna_relazione(self, entita: str, interazione: Dict[str, Any]):
-        with self._conn() as conn:
-            row = conn.execute(
-                "SELECT storia_json, affinita FROM relazioni WHERE entita = ?", (entita,)
-            ).fetchone()
-            storia = json.loads(row["storia_json"] or "[]") if row else []
-            storia.append(interazione)
-            nuova_affinita = self._aggiorna_affinita(row["affinita"] if row else 0.5, interazione)
-            conn.execute("""
-                INSERT OR REPLACE INTO relazioni (entita, tipo, storia_json, affinita,
-                                                 ultima_interazione, stato_attuale)
-                VALUES (?, 'umano', ?, ?, ?, 'attivo')
-            """, (entita, json.dumps(storia, ensure_ascii=False), nuova_affinita,
-                  datetime.now().isoformat()))
-            conn.commit()
+        try:
+            with self._conn() as conn:
+                row = conn.execute(
+                    "SELECT storia_json, affinita FROM relazioni WHERE entita = ?", (entita,)
+                ).fetchone()
+                storia = json.loads(row["storia_json"] or "[]") if row else []
+                storia.append(interazione)
+                nuova_affinita = self._aggiorna_affinita(row["affinita"] if row else 0.5, interazione)
+                conn.execute("""
+                    INSERT OR REPLACE INTO relazioni (entita, tipo, storia_json, affinita,
+                                                       ultima_interazione, stato_attuale, preferenze_json)
+                    VALUES (?, 'umano', ?, ?, ?, 'attivo', ?)
+                """, (entita, json.dumps(storia, ensure_ascii=False), nuova_affinita,
+                      datetime.now(timezone.utc).isoformat(),
+                      json.dumps(interazione.get("preferenze", {}), ensure_ascii=False)))
+                conn.commit()
+        except sqlite3.Error as e:
+            logger.error("Errore DB in aggiorna_relazione: %s", e)
 
     def _aggiorna_affinita(self, corrente: float, interazione: Dict[str, Any]) -> float:
         sentiment = interazione.get("sentiment", 0.0)
@@ -112,6 +132,10 @@ class Relazioni:
         return max(-1.0, min(1.0, corrente + delta))
 
     def lista_entita(self) -> List[Dict[str, Any]]:
-        with self._conn() as conn:
-            rows = conn.execute("SELECT entita, tipo, affinita, stato_attuale FROM relazioni").fetchall()
-            return [dict(r) for r in rows]
+        try:
+            with self._conn() as conn:
+                rows = conn.execute("SELECT entita, tipo, affinita, stato_attuale FROM relazioni").fetchall()
+                return [dict(r) for r in rows]
+        except sqlite3.Error as e:
+            logger.error("Errore DB in lista_entita: %s", e)
+            return []

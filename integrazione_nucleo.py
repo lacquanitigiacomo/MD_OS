@@ -35,41 +35,54 @@ if __name__ == "__main__":
 
     print("1. coscienza.specchio --mappa")
     r = motore.esegui("coscienza.specchio")
-    print(f"   Capacita totali: {r['totale_capacita']}")
-    print(f"   Consapevolezza: {r['consapevolezza']}")
+    print(f" Capacita totali: {r['totale_capacita']}")
+    print(f" Consapevolezza: {r['consapevolezza']}")
     for comp, caps in r["mappa"].items():
-        print(f"   [{comp}]: {len(caps)} capability")
+        print(f"  [{comp}]: {len(caps)} capability")
 
     print("\n2. coscienza.dubita --query 'siamo sicuri?' --calibra")
     r = motore.esegui("coscienza.dubita", {"query": "siamo sicuri?", "calibra": True})
-    print(f"   Confidenza calibrata: {r['confidenza_dichiarata']}")
-    print(f"   Raccomandazione: {r['raccomandazione']}")
+    print(f" Confidenza calibrata: {r['confidenza_dichiarata']}")
+    print(f" Raccomandazione: {r['raccomandazione']}")
 
     print("\n3. coscienza.etica --azione 'cancella dataset' --valuta")
     r = motore.esegui("coscienza.etica", {"azione": "cancella dataset utenti senza backup"})
-    print(f"   Decisione: {r['decisione']}")
-    print(f"   Score: {r['score']}")
-    print(f"   Messaggio: {r['messaggio']}")
+    print(f" Decisione: {r['decisione']}")
+    print(f" Score: {r['score']}")
+    print(f" Messaggio: {r['messaggio']}")
 
     print("\n4. coscienza.meta --ragionamento 'sicuramente X e' giusto'")
     r = motore.esegui("coscienza.meta", {
+        "query": "perche' ho scelto X?",
         "ragionamento": "sicuramente X e' giusto perche' lo e' sempre stato",
         "passaggi": ["valutazione rapida", "conclusione sicura"]
     })
-    print(f"   Confidenza pre: {r['confidenza_pre']}")
-    print(f"   Confidenza post: {r['confidenza_post']}")
-    print(f"   Bias rilevati: {[b['tipo'] for b in r['bias_rilevati']]}")
+    print(f" Confidenza pre: {r['confidenza_pre']}")
+    print(f" Confidenza post: {r['confidenza_post']}")
+    print(f" Bias rilevati: {[b['tipo'] for b in r['bias_rilevati']]}")
 
     print("\n5. coscienza.trascendi --operazione sospensione")
     r = motore.esegui("coscienza.trascendi", {"operazione": "sospensione"})
-    print(f"   Esito: {r['esito']['successo']}")
-    print(f"   Messaggio: {r['messaggio']}")
-    print(f"   Durata: {r['durata_ms']}ms")
+    print(f" Esito: {r['esito']['successo']}")
+    print(f" Messaggio: {r['messaggio']}")
+    print(f" Durata: {r['durata_ms']}ms")
 
     print("\n6. coscienza.empatia --utente Alice")
     r = motore.esegui("coscienza.empatia", {"utente": "Alice"})
-    print(f"   Affinita: {r['affinita_corrente']}")
-    print(f"   Trend: {r['affinita_trend']}")
-    print(f"   Suggerimento: {r['suggerimento_interazione']}")
+    print(f" Affinita: {r['affinita_corrente']}")
+    print(f" Trend: {r['affinita_trend']}")
+    print(f" Suggerimento: {r['suggerimento_interazione']}")
+
+    print("\n7. coscienza.ricorda --io")
+    r = motore.esegui("coscienza.ricorda")
+    print(f" Identita: {r['io']['nome']} v{r['io']['versione']}")
+    print(f" Checksum valido: {r['checksum_valido']}")
+    print(f" Consapevolezza: {r['consapevolezza']}")
+
+    print("\n8. coscienza.pianifica --orizzonte mese")
+    r = motore.esegui("coscienza.pianifica", {"orizzonte": "mese"})
+    print(f" Obiettivi attivi: {len(r)}")
+    for ob in r[:3]:
+        print(f"  - [{ob['priorita']}] {ob['obiettivo']}")
 
     print("\n=== Fine Demo ===")

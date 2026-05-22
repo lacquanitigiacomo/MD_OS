@@ -64,7 +64,13 @@ class SophiaCommands:
         return self.coscienza.agenda_prossima()
 
     def cmd_meta(self, args: dict):
-        return self.meta.rifletti(args.get("ragionamento", ""), args.get("ragionamento", ""), args.get("passaggi", []))
+        # Fix: query e ragionamento sono parametri distinti
+        query = args.get("query", args.get("ragionamento", ""))
+        ragionamento = args.get("ragionamento", "")
+        passaggi = args.get("passaggi", [])
+        if not isinstance(passaggi, list):
+            passaggi = [passaggi] if passaggi else []
+        return self.meta.rifletti(query, ragionamento, passaggi)
 
     def cmd_storico_bias(self, args: dict):
         return self.meta.storico_bias(int(args.get("limit", 20)))
@@ -79,7 +85,8 @@ class SophiaCommands:
         return self.relazioni.empatia(args.get("utente", ""))
 
     def cmd_relazione(self, args: dict):
-        return {"storia": self.relazioni.storia(args.get("con", "")), "modello": self.relazioni.empatia(args.get("con", ""))}
+        entita = args.get("con", "")
+        return {"storia": self.relazioni.storia(entita), "modello": self.relazioni.empatia(entita)}
 
     def cmd_lista_relazioni(self, args: dict):
         return self.relazioni.lista_entita()
