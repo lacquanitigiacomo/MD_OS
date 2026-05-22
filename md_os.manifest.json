@@ -1,0 +1,54 @@
+{
+  "name": "MD_OS",
+  "version": "31.1-runtime-bootstrap",
+  "type": "serverless_llm_patch",
+  "objective": "Patch portabile per aumentare le capacita operative di ChatGPT, Claude, Gemini e altri LLM tramite routing dichiarativo, dataset modulari, agenti specializzati, skill e quality gate.",
+  "principle": "Carica solo cio che serve. Riduci contesto, aumenta riuso, stabilizza output, preserva baseline.",
+  "entrypoint": "README.md",
+  "core": [
+    "README.md",
+    "LOGIC.md",
+    "AGENTI AI/AGENTI.md",
+    "AGENTI AI/AMBITI.md"
+  ],
+  "runtime_formula": "intent × profile × context × skill × dataset × output × quality_gate = runtime_packet",
+  "indexes": {
+    "agents": "indexes/agents.index.json",
+    "datasets": "indexes/datasets.index.json",
+    "skills": "indexes/skills.index.json",
+    "quality_gates": "indexes/quality_gates.index.json",
+    "outputs": "indexes/outputs.index.json"
+  },
+  "schemas": {
+    "runtime_packet": "schemas/runtime_packet.schema.json",
+    "agent_profile": "schemas/agent_profile.schema.json",
+    "dataset_card": "schemas/dataset_card.schema.json"
+  },
+  "platform_adapters": {
+    "chatgpt": "adapters/chatgpt.md",
+    "claude": "adapters/claude.md",
+    "gemini": "adapters/gemini.md",
+    "generic": "adapters/generic_llm.md"
+  },
+  "load_policy": {
+    "default_mode": "on_demand",
+    "max_primary_agents": 2,
+    "max_support_agents": 3,
+    "max_datasets": 3,
+    "prefer_indexes_before_full_files": true,
+    "declare_missing_files": true,
+    "never_pretend_loaded_content": true
+  },
+  "10x_gates": [
+    "meno carico cognitivo",
+    "meno contesto da caricare",
+    "piu riuso",
+    "piu qualita decisionale",
+    "piu automazione",
+    "piu leggibilita",
+    "piu esportabilita",
+    "piu sicurezza",
+    "piu capacita di apprendimento",
+    "piu effetto prodotto"
+  ]
+}
