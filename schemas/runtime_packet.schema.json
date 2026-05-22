@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MD_OS Runtime Packet",
+  "type": "object",
+  "properties": {
+    "intent": { "type": "string" },
+    "profile": { "type": "string" },
+    "context": { "type": "array" },
+    "agents": { "type": "array" },
+    "skills": { "type": "array" },
+    "datasets": { "type": "array" },
+    "output_mode": { "type": "string" },
+    "quality_gate": { "type": "array" },
+    "confidence": { "type": "number" },
+    "missing_data": { "type": "array" }
+  },
+  "required": [
+    "intent",
+    "agents",
+    "output_mode"
+  ]
+}
