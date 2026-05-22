@@ -1,0 +1,4 @@
+projects:
+  - id: ANALISI_LAVORO
+    path: PROJECTS/ANALISI_LAVORO
+    status: template_ready

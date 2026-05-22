@@ -1,0 +1,187 @@
+datasets:
+  - id: BASE_profilo_jack
+    path: DATASETS/BASE/profilo_jack.yaml
+    status: active
+  - id: BASE_contesto_base
+    path: DATASETS/BASE/contesto_base.yaml
+    status: active
+  - id: BASE_session_runtime
+    path: DATASETS/BASE/session_runtime.yaml
+    status: active
+  - id: BASE_team_composer
+    path: DATASETS/BASE/team_composer.yaml
+    status: active
+  - id: BASE_learning_rules
+    path: DATASETS/BASE/learning_rules.yaml
+    status: active
+  - id: BASE_semantic_runtime_index
+    path: DATASETS/BASE/semantic_runtime_index.yaml
+    status: active
+  - id: BASE_memory_chunk_schema
+    path: DATASETS/BASE/memory_chunk_schema.yaml
+    status: active
+  - id: BASE_dataset_compiler
+    path: DATASETS/BASE/dataset_compiler.yaml
+    status: active
+  - id: BASE_agent_council
+    path: DATASETS/BASE/agent_council.yaml
+    status: active
+  - id: BASE_innovation_radar
+    path: DATASETS/BASE/innovation_radar.yaml
+    status: active
+  - id: BASE_benchmark_scoring
+    path: DATASETS/BASE/benchmark_scoring.yaml
+    status: active
+  - id: BASE_external_reference_ingestion
+    path: DATASETS/BASE/external_reference_ingestion.yaml
+    status: active
+  - id: BASE_local_ai_strategy
+    path: DATASETS/BASE/local_ai_strategy.yaml
+    status: active
+  - id: BASE_refactor_10x_protocol
+    path: DATASETS/BASE/refactor_10x_protocol.yaml
+    status: active
+  - id: BASE_refactor_preservation_guard
+    path: DATASETS/BASE/refactor_preservation_guard.yaml
+    status: active
+  - id: BASE_innovation_board_plus
+    path: DATASETS/BASE/innovation_board_plus.yaml
+    status: active
+  - id: BASE_area_increment_matrix
+    path: DATASETS/BASE/area_increment_matrix.yaml
+    status: active
+  - id: BASE_ai_mastery_division
+    path: DATASETS/BASE/ai_mastery_division.yaml
+    status: active
+  - id: BASE_visionary_team
+    path: DATASETS/BASE/visionary_team.yaml
+    status: active
+  - id: BASE_genius_team
+    path: DATASETS/BASE/genius_team.yaml
+    status: active
+  - id: BASE_data_integration_matrix
+    path: DATASETS/BASE/data_integration_matrix.yaml
+    status: active
+  - id: BASE_cross_reference_schema
+    path: DATASETS/BASE/cross_reference_schema.yaml
+    status: active
+  - id: BASE_evidence_linking
+    path: DATASETS/BASE/evidence_linking.yaml
+    status: active
+  - id: BASE_ten_x_leap_rule
+    path: DATASETS/BASE/ten_x_leap_rule.yaml
+    status: active
+  - id: PRODUCT_product_lab
+    path: DATASETS/PRODUCT/product_lab.yaml
+    status: active
+  - id: PRODUCT_digital_wow
+    path: DATASETS/PRODUCT/digital_wow.yaml
+    status: active
+  - id: PRODUCT_pitch_pack
+    path: DATASETS/PRODUCT/pitch_pack.yaml
+    status: active
+  - id: PRODUCT_exportable_product_pack
+    path: DATASETS/PRODUCT/exportable_product_pack.yaml
+    status: active
+  - id: PRODUCT_mvp
+    path: DATASETS/PRODUCT/mvp.yaml
+    status: active
+  - id: PRODUCT_market_validation
+    path: DATASETS/PRODUCT/market_validation.yaml
+    status: active
+  - id: PRODUCT_launch_plan
+    path: DATASETS/PRODUCT/launch_plan.yaml
+    status: active
+  - id: TECHNOLOGY_DEVELOPMENT_stack
+    path: DATASETS/TECHNOLOGY_DEVELOPMENT/stack.yaml
+    status: active
+  - id: TECHNOLOGY_DEVELOPMENT_pattern
+    path: DATASETS/TECHNOLOGY_DEVELOPMENT/pattern.yaml
+    status: active
+  - id: TECHNOLOGY_DEVELOPMENT_security
+    path: DATASETS/TECHNOLOGY_DEVELOPMENT/security.yaml
+    status: active
+  - id: TECHNOLOGY_DEVELOPMENT_architecture_patterns
+    path: DATASETS/TECHNOLOGY_DEVELOPMENT/architecture_patterns.yaml
+    status: active
+  - id: TECHNOLOGY_DEVELOPMENT_serverless_repository_runtime
+    path: DATASETS/TECHNOLOGY_DEVELOPMENT/serverless_repository_runtime.yaml
+    status: active
+  - id: DESIGN_COMMUNICATION_ux
+    path: DATASETS/DESIGN_COMMUNICATION/ux.yaml
+    status: active
+  - id: DESIGN_COMMUNICATION_output_style_matrix
+    path: DATASETS/DESIGN_COMMUNICATION/output_style_matrix.yaml
+    status: active
+  - id: DESIGN_COMMUNICATION_table_first_policy
+    path: DATASETS/DESIGN_COMMUNICATION/table_first_policy.yaml
+    status: active
+  - id: DESIGN_COMMUNICATION_visual_layout_rules
+    path: DATASETS/DESIGN_COMMUNICATION/visual_layout_rules.yaml
+    status: active
+  - id: DESIGN_COMMUNICATION_executive_summary_schema
+    path: DATASETS/DESIGN_COMMUNICATION/executive_summary_schema.yaml
+    status: active
+  - id: WORK_PROFESSIONS_dataset_operativo
+    path: DATASETS/WORK_PROFESSIONS/dataset_operativo.yaml
+    status: active
+  - id: WORK_PROFESSIONS_voci_busta_paga
+    path: DATASETS/WORK_PROFESSIONS/voci_busta_paga.yaml
+    status: active
+  - id: WORK_PROFESSIONS_ccnl
+    path: DATASETS/WORK_PROFESSIONS/ccnl.yaml
+    status: active
+  - id: WORK_PROFESSIONS_anomalie_payroll
+    path: DATASETS/WORK_PROFESSIONS/anomalie_payroll.yaml
+    status: active
+  - id: ECONOMY_FINANCE_dataset_operativo
+    path: DATASETS/ECONOMY_FINANCE/dataset_operativo.yaml
+    status: active
+  - id: ECONOMY_FINANCE_fiscale_lavoro
+    path: DATASETS/ECONOMY_FINANCE/fiscale_lavoro.yaml
+    status: active
+  - id: DOCUMENTS_DATA_REPORT_dataset_operativo
+    path: DATASETS/DOCUMENTS_DATA_REPORT/dataset_operativo.yaml
+    status: active
+  - id: DOCUMENTS_DATA_REPORT_source_inventory
+    path: DATASETS/DOCUMENTS_DATA_REPORT/source_inventory.yaml
+    status: active
+  - id: DOCUMENTS_DATA_REPORT_entity_extraction_schema
+    path: DATASETS/DOCUMENTS_DATA_REPORT/entity_extraction_schema.yaml
+    status: active
+  - id: DOCUMENTS_DATA_REPORT_data_lineage
+    path: DATASETS/DOCUMENTS_DATA_REPORT/data_lineage.yaml
+    status: active
+  - id: DOCUMENTS_DATA_REPORT_normalization_rules
+    path: DATASETS/DOCUMENTS_DATA_REPORT/normalization_rules.yaml
+    status: active
+  - id: DOCUMENTS_DATA_REPORT_insight_matrix
+    path: DATASETS/DOCUMENTS_DATA_REPORT/insight_matrix.yaml
+    status: active
+  - id: LAW_REGULATION_dataset_operativo
+    path: DATASETS/LAW_REGULATION/dataset_operativo.yaml
+    status: active
+  - id: HEALTH_MEDICINE_dataset_operativo
+    path: DATASETS/HEALTH_MEDICINE/dataset_operativo.yaml
+    status: active
+  - id: CULTURE_ARTS_dataset_operativo
+    path: DATASETS/CULTURE_ARTS/dataset_operativo.yaml
+    status: active
+  - id: FOOD_COOKING_recipe_schema
+    path: DATASETS/FOOD_COOKING/recipe_schema.yaml
+    status: active
+  - id: FOOD_COOKING_menu_planning
+    path: DATASETS/FOOD_COOKING/menu_planning.yaml
+    status: active
+  - id: FOOD_COOKING_cookbook_structure
+    path: DATASETS/FOOD_COOKING/cookbook_structure.yaml
+    status: active
+  - id: SECURITY_RISK_dataset_operativo
+    path: DATASETS/SECURITY_RISK/dataset_operativo.yaml
+    status: active
+  - id: SECURITY_RISK_risk_matrix
+    path: DATASETS/SECURITY_RISK/risk_matrix.yaml
+    status: active
+  - id: SECURITY_RISK_regression_guard
+    path: DATASETS/SECURITY_RISK/regression_guard.yaml
+    status: active

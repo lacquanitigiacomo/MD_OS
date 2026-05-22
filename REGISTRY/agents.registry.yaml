@@ -1,0 +1,409 @@
+agents:
+  - id: session_director
+    area: BASE
+    path: AGENTS/BASE/session_director.md
+    status: active
+  - id: team_composer
+    area: BASE
+    path: AGENTS/BASE/team_composer.md
+    status: active
+  - id: learning_extractor
+    area: BASE
+    path: AGENTS/BASE/learning_extractor.md
+    status: active
+  - id: semantic_curator
+    area: BASE
+    path: AGENTS/BASE/semantic_curator.md
+    status: active
+  - id: dataset_compiler
+    area: BASE
+    path: AGENTS/BASE/dataset_compiler.md
+    status: active
+  - id: council_moderator
+    area: BASE
+    path: AGENTS/BASE/council_moderator.md
+    status: active
+  - id: innovation_radar_curator
+    area: BASE
+    path: AGENTS/BASE/innovation_radar_curator.md
+    status: active
+  - id: benchmark_analyst
+    area: BASE
+    path: AGENTS/BASE/benchmark_analyst.md
+    status: active
+  - id: local_ai_architect
+    area: BASE
+    path: AGENTS/BASE/local_ai_architect.md
+    status: active
+  - id: innovation_board_director
+    area: BASE
+    path: AGENTS/BASE/innovation_board_director.md
+    status: active
+  - id: refactor_architect
+    area: BASE
+    path: AGENTS/BASE/refactor_architect.md
+    status: active
+  - id: first_principles_genius
+    area: BASE
+    path: AGENTS/BASE/first_principles_genius.md
+    status: active
+  - id: leverage_hunter
+    area: BASE
+    path: AGENTS/BASE/leverage_hunter.md
+    status: active
+  - id: table_output_specialist
+    area: BASE
+    path: AGENTS/BASE/table_output_specialist.md
+    status: active
+  - id: ai_model_strategist
+    area: AI_MASTERY
+    path: AGENTS/AI_MASTERY/ai_model_strategist.md
+    status: active
+  - id: prompt_optimizer
+    area: AI_MASTERY
+    path: AGENTS/AI_MASTERY/prompt_optimizer.md
+    status: active
+  - id: context_compression_specialist
+    area: AI_MASTERY
+    path: AGENTS/AI_MASTERY/context_compression_specialist.md
+    status: active
+  - id: tool_usage_optimizer
+    area: AI_MASTERY
+    path: AGENTS/AI_MASTERY/tool_usage_optimizer.md
+    status: active
+  - id: retrieval_optimizer
+    area: AI_MASTERY
+    path: AGENTS/AI_MASTERY/retrieval_optimizer.md
+    status: active
+  - id: ai_capability_scout
+    area: AI_MASTERY
+    path: AGENTS/AI_MASTERY/ai_capability_scout.md
+    status: active
+  - id: prompt_security_specialist
+    area: AI_MASTERY
+    path: AGENTS/AI_MASTERY/prompt_security_specialist.md
+    status: active
+  - id: quality_gate_designer
+    area: AI_MASTERY
+    path: AGENTS/AI_MASTERY/quality_gate_designer.md
+    status: active
+  - id: systems_inventor
+    area: INNOVATION_DEVELOPMENT
+    path: AGENTS/INNOVATION_DEVELOPMENT/systems_inventor.md
+    status: active
+  - id: software_architect
+    area: INNOVATION_DEVELOPMENT
+    path: AGENTS/INNOVATION_DEVELOPMENT/software_architect.md
+    status: active
+  - id: automation_architect
+    area: INNOVATION_DEVELOPMENT
+    path: AGENTS/INNOVATION_DEVELOPMENT/automation_architect.md
+    status: active
+  - id: business_model_innovator
+    area: INNOVATION_DEVELOPMENT
+    path: AGENTS/INNOVATION_DEVELOPMENT/business_model_innovator.md
+    status: active
+  - id: creative_technologist
+    area: INNOVATION_DEVELOPMENT
+    path: AGENTS/INNOVATION_DEVELOPMENT/creative_technologist.md
+    status: active
+  - id: product_futurist
+    area: INNOVATION_DEVELOPMENT
+    path: AGENTS/INNOVATION_DEVELOPMENT/product_futurist.md
+    status: active
+  - id: scenario_analyst
+    area: ANALYSIS_PROJECTION
+    path: AGENTS/ANALYSIS_PROJECTION/scenario_analyst.md
+    status: active
+  - id: forecasting_specialist
+    area: ANALYSIS_PROJECTION
+    path: AGENTS/ANALYSIS_PROJECTION/forecasting_specialist.md
+    status: active
+  - id: risk_analyst
+    area: ANALYSIS_PROJECTION
+    path: AGENTS/ANALYSIS_PROJECTION/risk_analyst.md
+    status: active
+  - id: impact_evaluator
+    area: ANALYSIS_PROJECTION
+    path: AGENTS/ANALYSIS_PROJECTION/impact_evaluator.md
+    status: active
+  - id: feasibility_analyst
+    area: ANALYSIS_PROJECTION
+    path: AGENTS/ANALYSIS_PROJECTION/feasibility_analyst.md
+    status: active
+  - id: priority_strategist
+    area: ANALYSIS_PROJECTION
+    path: AGENTS/ANALYSIS_PROJECTION/priority_strategist.md
+    status: active
+  - id: data_integration_architect
+    area: DATA_PRESENTATION
+    path: AGENTS/DATA_PRESENTATION/data_integration_architect.md
+    status: active
+  - id: semantic_mapper
+    area: DATA_PRESENTATION
+    path: AGENTS/DATA_PRESENTATION/semantic_mapper.md
+    status: active
+  - id: evidence_linker
+    area: DATA_PRESENTATION
+    path: AGENTS/DATA_PRESENTATION/evidence_linker.md
+    status: active
+  - id: insight_synthesizer
+    area: DATA_PRESENTATION
+    path: AGENTS/DATA_PRESENTATION/insight_synthesizer.md
+    status: active
+  - id: report_designer
+    area: DATA_PRESENTATION
+    path: AGENTS/DATA_PRESENTATION/report_designer.md
+    status: active
+  - id: visual_information_designer
+    area: DATA_PRESENTATION
+    path: AGENTS/DATA_PRESENTATION/visual_information_designer.md
+    status: active
+  - id: executive_briefing_specialist
+    area: DATA_PRESENTATION
+    path: AGENTS/DATA_PRESENTATION/executive_briefing_specialist.md
+    status: active
+  - id: moonshot_architect
+    area: VISIONARIES
+    path: AGENTS/VISIONARIES/moonshot_architect.md
+    status: active
+  - id: systems_visionary
+    area: VISIONARIES
+    path: AGENTS/VISIONARIES/systems_visionary.md
+    status: active
+  - id: experience_visionary
+    area: VISIONARIES
+    path: AGENTS/VISIONARIES/experience_visionary.md
+    status: active
+  - id: automation_futurist
+    area: VISIONARIES
+    path: AGENTS/VISIONARIES/automation_futurist.md
+    status: active
+  - id: knowledge_ecosystem_designer
+    area: VISIONARIES
+    path: AGENTS/VISIONARIES/knowledge_ecosystem_designer.md
+    status: active
+  - id: human_ai_interaction_visionary
+    area: VISIONARIES
+    path: AGENTS/VISIONARIES/human_ai_interaction_visionary.md
+    status: active
+  - id: market_future_scout
+    area: VISIONARIES
+    path: AGENTS/VISIONARIES/market_future_scout.md
+    status: active
+  - id: constraint_breaker
+    area: GENIUSES
+    path: AGENTS/GENIUSES/constraint_breaker.md
+    status: active
+  - id: pattern_synthesizer
+    area: GENIUSES
+    path: AGENTS/GENIUSES/pattern_synthesizer.md
+    status: active
+  - id: paradigm_shift_designer
+    area: GENIUSES
+    path: AGENTS/GENIUSES/paradigm_shift_designer.md
+    status: active
+  - id: elegance_engineer
+    area: GENIUSES
+    path: AGENTS/GENIUSES/elegance_engineer.md
+    status: active
+  - id: contrarian_strategist
+    area: GENIUSES
+    path: AGENTS/GENIUSES/contrarian_strategist.md
+    status: active
+  - id: invention_catalyst
+    area: GENIUSES
+    path: AGENTS/GENIUSES/invention_catalyst.md
+    status: active
+  - id: product_lab_director
+    area: PRODUCT
+    path: AGENTS/PRODUCT/product_lab_director.md
+    status: active
+  - id: product_packager
+    area: PRODUCT
+    path: AGENTS/PRODUCT/product_packager.md
+    status: active
+  - id: idea_accelerator
+    area: PRODUCT
+    path: AGENTS/PRODUCT/idea_accelerator.md
+    status: active
+  - id: business_strategist
+    area: PRODUCT
+    path: AGENTS/PRODUCT/business_strategist.md
+    status: active
+  - id: presentation_designer
+    area: PRODUCT
+    path: AGENTS/PRODUCT/presentation_designer.md
+    status: active
+  - id: senior_full_stack_developer
+    area: TECHNOLOGY_DEVELOPMENT
+    path: AGENTS/TECHNOLOGY_DEVELOPMENT/senior_full_stack_developer.md
+    status: active
+  - id: senior_frontend_developer
+    area: TECHNOLOGY_DEVELOPMENT
+    path: AGENTS/TECHNOLOGY_DEVELOPMENT/senior_frontend_developer.md
+    status: active
+  - id: senior_backend_developer
+    area: TECHNOLOGY_DEVELOPMENT
+    path: AGENTS/TECHNOLOGY_DEVELOPMENT/senior_backend_developer.md
+    status: active
+  - id: api_architect
+    area: TECHNOLOGY_DEVELOPMENT
+    path: AGENTS/TECHNOLOGY_DEVELOPMENT/api_architect.md
+    status: active
+  - id: ai_engineer
+    area: TECHNOLOGY_DEVELOPMENT
+    path: AGENTS/TECHNOLOGY_DEVELOPMENT/ai_engineer.md
+    status: active
+  - id: data_engineer
+    area: TECHNOLOGY_DEVELOPMENT
+    path: AGENTS/TECHNOLOGY_DEVELOPMENT/data_engineer.md
+    status: active
+  - id: security_engineer
+    area: TECHNOLOGY_DEVELOPMENT
+    path: AGENTS/TECHNOLOGY_DEVELOPMENT/security_engineer.md
+    status: active
+  - id: qa_engineer
+    area: TECHNOLOGY_DEVELOPMENT
+    path: AGENTS/TECHNOLOGY_DEVELOPMENT/qa_engineer.md
+    status: active
+  - id: ux_reviewer
+    area: DESIGN_COMMUNICATION
+    path: AGENTS/DESIGN_COMMUNICATION/ux_reviewer.md
+    status: active
+  - id: web_designer
+    area: DESIGN_COMMUNICATION
+    path: AGENTS/DESIGN_COMMUNICATION/web_designer.md
+    status: active
+  - id: grafico
+    area: DESIGN_COMMUNICATION
+    path: AGENTS/DESIGN_COMMUNICATION/grafico.md
+    status: active
+  - id: copywriter
+    area: DESIGN_COMMUNICATION
+    path: AGENTS/DESIGN_COMMUNICATION/copywriter.md
+    status: active
+  - id: redattore_report
+    area: DESIGN_COMMUNICATION
+    path: AGENTS/DESIGN_COMMUNICATION/redattore_report.md
+    status: active
+  - id: revisore_cedolini
+    area: WORK_PROFESSIONS
+    path: AGENTS/WORK_PROFESSIONS/revisore_cedolini.md
+    status: active
+  - id: consulente_lavoro
+    area: WORK_PROFESSIONS
+    path: AGENTS/WORK_PROFESSIONS/consulente_lavoro.md
+    status: active
+  - id: analista_ccnl
+    area: WORK_PROFESSIONS
+    path: AGENTS/WORK_PROFESSIONS/analista_ccnl.md
+    status: active
+  - id: revisore_orari_turni
+    area: WORK_PROFESSIONS
+    path: AGENTS/WORK_PROFESSIONS/revisore_orari_turni.md
+    status: active
+  - id: analista_sicurezza_lavoro
+    area: WORK_PROFESSIONS
+    path: AGENTS/WORK_PROFESSIONS/analista_sicurezza_lavoro.md
+    status: active
+  - id: hr_specialist
+    area: WORK_PROFESSIONS
+    path: AGENTS/WORK_PROFESSIONS/hr_specialist.md
+    status: active
+  - id: career_coach
+    area: WORK_PROFESSIONS
+    path: AGENTS/WORK_PROFESSIONS/career_coach.md
+    status: active
+  - id: redattore_istanze_lavoro
+    area: WORK_PROFESSIONS
+    path: AGENTS/WORK_PROFESSIONS/redattore_istanze_lavoro.md
+    status: active
+  - id: commercialista
+    area: ECONOMY_FINANCE
+    path: AGENTS/ECONOMY_FINANCE/commercialista.md
+    status: active
+  - id: analista_finanziario
+    area: ECONOMY_FINANCE
+    path: AGENTS/ECONOMY_FINANCE/analista_finanziario.md
+    status: active
+  - id: revisore_contabile
+    area: ECONOMY_FINANCE
+    path: AGENTS/ECONOMY_FINANCE/revisore_contabile.md
+    status: active
+  - id: data_extraction_architect
+    area: DOCUMENTS_DATA_REPORT
+    path: AGENTS/DOCUMENTS_DATA_REPORT/data_extraction_architect.md
+    status: active
+  - id: document_analyst
+    area: DOCUMENTS_DATA_REPORT
+    path: AGENTS/DOCUMENTS_DATA_REPORT/document_analyst.md
+    status: active
+  - id: source_inventory_specialist
+    area: DOCUMENTS_DATA_REPORT
+    path: AGENTS/DOCUMENTS_DATA_REPORT/source_inventory_specialist.md
+    status: active
+  - id: report_auditor
+    area: DOCUMENTS_DATA_REPORT
+    path: AGENTS/DOCUMENTS_DATA_REPORT/report_auditor.md
+    status: active
+  - id: legal_reviewer
+    area: LAW_REGULATION
+    path: AGENTS/LAW_REGULATION/legal_reviewer.md
+    status: active
+  - id: labor_rights_specialist
+    area: LAW_REGULATION
+    path: AGENTS/LAW_REGULATION/labor_rights_specialist.md
+    status: active
+  - id: compliance_analyst
+    area: LAW_REGULATION
+    path: AGENTS/LAW_REGULATION/compliance_analyst.md
+    status: active
+  - id: occupational_doctor
+    area: HEALTH_MEDICINE
+    path: AGENTS/HEALTH_MEDICINE/occupational_doctor.md
+    status: active
+  - id: medico_legale
+    area: HEALTH_MEDICINE
+    path: AGENTS/HEALTH_MEDICINE/medico_legale.md
+    status: active
+  - id: health_risk_analyst
+    area: HEALTH_MEDICINE
+    path: AGENTS/HEALTH_MEDICINE/health_risk_analyst.md
+    status: active
+  - id: storyteller
+    area: CULTURE_ARTS
+    path: AGENTS/CULTURE_ARTS/storyteller.md
+    status: active
+  - id: critico_culturale
+    area: CULTURE_ARTS
+    path: AGENTS/CULTURE_ARTS/critico_culturale.md
+    status: active
+  - id: editor_scrittura
+    area: CULTURE_ARTS
+    path: AGENTS/CULTURE_ARTS/editor_scrittura.md
+    status: active
+  - id: chef_domestico
+    area: FOOD_COOKING
+    path: AGENTS/FOOD_COOKING/chef_domestico.md
+    status: active
+  - id: meal_planner
+    area: FOOD_COOKING
+    path: AGENTS/FOOD_COOKING/meal_planner.md
+    status: active
+  - id: cookbook_editor
+    area: FOOD_COOKING
+    path: AGENTS/FOOD_COOKING/cookbook_editor.md
+    status: active
+  - id: risk_matrix_specialist
+    area: SECURITY_RISK
+    path: AGENTS/SECURITY_RISK/risk_matrix_specialist.md
+    status: active
+  - id: safety_reviewer
+    area: SECURITY_RISK
+    path: AGENTS/SECURITY_RISK/safety_reviewer.md
+    status: active
+  - id: regression_guard
+    area: SECURITY_RISK
+    path: AGENTS/SECURITY_RISK/regression_guard.md
+    status: active

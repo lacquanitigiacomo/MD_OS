@@ -1,0 +1,28 @@
+skills:
+  - id: product-lab
+    path: SKILLS/product-lab/SKILL.md
+    status: active
+  - id: digital-product-wow
+    path: SKILLS/digital-product-wow/SKILL.md
+    status: active
+  - id: external-radar
+    path: SKILLS/external-radar/SKILL.md
+    status: active
+  - id: session-control
+    path: SKILLS/session-control/SKILL.md
+    status: active
+  - id: semantic-runtime
+    path: SKILLS/semantic-runtime/SKILL.md
+    status: active
+  - id: refactor-10x
+    path: SKILLS/refactor-10x/SKILL.md
+    status: active
+  - id: local-ai-strategy
+    path: SKILLS/local-ai-strategy/SKILL.md
+    status: active
+  - id: data-integration-extreme
+    path: SKILLS/data-integration-extreme/SKILL.md
+    status: active
+  - id: export-product-pack
+    path: SKILLS/export-product-pack/SKILL.md
+    status: active

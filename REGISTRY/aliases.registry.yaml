@@ -1,0 +1,7 @@
+aliases:
+  - old: AGENTI
+    new: AGENTS
+  - old: DATASET
+    new: DATASETS
+  - old: ANALISI LAVORO
+    new: PROJECTS/ANALISI_LAVORO

@@ -1,0 +1,16 @@
+nodes:
+  - id: ten_x_leap
+    type: rule
+    activates:
+      - innovation_board
+      - refactor_10x
+  - id: product_lab
+    type: skill
+    activates:
+      - product_lab_director
+      - business_strategist
+  - id: analysis_work
+    type: project_mode
+    activates:
+      - revisore_cedolini
+      - evidence_linker
