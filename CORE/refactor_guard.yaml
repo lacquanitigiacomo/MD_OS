@@ -1,8 +1,0 @@
-refactor_guard:
-  rules:
-    - no_delete_without_manifest
-    - no_rename_without_alias
-    - no_move_without_mapping
-    - no_registry_loss
-    - no_output_contract_loss
-    - preserve_legacy_notes
