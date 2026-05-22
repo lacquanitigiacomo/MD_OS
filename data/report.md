@@ -1,0 +1,4 @@
+{
+  "agent": "transform",
+  "result": "# Analysis Report\n\n- **Count**: 10\n- **Mean**: 48.2\n- **Max**: 97\n- **Min**: 5\n\n## Raw Dataset\n```json\n[\n  {\n    \"id\": 0,\n    \"value\": 19\n  },\n  {\n    \"id\": 1,\n    \"value\": 94\n  },\n  {\n    \"id\": 2,\n    \"value\": 48\n  },\n  {\n    \"id\": 3,\n    \"value\": 34\n  },\n  {\n    \"id\": 4,\n    \"value\": 45\n  },\n  {\n    \"id\": 5,\n    \"value\": 5\n  },\n  {\n    \"id\": 6,\n    \"value\": 97\n  },\n  {\n    \"id\": 7,\n    \"value\": 12\n  },\n  {\n    \"id\": 8,\n    \"value\": 75\n  },\n  {\n    \"id\": 9,\n    \"value\": 53\n  }\n]\n```"
+}

@@ -1,0 +1,40 @@
+mesh:
+  name: "chimera_web_demo"
+  version: "2.0.1"
+
+nodes:
+  query_input:
+    type: "echo"
+    config:
+      value: "Python automation best practices 2026"
+
+  web_search:
+    type: "web_search"
+    config:
+      max_results: 5
+      offline_mode: false
+
+  to_markdown:
+    type: "transform"
+    config:
+      operation: "to_markdown"
+
+  save_report:
+    type: "file_write"
+    config:
+      path: "data/web_report.md"
+
+  verify_file:
+    type: "file_read"
+    config:
+      path: "data/web_report.md"
+
+connections:
+  - from: "query_input"
+    to: "web_search"
+  - from: "web_search"
+    to: "to_markdown"
+  - from: "to_markdown"
+    to: "save_report"
+  - from: "save_report"
+    to: "verify_file"

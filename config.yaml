@@ -1,0 +1,67 @@
+mesh:
+  name: "chimera_offline_demo"
+  version: "2.0.1"
+
+nodes:
+  # Agent: generate synthetic dataset with Python
+  generate_data:
+    type: "python"
+    config:
+      code: |
+        import json, random
+        data = [{"id": i, "value": random.randint(1, 100)} for i in range(10)]
+        print(json.dumps(data))
+      timeout: 10
+
+  # Agent: analyze the dataset
+  analyze:
+    type: "python"
+    config:
+      code: |
+        import json, statistics
+        # Read the previous stdout (it is passed as a string in inputs)
+        raw = list(inputs.values())[0]
+        # The stdout from the previous node contains the JSON array printed to stdout
+        # Actually the mesh passes the whole result dict. We need to extract stdout.
+        # For simplicity, the mesh passes the predecessor result dict under its node_id.
+        # We will handle extraction in the node execution by passing predecessor outputs.
+        # Since the python agent returns {"stdout": "..."}, we parse that here.
+        data = json.loads(raw["stdout"])
+        values = [d["value"] for d in data]
+        result = {
+          "count": len(values),
+          "mean": round(statistics.mean(values), 2),
+          "max": max(values),
+          "min": min(values),
+          "dataset": data,
+        }
+        print(json.dumps(result))
+      timeout: 10
+
+  # Agent: format as markdown report
+  format_report:
+    type: "transform"
+    config:
+      operation: "to_markdown"
+
+  # Agent: save to file
+  save_report:
+    type: "file_write"
+    config:
+      path: "data/report.md"
+
+  # Agent: read back and verify
+  verify:
+    type: "file_read"
+    config:
+      path: "data/report.md"
+
+connections:
+  - from: "generate_data"
+    to: "analyze"
+  - from: "analyze"
+    to: "format_report"
+  - from: "format_report"
+    to: "save_report"
+  - from: "save_report"
+    to: "verify"
