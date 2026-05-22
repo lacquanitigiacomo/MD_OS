@@ -1,0 +1,1 @@
+{"id":"INT-SCHEMA-0001","tipo":"schema","descrizione":"Schema base per registrare interazioni utili del sistema interattivo progressivo.","campi":["id","timestamp","input","intent","keywords","patterns","agents","datasets","output_summary","score","next_action","learned"],"stato":"schema_attivo"}
