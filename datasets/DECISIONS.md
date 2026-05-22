@@ -64,3 +64,23 @@ Each decision must include:
 - reason: preserve learning across sessions and make MD_OS cumulative
 - affected agents: interaction_agent, memory_agent, agent_registry
 - next action: implement guided learning protocol
+
+### D006 - Beta emulation workspace
+
+- date: 2026-05-22
+- session focus: beta testing and debug
+- decision: MD_OS needs a dedicated beta workspace for emulation, scenarios, reports and experiments
+- reason: system quality improves when ideas are tested before release promotion
+- affected agents: vision_agent, interaction_agent, optimization_agent, production_realist
+- affected files: beta/README.md, beta/scenarios/SCENARIO_001_MEMORY_FAILURE.md, beta/debug/DEBUG_REPORT_001.md
+- next action: use beta results to prioritize memory, retrieval and validation layers
+
+### D007 - Build-emulate-debug-learn cycle
+
+- date: 2026-05-22
+- session focus: operating method
+- decision: MD_OS should use a build, emulate, fail, debug, patch, learn and release cycle
+- reason: this turns design into tested system evolution
+- affected agents: all operating agents
+- affected files: datasets/SESSION_DATASET.md, datasets/KEYWORDS.md, datasets/BETA_AWARENESS.md
+- next action: record beta findings as release blockers and improvement inputs
