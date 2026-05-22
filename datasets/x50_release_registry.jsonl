@@ -1,0 +1,51 @@
+{"id":"X50-00","nome":"baseline_x50","tipo":"release","stato":"applicata","descrizione":"Registro X50 applicato: 50 versioni evolutive collegate alla roadmap X10 e pronte per sviluppo incrementale."}
+{"id":"X50-01","nome":"ask_core","area":"interazione","stato":"attiva","obiettivo":"domanda locale con memoria e risposta strutturata","priorita":10}
+{"id":"X50-02","nome":"memory_core","area":"memoria","stato":"attiva","obiettivo":"recupero leggero da dataset locali","priorita":10}
+{"id":"X50-03","nome":"agent_orchestrator","area":"agenti","stato":"attiva","obiettivo":"selezione agenti da pattern e keyword","priorita":10}
+{"id":"X50-04","nome":"quality_loop","area":"qualita","stato":"attiva","obiettivo":"valutazione output e correzioni","priorita":9}
+{"id":"X50-05","nome":"learning_loop","area":"apprendimento","stato":"attiva","obiettivo":"salvataggio interazioni e pattern utili","priorita":9}
+{"id":"X50-06","nome":"security_gate","area":"governo","stato":"attiva","obiettivo":"confini operativi e controlli su azioni sensibili","priorita":10}
+{"id":"X50-07","nome":"dashboard","area":"stato","stato":"attiva","obiettivo":"vista sintetica dello stato sistema","priorita":8}
+{"id":"X50-08","nome":"roadmap_engine","area":"pianificazione","stato":"attiva","obiettivo":"priorita evolutive e avanzamento roadmap","priorita":8}
+{"id":"X50-09","nome":"report_engine","area":"export","stato":"pianificata","obiettivo":"report markdown e json da dataset","priorita":8}
+{"id":"X50-10","nome":"decision_engine","area":"decisioni","stato":"pianificata","obiettivo":"decisioni motivate e prossima azione","priorita":9}
+{"id":"X50-11","nome":"hybrid_retrieval","area":"retrieval","stato":"pianificata","obiettivo":"keyword piu metadata piu scoring semplice","priorita":9}
+{"id":"X50-12","nome":"dataset_governance","area":"dataset","stato":"pianificata","obiettivo":"qualita e ciclo vita dataset","priorita":8}
+{"id":"X50-13","nome":"technical_agents","area":"tecnica","stato":"pianificata","obiettivo":"agenti tecnici per codice e architettura","priorita":8}
+{"id":"X50-14","nome":"internal_versioning","area":"versioni","stato":"pianificata","obiettivo":"registro versioni e regressioni","priorita":7}
+{"id":"X50-15","nome":"beta_lab","area":"test","stato":"pianificata","obiettivo":"scenari beta e prove controllate","priorita":8}
+{"id":"X50-16","nome":"systems_matrix","area":"sistemi","stato":"pianificata","obiettivo":"mappa dipendenze e leve","priorita":8}
+{"id":"X50-17","nome":"interactive_session","area":"interazione","stato":"pianificata","obiettivo":"sessione continua locale","priorita":8}
+{"id":"X50-18","nome":"feedback_weighting","area":"feedback","stato":"pianificata","obiettivo":"pesi da feedback e storico","priorita":8}
+{"id":"X50-19","nome":"advanced_provenance","area":"tracciabilita","stato":"pianificata","obiettivo":"origine di ogni risultato utile","priorita":9}
+{"id":"X50-20","nome":"local_optimization","area":"performance","stato":"pianificata","obiettivo":"meno rumore e piu riuso","priorita":9}
+{"id":"X50-21","nome":"pattern_intelligence","area":"pattern","stato":"pianificata","obiettivo":"riconoscimento richieste ricorrenti","priorita":8}
+{"id":"X50-22","nome":"quality_gates","area":"qualita","stato":"pianificata","obiettivo":"bloccare output deboli o incoerenti","priorita":9}
+{"id":"X50-23","nome":"department_agents","area":"reparti","stato":"pianificata","obiettivo":"agenti collegati ai reparti","priorita":8}
+{"id":"X50-24","nome":"light_graph","area":"relazioni","stato":"pianificata","obiettivo":"grafo leggero da dataset","priorita":8}
+{"id":"X50-25","nome":"cli_composition","area":"cli","stato":"pianificata","obiettivo":"comandi componibili","priorita":7}
+{"id":"X50-26","nome":"operational_exports","area":"export","stato":"pianificata","obiettivo":"export audit e report","priorita":7}
+{"id":"X50-27","nome":"self_diagnosis","area":"diagnosi","stato":"pianificata","obiettivo":"lacune e colli di bottiglia","priorita":8}
+{"id":"X50-28","nome":"decision_memory","area":"memoria","stato":"pianificata","obiettivo":"storico decisioni motivate","priorita":9}
+{"id":"X50-29","nome":"ai_emulation_lab","area":"emulazione","stato":"pianificata","obiettivo":"capacita AI tradotte in dataset","priorita":8}
+{"id":"X50-30","nome":"external_service_strategy","area":"integrazioni","stato":"pianificata","obiettivo":"criteri per servizi esterni futuri","priorita":7}
+{"id":"X50-31","nome":"adaptive_context","area":"contesto","stato":"pianificata","obiettivo":"contesto giusto per ogni task","priorita":8}
+{"id":"X50-32","nome":"dataset_compression","area":"dataset","stato":"pianificata","obiettivo":"deduplica e densita informativa","priorita":8}
+{"id":"X50-33","nome":"agent_scoring","area":"agenti","stato":"pianificata","obiettivo":"misurare utilita agenti","priorita":8}
+{"id":"X50-34","nome":"release_intelligence","area":"release","stato":"pianificata","obiettivo":"release check informato dai dati","priorita":8}
+{"id":"X50-35","nome":"docs_as_system","area":"documentazione","stato":"pianificata","obiettivo":"documentazione usabile come dato","priorita":7}
+{"id":"X50-36","nome":"light_semantic_query","area":"ricerca","stato":"pianificata","obiettivo":"matching semantico leggero via pattern","priorita":8}
+{"id":"X50-37","nome":"runtime_profiles","area":"profili","stato":"pianificata","obiettivo":"modalita operative del sistema","priorita":7}
+{"id":"X50-38","nome":"local_audit","area":"audit","stato":"pianificata","obiettivo":"traccia azioni significative","priorita":9}
+{"id":"X50-39","nome":"predictive_maintenance","area":"manutenzione","stato":"pianificata","obiettivo":"prevedere aree deboli","priorita":7}
+{"id":"X50-40","nome":"progressive_autonomy","area":"autonomia","stato":"pianificata","obiettivo":"ridurre lavoro manuale ripetuto","priorita":9}
+{"id":"X50-41","nome":"multi_output","area":"produzione","stato":"pianificata","obiettivo":"piani patch report checklist","priorita":7}
+{"id":"X50-42","nome":"vision_evaluator","area":"visione","stato":"pianificata","obiettivo":"coerenza innovazione efficienza visione","priorita":9}
+{"id":"X50-43","nome":"tool_sandbox","area":"strumenti","stato":"pianificata","obiettivo":"simulare strumenti prima delluso","priorita":10}
+{"id":"X50-44","nome":"learning_review","area":"apprendimento","stato":"pianificata","obiettivo":"pulire apprendimento debole o obsoleto","priorita":8}
+{"id":"X50-45","nome":"performance_index","area":"performance","stato":"pianificata","obiettivo":"indice velocita utilita rumore riuso","priorita":8}
+{"id":"X50-46","nome":"dataset_catalog","area":"dataset","stato":"pianificata","obiettivo":"catalogo dataset riusabili","priorita":7}
+{"id":"X50-47","nome":"priority_system","area":"priorita","stato":"pianificata","obiettivo":"scegliere lavoro migliore per score","priorita":9}
+{"id":"X50-48","nome":"dataset_neural_ecosystem","area":"ecosistema","stato":"pianificata","obiettivo":"rete locale di relazioni tra dati","priorita":9}
+{"id":"X50-49","nome":"ai_integration_readiness","area":"integrazione","stato":"pianificata","obiettivo":"valutare costo beneficio AI esterna","priorita":7}
+{"id":"X50-50","nome":"stable_core_x50","area":"consolidamento","stato":"pianificata","obiettivo":"consolidare la release X50 nel core stabile","priorita":10}
